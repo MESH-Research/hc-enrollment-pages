@@ -14,7 +14,9 @@ gulp.task('serve', function() {
       'css/',
       'discovery_service_enrollment/',
       'discovery_service_registry/',
+      'discovery_service_wordpress/',
       'img/',
+      'partials/',
       {
         fn: function( event, file ) {
           this.reload();

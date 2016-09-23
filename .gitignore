@@ -4,3 +4,4 @@ registry*
 secure
 node_modules/*
 .env
+.git/config
