@@ -1,0 +1,131 @@
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body > .section {
+  font-size: 15px;
+}
+
+body.discovery-service-enrollment > .section, body.discovery-service-registry > .section {
+  height: auto;
+}
+
+#row1 {
+  background-color: #333;
+  color: white;
+  padding: 0 0 4px 0;
+  height: 26px;
+  margin-top: -20px;
+}
+
+#customHeader, #customHeader .contentWidth {
+  position: relative;
+}
+
+#customHeader {
+  padding: 1.5em;
+  color: black;
+}
+
+#customHeader h1 {
+  font-weight: 700;
+  font-size: 3em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin-left: 200px;
+}
+
+#customHeader .customElement {
+  position: absolute;
+  right: 10px;
+  bottom: -1em;
+}
+
+#customHeader .customImage img {
+  position: absolute;
+  top: -.7em;
+  left: -110px;
+  height: auto;
+}
+
+.customImage {
+  margin-bottom: 10px;
+}
+
+#customFooter {
+  position: absolute;
+  bottom: 0;
+  color: black;
+  font-size: 1.4em;
+  margin-top: 2em;
+  padding: 1em 0 1.5em;
+  width: 100%;
+}
+
+.sidebar {
+  display: none;
+}
+
+.pageTitle {
+  display: none;
+}
+
+.boxtitle > span.required {
+  display: none;
+}
+
+.contentFooterWithoutSidebar {
+  color: black;
+  text-align: left;
+}
+
+.section {
+  display: block;
+}
+
+#customFooter {
+  font-size: 14px;
+  background-color: grey; /** this is only here for footer visualization, keep or remove when ready **/
+}
+
+  #customFooter p {
+    padding-left: 50px;
+  }
+
+.customElement {
+  font-size: 15px;
+}
+
+
+
+@media only screen and (min-width: 720px) and (max-width: 900px) {
+  #customHeader .customImage img {  margin-left: 100px; }
+  #customHeader h1 { margin-left: 250px; }
+}
+
+@media only screen and (min-width: 992px) {
+  .contentFooterWithoutSidebar {
+  width: 685px !important;
+  }
+
+  #customHeader .customImage img {  margin-left: 100px; }
+  #customHeader h1 { margin-left: 250px; }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contentFooterWithoutSidebar {
+  width: 900px !important;
+  }
+
+  #customHeader .customImage img {
+  margin-left: 100px;
+  }
+
+  #customHeader h1 {
+  margin-left: 250px;
+  }
+}
