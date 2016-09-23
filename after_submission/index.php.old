@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+  <title>Humanities Commons Draft IdP Discovery Page 01</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-5" />
+  <meta name="google-signin-client_id" content="124123089170-1bdca6gffh2vn72s21k3cnmak326gcsa.apps.googleusercontent.com">
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
+  <link rel="stylesheet" type="text/css" href="idpselect.css" />
+</head>
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <h1>Welcome to Humanities Commons</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <a class="button button-primary" href="">Click here to join Humanities Commons</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h2>Already a member? Choose how to login:</h2>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row with-flex">
+        <div class="one-third column align-self-center">
+          <a href="">
+          <img src="/img/mla_commons_logo.png" width="128" height="128"></img>
+          </a>
+        </div>
+        <div class="one-third column align-self-center">
+          <div id="my-signin2"></div>
+          <script>
+            function onSuccess(googleUser) {
+              console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+              <?php 
+                // Get the 'return' URL included by the SP from the query string.
+                $returnUrl = $_GET["return"];
+
+                // The entityID for the HC IdP that uses Google for authentication.
+                $entityID = 'https://login-dev.commons.mla.org/idp/shibboleth';
+
+                // Need to URL encode the entityID before adding it as a query string
+                // parameter to the link.
+                echo 'window.location = "' . $returnUrl . '&entityID=' . urlencode($entityID) . '";';
+              ?>
+            }
+            function onFailure(error) {
+              console.log(error);
+            }
+            function renderButton() {
+              gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 200,
+                'height': 50,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+              });
+            }
+          </script>
+
+          <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+        </div>
+        <div class="one-third column align-self-center">
+          <a href="">
+          <img src="/img/orcid_128x128.png"></img>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Shibboleth EDS
+  <div class="section">
+    <div class="container" style="text-align:center;">
+      <div id="idpSelect" style="display:inline-block;"></div>
+      <script src="idpselect_config.js" type="text/javascript" language="javascript"></script>
+      <script src="idpselect.js" type="text/javascript" language="javascript"></script>
+    </div>
+  </div>
+-->
+     
+
+</body>
+</html>
