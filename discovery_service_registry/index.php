@@ -6,9 +6,25 @@
   <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
   <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
   <link rel="stylesheet" type="text/css" href="idpselect.css" />
+  <link rel="stylesheet" type="text/css" href="/css/global.css" />
 </head>
 
-<body>
+<body class="discovery-service-registry">
+
+  <header id="customHeader">
+    <div class="contentWidth">
+      <!-- example markup for your header field -->
+      <h1>MLA Custom Site Title</h1>
+      <div class="customElement">MLA site element</div>
+      <div class="customImage"><img src="https://hcommons-dev.org/app/uploads/2016/09/hc_mla_65px.png" /></div>
+  </header> <!-- /#customHeader -->
+
+  <nav id="row1" aria-label="user and platform menus">
+    <div class="contentWidth">
+      <div id="secondaryMenu" class="rightmenu"></div> <!-- /.secondaryMenu -->
+    </div> <!-- /.contentWidth -->
+  </nav> <!-- /#row1 -->
+
   <div class="section">
     <div class="container">
       <div class="row">
@@ -23,7 +39,7 @@
     <div class="container">
       <div class="row with-flex">
         <div class="one-half column align-self-center" style="display:none">
-          <?php 
+          <?php
             // Get the 'return' URL included by the SP from the query string.
             $returnUrl = $_GET["return"];
 
@@ -38,7 +54,7 @@
           </a>
         </div>
         <div class="one-half column align-self-center">
-          <?php 
+          <?php
             // Get the 'return' URL included by the SP from the query string.
             $returnUrl = $_GET["return"];
 
@@ -64,7 +80,7 @@
 
       <div class="row with-flex">
         <div class="eight column align-self-center">
-            <?php 
+            <?php
               // Get the 'return' URL included by the SP from the query string.
               $returnUrl = $_GET["return"];
 
@@ -92,6 +108,14 @@
     </div>
   </div>
 
+  <footer id="customFooter">
+    <div class="contentWidth">
+      <div class="contentFooterWithoutSidebar">
+        <p>test</p>
+      </div> <!-- /.contentFooterWithoutSidebar -->
+    </div> <!-- /.contentWidth -->
+  </footer> <!-- /#customFooter -->
+
 <?php /*
   <div class="section">
     <div class="container" style="text-align:center;">
@@ -99,28 +123,28 @@
       <script src="idpselect_config.js" type="text/javascript" language="javascript"></script>
       <script src="idpselect.js" type="text/javascript" language="javascript"></script>
       <noscript>
-        <!-- If you need to care about non javascript browsers you will need to 
+        <!-- If you need to care about non javascript browsers you will need to
              generate a hyperlink to a non-js DS.
 
              To build you will need:
                  - URL:  The base URL of the DS you use
-                 - EI: Your entityId, URLencoded.  You can get this from the line that 
+                 - EI: Your entityId, URLencoded.  You can get this from the line that
                    this page is called with.
                  - RET: Your return address dlib-adidp.ucs.ed.ac.uk. Again you can get
-                   this from the page this is called with, but beware of the 
+                   this from the page this is called with, but beware of the
                    target%3Dcookie%253A5269905f bit..
 
             < href=${URL}?entityID=${EI}&return=${RET}
          -->
 
-        Your Browser does not support javascript. Please use 
+        Your Browser does not support javascript. Please use
         <a href="http://federation.org/DS/DS?entityID=https%3A%2F%2FyourentityId.edu.edu%2Fshibboleth&return=https%3A%2F%2Fyourreturn.edu%2FShibboleth.sso%2FDS%3FSAMLDS%3D1%26target%3Dhttps%3A%2F%2Fyourreturn.edu%2F">this link</a>.
 
       </noscript>
     </div>
   </div>
 */ ?>
-     
+
 
 </body>
 </html>
