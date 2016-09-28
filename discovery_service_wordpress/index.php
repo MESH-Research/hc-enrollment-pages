@@ -1,3 +1,6 @@
+<?php
+  $referer = parse_url( $_SERVER['HTTP_REFERER'] );
+?>
 <html lang="en">
 <head>
   <title>Humanities Commons Draft IdP Discovery Page WordPress</title>
@@ -18,9 +21,7 @@
       <h2>Select your login method</h2>
     </div>
   </div>
-  <pre>
-    <?php var_dump($_SERVER); ?>
-  </pre>
+
   <div class="section">
     <div class="container">
       <div class="row with-flex">

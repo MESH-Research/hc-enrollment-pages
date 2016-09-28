@@ -1,3 +1,6 @@
+<pre>
+<?php var_dump( $referer ); ?>
+</pre>
 <header id="customHeader">
   <div class="contentWidth">
     <!-- example markup for your header field -->
