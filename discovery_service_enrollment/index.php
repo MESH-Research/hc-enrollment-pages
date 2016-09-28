@@ -197,7 +197,9 @@
         $('#countdown').countdown360({
           radius    : 60,
           seconds   : 15,
-          fillStyle : '#8BB6DB',
+          fillStyle : '#000',
+          strokeStyle: 'maroon',
+          fontColor: '#fff',
           autostart : false
         }).start()
       </script>
@@ -263,6 +265,8 @@
       </div>
     </div>
   </div>
+
+  <?php include('../partials/sidebar.php'); ?>
 
   <?php include('../partials/footer.php'); ?>
 
