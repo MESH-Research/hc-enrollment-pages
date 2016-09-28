@@ -5,6 +5,7 @@ body {
 
 html {
   height: 100%;
+  font-family: proxima-nova, Verdana, sans-serif !important;
 }
 
 body > .section {
@@ -32,25 +33,25 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   color: black;
 }
 
-#customHeader h1 {
-  font-weight: 700;
-  font-size: 3em;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  margin-left: 200px;
-}
+  #customHeader h1 {
+    font-weight: 700;
+    font-size: 3em;
+    font-family: proxima-nova, Helvetica, sans-serif;
+    margin-left: 200px;
+  }
 
-#customHeader .customElement {
-  position: absolute;
-  right: 10px;
-  bottom: -1em;
-}
+  #customHeader .customElement {
+    position: absolute;
+    right: 10px;
+    bottom: -1em;
+  }
 
-#customHeader .customImage img {
-  position: absolute;
-  top: -.7em;
-  left: -110px;
-  height: auto;
-}
+  #customHeader .customImage img {
+    position: absolute;
+    top: -.7em;
+    left: -110px;
+    height: auto;
+  }
 
 .customImage {
   margin-bottom: 10px;
@@ -63,12 +64,31 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   font-size: 1.4em;
   margin-top: 2em;
   padding: 1em 0 1.5em;
-  width: 100%;
+  width: 98%;
+  font-size: 14px;
+  border-top: solid 1px #b3b3b3;
+  margin: 0 10px;
 }
 
+  #customFooter p {
+    padding-left: 50px;
+    margin-bottom: 10px;
+  }
+
 .sidebar {
-  display: none;
+  background-color: white;
+  border: none;
+  margin-top: 55px;
+  width: 267px;
+  position: absolute;
+  right: 10px;
+  top: 100px;
 }
+
+  .sidebar > img.center {
+    display: block;
+    margin: 0 auto;
+  }
 
 .pageTitle {
   display: none;
@@ -81,26 +101,30 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 .contentFooterWithoutSidebar {
   color: black;
   text-align: left;
+  font-family: proxima-nova, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  padding: 15px 0 15px 15px 15px;
 }
 
 .section {
   display: block;
+  width: 80%;
 }
 
-#customFooter {
-  font-size: 14px;
-  background-color: grey; /** this is only here for footer visualization, keep or remove when ready **/
+.create_new_login {
+  margin-bottom: 100px;
 }
 
-  #customFooter p {
-    padding-left: 50px;
-  }
+.section_after_submission {
+  width: 80%;
+}
 
 .customElement {
   font-size: 15px;
 }
-
-
 
 @media only screen and (min-width: 720px) and (max-width: 900px) {
   #customHeader .customImage img {  margin-left: 100px; }
