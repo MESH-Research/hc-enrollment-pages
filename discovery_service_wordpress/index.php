@@ -64,7 +64,11 @@
     </div>
   </div>
 
-  <?php include('../partials/footer.php'); ?>
+
+  <?php
+    include('../partials/sidebar.php');
+    include('../partials/footer.php');
+  ?>
 
 <?php /*
   <div class="section">
