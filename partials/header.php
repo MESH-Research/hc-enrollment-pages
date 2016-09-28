@@ -2,17 +2,17 @@
   $host = explode( '.', $referer['host'] );
   $currentUrl = parse_url( $_SERVER['REQUEST_URI'] );
 ?>
+
 <header id="customHeader">
   <div class="contentWidth">
     <?php
 
     //for now, lets only target the discovery_service_wordpress page
-    if( $currentUrl['path'] == '/discovery_service_wordpress' ) :
+    if( $currentUrl['path'] == '/discovery_service_wordpress/index.php' ) :
 
     switch( $host[0] ) :
       case "mla" :
     ?>
-    <!-- example markup for your header field -->
     <h1><?php echo $host[0]; ?> Custom Site Title</h1>
     <div class="customElement"><?php echo $host[0]; ?> site element</div>
     <div class="customImage"><img src="/img/mla_55.png" /></div>
