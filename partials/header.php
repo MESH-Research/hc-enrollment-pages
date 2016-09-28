@@ -1,12 +1,52 @@
-<pre>
-<?php var_dump( $referer ); ?>
-</pre>
+<?php
+  $host = explode( '.', $referer['host'] );
+  $currentUrl = parse_url( $_SERVER['REQUEST_URI'] );
+?>
 <header id="customHeader">
   <div class="contentWidth">
+    <?php
+
+    //for now, lets only target the discovery_service_wordpress page
+    if( $currentUrl['path'] == '/discovery_service_wordpress' ) :
+
+    switch( $host[0] ) :
+      case "mla" :
+    ?>
+    <!-- example markup for your header field -->
+    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
+    <div class="customElement"><?php echo $host[0]; ?> site element</div>
+    <div class="customImage"><img src="/img/mla_55.png" /></div>
+    <?php
+      break;
+      case "ajs" :
+    ?>
+    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
+    <div class="customElement"><?php echo $host[0]; ?> site element</div>
+    <div class="customImage"><img src="/img/ajs_55.png" /></div>
+    <?php break;
+      case "aseees":
+    ?>
+    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
+    <div class="customElement"><?php echo $host[0]; ?> site element</div>
+    <div class="customImage"><img src="/img/aseees_55.png" /></div>
+    <?php
+      break;
+      default :
+    ?>
+    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
+    <div class="customElement"><?php echo $host[0]; ?> site element</div>
+    <div class="customImage"><img src="/img/hc_55.png" /></div>
+    <?php
+      break;
+    endswitch;
+
+    else :
+    ?>
     <!-- example markup for your header field -->
     <h1>HC Custom Site Title</h1>
     <div class="customElement">HC site element</div>
-    <div class="customImage"><img src="https://hcommons-dev.org/app/uploads/2016/09/hc_mla_65px.png" /></div>
+    <div class="customImage"><img src="/img/hc_mla_55.png" /></div>
+    <?php endif; ?>
 </header> <!-- /#customHeader -->
 
 <nav id="row1" aria-label="user and platform menus">
