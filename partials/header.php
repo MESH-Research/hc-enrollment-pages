@@ -15,20 +15,20 @@
     ?>
     <h1><?php echo $host[0]; ?> Custom Site Title</h1>
     <div class="customElement"><?php echo $host[0]; ?> site element</div>
-    <div class="customImage"><img src="/img/mla_55.png" /></div>
+    <div class="customImage"><img src="/img/hc_mla_55.png" /></div>
     <?php
       break;
       case "ajs" :
     ?>
     <h1><?php echo $host[0]; ?> Custom Site Title</h1>
     <div class="customElement"><?php echo $host[0]; ?> site element</div>
-    <div class="customImage"><img src="/img/ajs_55.png" /></div>
+    <div class="customImage"><img src="/img/hc_ajs_55.png" /></div>
     <?php break;
-      case "aseees":
+      case "aseees" :
     ?>
     <h1><?php echo $host[0]; ?> Custom Site Title</h1>
     <div class="customElement"><?php echo $host[0]; ?> site element</div>
-    <div class="customImage"><img src="/img/aseees_55.png" /></div>
+    <div class="customImage"><img src="/img/hc_aseees_55.png" /></div>
     <?php
       break;
       default :
