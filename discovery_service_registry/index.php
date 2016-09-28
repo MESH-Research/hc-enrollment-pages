@@ -78,7 +78,7 @@
       </div>
 
 
-      <div class="row with-flex">
+      <div class="row with-flex create_new_login">
         <div class="eight column align-self-center">
             <?php
               // Get the 'return' URL included by the SP from the query string.
@@ -107,14 +107,10 @@
 
     </div>
   </div>
-
-  <footer id="customFooter">
-    <div class="contentWidth">
-      <div class="contentFooterWithoutSidebar">
-        <p>test</p>
-      </div> <!-- /.contentFooterWithoutSidebar -->
-    </div> <!-- /.contentWidth -->
-  </footer> <!-- /#customFooter -->
+  <?php
+    include('../partials/sidebar.php');
+    include('../partials/footer.php'); 
+  ?>
 
 <?php /*
   <div class="section">
