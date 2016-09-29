@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
   <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
   <link rel="stylesheet" type="text/css" href="idpselect.css" />
+  <link rel="stylesheet" type="text/css" href="/css/global.css" />
 </head>
 
 <body>
