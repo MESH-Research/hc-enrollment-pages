@@ -33,9 +33,9 @@
       break;
       default :
     ?>
-    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
-    <div class="customElement"><?php echo $host[0]; ?> site element</div>
-    <div class="customImage"><img src="/img/hc_55.png" /></div>
+    <h1>HC Custom Site Title</h1>
+    <div class="customElement">HC site element</div>
+    <div class="customImage"><img src="/img/double_hc_55.png" /></div>
     <?php
       break;
     endswitch;
@@ -45,7 +45,7 @@
     <!-- example markup for your header field -->
     <h1>HC Custom Site Title</h1>
     <div class="customElement">HC site element</div>
-    <div class="customImage"><img src="/img/hc_mla_55.png" /></div>
+    <div class="customImage"><img src="/img/double_hc_55.png" /></div>
     <?php endif; ?>
 </header> <!-- /#customHeader -->
 
