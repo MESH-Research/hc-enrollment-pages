@@ -12,6 +12,10 @@
 <body class="discovery-service-registry">
 
   <pre>
+    <?php var_dump( $_SESSION ); ?>
+  </pre>
+
+  <pre>
     <?php var_dump( $_SERVER ); ?>
   </pre>
 
