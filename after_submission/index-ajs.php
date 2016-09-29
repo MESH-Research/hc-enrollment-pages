@@ -1,3 +1,6 @@
+<?php 
+  $_SESSION['society'] = filter_var( $_GET['society'], FILTER_SANITIZE_STRING );
+?>
 <html lang="en">
 <head>
   <title>AJS Commons Email Verification</title>
@@ -18,7 +21,7 @@
     </div>
   </div>
 
-     
+
 
 </body>
 </html>
