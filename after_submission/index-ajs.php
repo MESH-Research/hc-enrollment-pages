@@ -1,6 +1,7 @@
-<?php 
-  $_SESSION['society'] = filter_var( $_GET['society'], FILTER_SANITIZE_STRING );
+<?php session_start();
+$_SESSION['society'] = filter_var( $_GET['society'], FILTER_SANITIZE_STRIPPED );
 ?>
+
 <html lang="en">
 <head>
   <title>AJS Commons Email Verification</title>
