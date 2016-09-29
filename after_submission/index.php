@@ -9,6 +9,10 @@
 </head>
 
 <body>
+
+<pre>
+  <?php var_dump( $_SERVER ); ?>
+</pre>
   <div class="section">
     <div class="container">
       <div class="row">
@@ -19,7 +23,7 @@
     </div>
   </div>
 
-     
+
 
 </body>
 </html>
