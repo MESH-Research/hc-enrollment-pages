@@ -10,15 +10,7 @@
 </head>
 
 <body class="discovery-service-registry">
-
-  <pre>
-    <?php var_dump( $_SESSION ); ?>
-  </pre>
-
-  <pre>
-    <?php var_dump( $_SERVER ); ?>
-  </pre>
-
+  
   <header id="customHeader">
     <div class="contentWidth">
       <!-- example markup for your header field -->
@@ -152,4 +144,3 @@
 
 </body>
 </html>
-<?php session_destroy(); ?>
