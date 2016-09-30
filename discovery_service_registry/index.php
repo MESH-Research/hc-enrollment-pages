@@ -77,6 +77,46 @@
 */ ?>
       </div>
 
+      <div class="row with-flex">
+        <div class="one-half column align-self-center" >
+          <?php
+            // Get the 'return' URL included by the SP from the query string.
+            $returnUrl = $_GET["return"];
+
+            // The entityID for the Twitter gateway
+            $entityID = 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth';
+
+            // Need to URL encode the entityID before adding it as a query string
+            // parameter to the link.
+            echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
+          ?>
+          <img class="hc-signin" src="/img/twitter.png"></img>
+          </a>
+        </div>
+        <div class="one-half column align-self-center">
+          <?php
+            // Get the 'return' URL included by the SP from the query string.
+            $returnUrl = $_GET["return"];
+
+            // The entityID for the MLA IdP
+            $entityID = 'https://mla-idp-dev.mla.org/idp/shibboleth';
+
+            // Need to URL encode the entityID before adding it as a query string
+            // parameter to the link.
+            echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
+          ?>
+          <img src="/img/mla_logo.jpg"></img>
+          </a>
+        </div>
+<?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
+        <div class="one-third column align-self-center">
+          <a href="">
+          <img src="/img/orcid_128x128.png"></img>
+          </a>
+        </div>
+*/ ?>
+      </div>
+
 
       <div class="row with-flex create_new_login">
         <div class="eight column align-self-center">
