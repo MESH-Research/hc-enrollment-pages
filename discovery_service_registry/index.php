@@ -10,7 +10,7 @@
 </head>
 
 <body class="discovery-service-registry">
-
+  
   <?php include('../partials/header.php'); ?>
 
   <div class="section">

@@ -1,6 +1,7 @@
 <?php
   $host = explode( '.', $referer['host'] );
   $currentUrl = parse_url( $_SERVER['REQUEST_URI'] );
+  var_dump( $currentUrl );
 ?>
 
 <header id="customHeader">
