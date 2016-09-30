@@ -126,6 +126,10 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   font-size: 15px;
 }
 
+.hc-signin {
+  float: left;
+}
+
 @media only screen and (min-width: 720px) and (max-width: 900px) {
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }

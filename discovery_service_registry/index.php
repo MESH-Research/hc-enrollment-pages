@@ -11,19 +11,7 @@
 
 <body class="discovery-service-registry">
 
-  <header id="customHeader">
-    <div class="contentWidth">
-      <!-- example markup for your header field -->
-      <h1>MLA Custom Site Title</h1>
-      <div class="customElement">MLA site element</div>
-      <div class="customImage"><img src="https://hcommons-dev.org/app/uploads/2016/09/hc_mla_65px.png" /></div>
-  </header> <!-- /#customHeader -->
-
-  <nav id="row1" aria-label="user and platform menus">
-    <div class="contentWidth">
-      <div id="secondaryMenu" class="rightmenu"></div> <!-- /.secondaryMenu -->
-    </div> <!-- /.contentWidth -->
-  </nav> <!-- /#row1 -->
+  <?php include('../partials/header.php'); ?>
 
   <div class="section">
     <div class="container">
@@ -38,7 +26,7 @@
   <div class="section">
     <div class="container">
       <div class="row with-flex">
-        <div class="one-half column align-self-center" style="display:none">
+        <div class="one-half column align-self-center" style="display:inherit">
           <?php
             // Get the 'return' URL included by the SP from the query string.
             $returnUrl = $_GET["return"];
@@ -50,7 +38,7 @@
             // parameter to the link.
             echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
           ?>
-          <img class="hc-signin" src="/img/hc_signin2_360.png"></img>
+          <img class="hc-signin" src="/img/hc_signin2.png"></img>
           </a>
         </div>
         <div class="one-half column align-self-center">
@@ -65,7 +53,7 @@
             // parameter to the link.
             echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
           ?>
-          <img src="/img/google.png"></img>
+          <img src="/img/google_button.png"></img>
           </a>
         </div>
 <?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
@@ -78,7 +66,7 @@
       </div>
 
       <div class="row with-flex">
-        <div class="one-half column align-self-center" >
+        <div class="one-half column align-self-center" style="margin-top: 10px;">
           <?php
             // Get the 'return' URL included by the SP from the query string.
             $returnUrl = $_GET["return"];
@@ -90,7 +78,7 @@
             // parameter to the link.
             echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
           ?>
-          <img class="hc-signin" src="/img/twitter.png"></img>
+          <img class="hc-signin" src="/img/twitter_signin.png"></img>
           </a>
         </div>
         <div class="one-half column align-self-center">
@@ -105,11 +93,11 @@
             // parameter to the link.
             echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
           ?>
-          <img src="/img/mla_logo.jpg"></img>
+          <img src="/img/mla_signin_black_text.png"></img>
           </a>
         </div>
-<?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
-        <div class="one-third column align-self-center">
+        <?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
+          <div class="one-third column align-self-center">
           <a href="">
           <img src="/img/orcid_128x128.png"></img>
           </a>
