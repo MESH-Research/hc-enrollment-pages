@@ -2,19 +2,19 @@
 
   <div class="row with-flex">
 
-    <div class="one-half column align-self-center" style="display:inherit">
+    <div class="one-half column align-self-center" style="margin-bottom: 10px;">
       <?php
         // Get the 'return' URL included by the SP from the query string.
         $returnUrl = $_GET["return"];
 
-        // The entityID for the HC alpha test IdP
-        $entityID = 'https://hcommons-test.commons.mla.org/idp/shibboleth';
+        // The entityID for the Twitter gateway
+        $entityID = 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth';
 
         // Need to URL encode the entityID before adding it as a query string
         // parameter to the link.
         echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
       ?>
-      <img class="hc-signin" src="/img/hc_signin2.png"></img>
+      <img class="hc-signin" src="/img/twitter_signin.png"></img>
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -46,19 +46,20 @@
   </div> <!-- /.row.with-flex -->
 
   <div class="row with-flex">
-    <div class="one-half column align-self-center" style="margin-top: 10px;">
+
+    <div class="one-half column align-self-center" style="display:inherit">
       <?php
         // Get the 'return' URL included by the SP from the query string.
         $returnUrl = $_GET["return"];
 
-        // The entityID for the Twitter gateway
-        $entityID = 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth';
+        // The entityID for the HC alpha test IdP
+        $entityID = 'https://hcommons-test.commons.mla.org/idp/shibboleth';
 
         // Need to URL encode the entityID before adding it as a query string
         // parameter to the link.
         echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
       ?>
-      <img class="hc-signin" src="/img/twitter_signin.png"></img>
+      <img class="hc-signin" src="/img/hc_signin2.png"></img>
       </a>
     </div> <!-- /.one-half.column -->
 
