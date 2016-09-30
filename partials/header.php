@@ -1,7 +1,20 @@
 <?php
   $host = explode( '.', $referer['host'] );
   $currentUrl = parse_url( $_SERVER['REQUEST_URI'] );
-  var_dump( pathinfo( $currentUrl['path'] ) );
+  $registryUrl = pathinfo( $currentUrl['path'] );
+
+  //lets check for the after_submission page and allow the logos to change according to society for that enrollment flow
+  if( fnmatch( 'index-*.php', $registryUrl['basename'] ) && $registryUrl['dirname'] == '/after_submission' ) {
+
+    $registryUrlSociety = explode( '-', $registryUrl['filename'] );
+    $host[0] = $registryUrlSociety[1];
+
+  } else {
+
+    $registryUrlSociety = false;
+
+  }
+
 ?>
 
 <header id="customHeader">
@@ -9,7 +22,7 @@
     <?php
 
     //for now, lets only target the discovery_service_wordpress page
-    if( $currentUrl['path'] == '/discovery_service_wordpress/index.php' ) :
+    if( $currentUrl['path'] == '/discovery_service_wordpress/index.php' || is_array( $registryUrlSociety ) ) :
 
     switch( $host[0] ) :
       case "mla" :
