@@ -10,7 +10,11 @@
 </head>
 
 <body class="discovery-service-registry">
-  
+
+  <!--<div class="flash_msg">
+    <p>Thank you for registering! <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
+  </div>--> <!-- /.flash_msg -->
+
   <?php include('../partials/header.php'); ?>
 
   <div class="section">
@@ -18,7 +22,7 @@
       <div class="row">
         <h2>Thank you for registering!</h2>
         <h2>Select your login method</h2>
-          <p>Please choose the login method you would prefer to use to login to the Commons.</p>
+        <p>Please choose the login method you would prefer to use to login to the Commons.</p>
       </div>
     </div>
   </div>

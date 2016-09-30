@@ -127,8 +127,37 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 }
 
 .hc-signin {
-  float: left;
+  float: left !important;
 }
+
+.flash_msg {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  margin: 10px auto !important;
+  background-color: #DFF0D8;
+  z-index: 100;
+}
+
+  .flash_msg p {
+    margin:0;
+    font-weight: bold;
+    color: #3C763D;
+  }
+
+  .flash_msg .close {
+    color: grey;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 250px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
 
 @media only screen and (min-width: 720px) and (max-width: 900px) {
   #customHeader .customImage img {  margin-left: 100px; }
