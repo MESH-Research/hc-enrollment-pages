@@ -180,7 +180,7 @@ img.legacy_mla {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .login-items-desktop { display: none; }
+  .login-items-desktop { display: none !important; }
   .sidebar { display: none !important; }
 }
 
@@ -198,7 +198,7 @@ img.legacy_mla {
 
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
-  .login-items-mobile { display: none; }
+  .login-items-mobile { display: none !important; }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -214,5 +214,5 @@ img.legacy_mla {
     margin-left: 250px;
   }
 
-  .login-items-mobile { display: none; }
+  .login-items-mobile { display: none !important; }
 }
