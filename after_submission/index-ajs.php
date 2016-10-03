@@ -2,11 +2,7 @@
 <head>
   <title>AJS Commons Email Verification</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-5" />
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
-  <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
-  <link rel="stylesheet" type="text/css" href="idpselect.css" />
-  <link rel="stylesheet" type="text/css" href="/css/global.css" />
+  <?php include('../partials/css_js.php'); ?>
 </head>
 
 <body>

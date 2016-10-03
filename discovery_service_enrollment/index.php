@@ -2,15 +2,7 @@
 <head>
   <title>Humanities Commons Draft IdP Discovery Page for Enrollment</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-5" />
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
-  <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
-  <link rel="stylesheet" type="text/css" href="idpselect.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.countdown360.js" charset="utf-8"></script>
-  <!--<link rel='stylesheet' type='text/css' href="http://registry-dev.commons.mla.org/registry/css/comanage.css" />-->
-  <link rel="stylesheet" type="text/css" href="/css/global.css" />
-
+  <?php include('../partials/css_js.php'); ?>
 </head>
 
 <body class="discovery-service-enrollment">
