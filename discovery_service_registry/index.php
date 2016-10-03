@@ -13,21 +13,18 @@
 
   <?php include('../partials/header.php'); ?>
 
-  <div class="section">
     <div class="container">
       <div class="row">
-        <h2>Thank you for registering!</h2>
-        <h2>Select your login method</h2>
-        <p>Please choose the login method you would prefer to use to login to the Commons.</p>
-      </div>
-    </div>
-  </div>
+        <div class="eleven columns align-self-center login_registry_text">
+          <h2>Thank you for registering!</h2>
+          <h2>Select your login method</h2>
+          <p>Please choose the login method you would prefer to use to login to the Commons.</p>
+        </div> <!-- /.ten.columns -->
+      </div> <!-- /.row -->
 
-  <div class="section">
+      <?php include('../partials/login_items.php'); ?>
 
-    <?php include('../partials/login_items.php'); ?>
-
-  </div> <!-- /.section -->
+    </div> <!-- /.container -->
 
   <?php
     include('../partials/sidebar.php');

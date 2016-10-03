@@ -1,4 +1,5 @@
-<div class="container">
+<!-- login items desktop -->
+<div class="login-items-desktop">
 
   <div class="row with-flex">
 
@@ -75,7 +76,7 @@
         // parameter to the link.
         echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
       ?>
-      <img src="/img/mla_signin_black_text.png"></img>
+      <img class="legacy_mla" src="/img/mla_signin_black_text.png"></img>
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -87,14 +88,99 @@
     </div> */ ?>
   </div> <!-- /.row.with-flex -->
 
+</div> <!-- /.login-items-desktop -->
+
+<!-- end login-items-desktop -->
+
+<!-- login-items-mobile -->
+
+<div class="six columns login-items-mobile">
+
+  <div class="row with-flex">
+    <div class="eleven columns align-self-center">
+      <?php
+        // Get the 'return' URL included by the SP from the query string.
+        $returnUrl = $_GET["return"];
+
+        // The entityID for the Twitter gateway
+        $entityID = 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth';
+
+        // Need to URL encode the entityID before adding it as a query string
+        // parameter to the link.
+        echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
+      ?>
+      <img class="hc-signin" src="/img/twitter_signin.png"></img>
+      </a>
+    </div> <!-- /.eleven.columns -->
+  </div> <!-- /.row.with-flex -->
+
+  <div class="row with-flex">
+    <div class="eleven columns align-self-center">
+      <?php
+        // Get the 'return' URL included by the SP from the query string.
+        $returnUrl = $_GET["return"];
+
+        // The entityID for the HC IdP that uses Google for authentication.
+        $entityID = 'https://login-dev.commons.mla.org/idp/shibboleth';
+
+        // Need to URL encode the entityID before adding it as a query string
+        // parameter to the link.
+        echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
+      ?>
+      <img src="/img/google_button.png"></img>
+      </a>
+    </div> <!-- /.eleven.columns -->
+  </div> <!-- /.row.with-flex -->
+
+  <div class="row with-flex">
+    <div class="eleven columns align-self-center">
+      <?php
+        // Get the 'return' URL included by the SP from the query string.
+        $returnUrl = $_GET["return"];
+
+        // The entityID for the HC alpha test IdP
+        $entityID = 'https://hcommons-test.commons.mla.org/idp/shibboleth';
+
+        // Need to URL encode the entityID before adding it as a query string
+        // parameter to the link.
+        echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
+      ?>
+      <img class="hc-signin" src="/img/hc_signin2.png"></img>
+      </a>
+    </div> <!-- /.eleven.columns -->
+  </div> <!-- /.row.with-flex -->
+
+  <div class="row with-flex">
+    <div class="eleven columns align-self-center">
+      <?php
+        // Get the 'return' URL included by the SP from the query string.
+        $returnUrl = $_GET["return"];
+
+        // The entityID for the MLA IdP
+        $entityID = 'https://mla-idp-dev.mla.org/idp/shibboleth';
+
+        // Need to URL encode the entityID before adding it as a query string
+        // parameter to the link.
+        echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
+      ?>
+      <img class="legacy_mla" src="/img/mla_signin_black_text.png"></img>
+      </a>
+    </div> <!-- /.eleven.columns -->
+  </div> <!-- /.row.with-flex -->
+
+
+</div> <!-- /.login-items-mobile -->
+
+<!-- end login-items-mobile -->
+
   <?php
   //we only want the user to see this option when in the discovery_service_registry enrollment flow
   if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
 
-  <div class="row with-flex create_new_login">
+  <div class="row create_new_login">
     <div class="eight column align-self-center">
         <?php
-          // Get the 'return' URL included by the SP from the query string.
+          //Get the 'return' URL included by the SP from the query string.
           $returnUrl = $_GET["return"];
 
           // The entityID for the HC alpha test IdP
@@ -117,5 +203,3 @@
     </div> <!-- /.create_new_login -->
 
   <?php endif; ?>
-
-  </div> <!-- /.container -->

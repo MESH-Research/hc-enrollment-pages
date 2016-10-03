@@ -116,6 +116,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 
 .create_new_login {
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .section_after_submission {
@@ -159,30 +160,59 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
     border-radius: 10px;
   }
 
+.login_registry_text {
+  text-align: center;
+}
+
+.login-items-mobile {
+  margin-left: 220px;
+}
+
+  .login-items-mobile > .row {
+    margin-bottom: 10px;
+  }
+
+img.legacy_mla {
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px #ccc;
+  padding: 4px;
+  transition: all 0.2s;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .login-items-desktop { display: none; }
+  .sidebar { display: none !important; }
+}
+
 @media only screen and (min-width: 720px) and (max-width: 900px) {
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
+  .login-items-mobile { display: none; }
 }
 
 @media only screen and (min-width: 992px) {
+
   .contentFooterWithoutSidebar {
-  width: 685px !important;
+    width: 685px !important;
   }
 
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
+  .login-items-mobile { display: none; }
 }
 
 @media only screen and (min-width: 1200px) {
   .contentFooterWithoutSidebar {
-  width: 900px !important;
+    width: 900px !important;
   }
 
   #customHeader .customImage img {
-  margin-left: 100px;
+    margin-left: 100px;
   }
 
   #customHeader h1 {
-  margin-left: 250px;
+    margin-left: 250px;
   }
+
+  .login-items-mobile { display: none; }
 }
