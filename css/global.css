@@ -166,6 +166,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 
 .login-items-mobile {
   margin-left: 220px;
+  display: none;
 }
 
   .login-items-mobile > .row {
@@ -180,7 +181,7 @@ img.legacy_mla {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .login-items-desktop { display: none !important; }
+  /*.login-items-desktop { display: none !important; }*/
   .sidebar { display: none !important; }
 }
 
@@ -202,6 +203,7 @@ img.legacy_mla {
 }
 
 @media only screen and (min-width: 1200px) {
+
   .contentFooterWithoutSidebar {
     width: 900px !important;
   }
