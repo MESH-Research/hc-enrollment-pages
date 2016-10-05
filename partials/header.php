@@ -27,20 +27,20 @@
     switch( $host[0] ) :
       case "mla" :
     ?>
-    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
+    <h1><?php echo strtoupper( $host[0] ); ?> Custom Site Title</h1>
     <div class="customElement"><?php echo $host[0]; ?> site element</div>
     <div class="customImage"><img src="/img/hc_mla_55.png" /></div>
     <?php
       break;
       case "ajs" :
     ?>
-    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
+    <h1><?php echo strtoupper( $host[0] ); ?> Custom Site Title</h1>
     <div class="customElement"><?php echo $host[0]; ?> site element</div>
     <div class="customImage"><img src="/img/hc_ajs_55.png" /></div>
     <?php break;
       case "aseees" :
     ?>
-    <h1><?php echo $host[0]; ?> Custom Site Title</h1>
+    <h1><?php echo strtoupper( $host[0] ); ?> Custom Site Title</h1>
     <div class="customElement"><?php echo $host[0]; ?> site element</div>
     <div class="customImage"><img src="/img/hc_aseees_55.png" /></div>
     <?php
