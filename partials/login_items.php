@@ -94,7 +94,7 @@
 
 <!-- login-items-mobile -->
 
-<div class="six columns login-items-mobile">
+<div class="six columns login-items-mobile offset-by-three">
 
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
@@ -168,7 +168,6 @@
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
 
-
 </div> <!-- /.login-items-mobile -->
 
 <!-- end login-items-mobile -->
@@ -178,7 +177,7 @@
   if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
 
   <div class="row create_new_login">
-    <div class="eight columns align-self-center u-cf">
+    <div class="eleven columns align-self-center u-cf">
         <?php
           //Get the 'return' URL included by the SP from the query string.
           $returnUrl = $_GET["return"];

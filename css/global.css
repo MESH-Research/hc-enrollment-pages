@@ -164,9 +164,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   text-align: center;
 }
 
-.login-items-mobile {
-  margin-left: 210px;
-}
+.login-items-mobile { }
 
   .login-items-mobile > .row {
     margin-bottom: 10px;
@@ -181,6 +179,13 @@ img.legacy_mla {
 
 .container {
   margin-top: 30px;
+}
+
+.full-width-container {
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+  margin: 0 auto !important;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
