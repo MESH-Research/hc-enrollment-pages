@@ -178,7 +178,7 @@
   if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
 
   <div class="row create_new_login">
-    <div class="eight column align-self-center">
+    <div class="eight columns align-self-center u-cf">
         <?php
           //Get the 'return' URL included by the SP from the query string.
           $returnUrl = $_GET["return"];
