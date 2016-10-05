@@ -166,7 +166,6 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 
 .login-items-mobile {
   margin-left: 220px;
-  display: none;
 }
 
   .login-items-mobile > .row {
@@ -180,9 +179,25 @@ img.legacy_mla {
   transition: all 0.2s;
 }
 
+.container {
+  margin-top: 30px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  /*.login-items-desktop { display: none !important; }*/
+
+  .login-items-desktop { display: none !important; }
   .sidebar { display: none !important; }
+  .container { margin-top: 50px; }
+
+  .customImage > img {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  #customHeader > h1 {
+    margin-left: 230px;
+  }
+
 }
 
 @media only screen and (min-width: 720px) and (max-width: 900px) {
