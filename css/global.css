@@ -179,7 +179,12 @@ img.legacy_mla {
 
 .container {
   margin-top: 30px;
+  margin-bottom: 100px;
 }
+
+  .container h2 {
+    text-align: center;
+  }
 
 .full-width-container {
   width: 100%;
@@ -225,6 +230,7 @@ img.legacy_mla {
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
   .login-items-mobile { display: none !important; }
+
 }
 
 @media only screen and (min-width: 1200px) {

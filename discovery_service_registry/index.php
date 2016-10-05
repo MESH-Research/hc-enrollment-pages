@@ -10,7 +10,7 @@
   <div class="container full-width-container">
     <div class="row">
       <div class="twelve columns">
-        
+
         <!--<div class="flash_msg">
           <p>Thank you for registering! <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
         </div>--> <!-- /.flash_msg -->
@@ -62,7 +62,7 @@
       */ ?>
       </div> <!-- /.eleven.columns -->
     </div> <!-- /.row -->
-  </div> <!-- /.container -->
+  </div> <!-- /.container.full-width-container -->
 
   <?php include('../partials/footer.php'); ?>
 
