@@ -10,6 +10,7 @@
   <div class="container full-width-container">
     <div class="row">
       <div class="twelve columns">
+        
         <!--<div class="flash_msg">
           <p>Thank you for registering! <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
         </div>--> <!-- /.flash_msg -->
@@ -22,17 +23,14 @@
                 <h2>Thank you for registering!</h2>
                 <h2>Select your login method</h2>
                 <p>Please choose the login method you would prefer to use to login to the Commons.</p>
-              </div> <!-- /.ten.columns -->
+              </div> <!-- /.eleven.columns -->
             </div> <!-- /.row -->
 
             <?php include('../partials/login_items.php'); ?>
 
           </div> <!-- /.container -->
 
-        <?php
-          include('../partials/sidebar.php');
-          include('../partials/footer.php');
-        ?>
+        <?php include('../partials/sidebar.php'); ?>
 
       <?php /*
         <div class="section">
@@ -65,6 +63,8 @@
       </div> <!-- /.eleven.columns -->
     </div> <!-- /.row -->
   </div> <!-- /.container -->
+
+  <?php include('../partials/footer.php'); ?>
 
 </body>
 </html>

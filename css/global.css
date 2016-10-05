@@ -58,16 +58,16 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 }
 
 #customFooter {
-  position: absolute;
+  position: relative;
+  overflow: hidden;
   bottom: 0;
   color: black;
   font-size: 1.4em;
-  margin-top: 2em;
   padding: 1em 0 1.5em;
   width: 98%;
   font-size: 14px;
   border-top: solid 1px #b3b3b3;
-  margin: 0 10px;
+  margin: 2em 10px 0 10px;
 }
 
   #customFooter p {
@@ -185,7 +185,7 @@ img.legacy_mla {
   width: 100%;
   max-width: 100%;
   clear: both;
-  margin: 0 auto !important;
+  margin: 0 auto 100px auto !important;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -205,10 +205,15 @@ img.legacy_mla {
 
 }
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .login-items-desktop { display: none !important; }
+}
+
 @media only screen and (min-width: 720px) and (max-width: 900px) {
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
-  .login-items-mobile { display: none; }
+  .login-items-desktop { display: none !important; }
 }
 
 @media only screen and (min-width: 992px) {
