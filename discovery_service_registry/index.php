@@ -20,8 +20,8 @@
           <div class="container">
             <div class="row">
               <div class="eleven columns align-self-center login_registry_text">
-                <h2>Thank you for registering!</h2>
-                <h2>Select your login method</h2>
+                <h3>Thank you for registering!</h3>
+                <h3>Select your login method</h3>
                 <p>Please choose the login method you would prefer to use to login to the Commons.</p>
               </div> <!-- /.eleven.columns -->
             </div> <!-- /.row -->
