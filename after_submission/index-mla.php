@@ -15,7 +15,7 @@
         <div class="container">
           <div class="row">
             <div class="ten columns align-self-center section_after_submission">
-              <h2>Please verify your e-mail address.</h2>
+              <h3>Please verify your e-mail address.</h3>
               <p>Check your e-mail for a note with the subject "Activate your <?php echo strtoupper( $host[0] ); ?> Commons Account". In that message you will find a link. Please click on it so that we can verify your e-mail address and you can complete the registration process.</p>
             </div> <!-- /.eleven.columns -->
           </div> <!-- /.row -->

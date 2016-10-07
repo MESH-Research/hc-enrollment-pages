@@ -182,7 +182,7 @@ img.legacy_mla {
   margin-bottom: 100px;
 }
 
-  .container h2 {
+  .container h3 {
     text-align: center;
   }
 
@@ -213,6 +213,7 @@ img.legacy_mla {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .login-items-desktop { display: none !important; }
+  .sidebar { display: none; }
 }
 
 @media only screen and (min-width: 720px) and (max-width: 900px) {
