@@ -15,7 +15,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     // Need to URL encode the entityID before adding it as a query string
     // parameter to the link.
-    $discoveryUrlEncoded = $returnUrl . '&entityID=' . urlencode($entityID);
+    $discoveryUrlEncoded = $returnUrl . '&entityID=' . urlencode($entityId);
 
     // URL encode the discoveryURL to make it a query string parameter for
     // the HumanitiesCommonsIdpEnroller provision action
@@ -34,13 +34,13 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row with-flex">
 
-    <div class="one-half column align-self-center" style="margin-bottom: 10px;">
+    <div class="four columns align-self-center" style="margin-bottom: 10px;">
       <a href="<?php echo outputUrl( 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth' ); ?>">
         <img class="hc-signin" src="/img/twitter_signin.png"></img>
       </a>
     </div> <!-- /.one-half.column -->
 
-    <div class="one-half column align-self-center">
+    <div class="one-half column align-self-center offset-by-one">
       <a href="<?php echo outputUrl('https://login-dev.commons.mla.org/idp/shibboleth'); ?>">
         <img src="/img/google_button.png"></img>
       </a>
@@ -57,23 +57,13 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row with-flex">
 
-    <?php if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
-      <div class="row with-flex">
-        <div class="eleven columns align-self-center" style="display:inherit">
-          <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth', true ); ?>">
-            <img class="hc-signin" src="/img/hc_signin2.png"></img>
-          </a>
-        </div> <!-- /.eleven.columns -->
-      </div> <!-- /.row.with-flex -->
-    <?php else : ?>
-      <div class="row with-flex">
-        <div class="eleven columns align-self-center" style="display:inherit">
-          <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth' ); ?>">
-            <img class="hc-signin" src="/img/hc_signin2.png"></img>
-          </a>
-        </div> <!-- /.eleven.columns -->
-      </div> <!-- /.row.with-flex -->
-    <?php endif; ?>
+    <div class="row with-flex">
+      <div class="eleven columns align-self-center" style="display:inherit">
+        <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth', true ); ?>">
+          <img class="hc-signin" src="/img/hc_signin2.png"></img>
+        </a>
+      </div> <!-- /.eleven.columns -->
+    </div> <!-- /.row.with-flex -->
 
     <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl('https://mla-idp-dev.mla.org/idp/shibboleth'); ?>">
