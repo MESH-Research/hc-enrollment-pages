@@ -7,6 +7,10 @@
  */
 function outputUrl( $entityId, $newLogin = false ) {
 
+  echo "<pre>";
+  var_dump( $entityId );
+  echo "</pre>";
+
   // Get the 'return' URL included by the SP from the query string.
   $returnUrl = $_GET["return"];
 
