@@ -27,6 +27,12 @@ function outputUrl( $entityId, $newLogin = false ) {
     return $returnUrl . '&entityID=' . urlencode($entityId);
   }
 }
+echo "<pre>";
+var_dump( parse_url( outputUrl( 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth' ) ) );
+var_dump( parse_url( outputUrl('https://login-dev.commons.mla.org/idp/shibboleth') ) );
+var_dump( parse_url( outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth', true ) ) );
+echo "</pre>";
+die();
 ?>
 
 <!-- login items desktop -->
