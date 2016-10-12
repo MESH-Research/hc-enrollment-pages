@@ -19,7 +19,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     // URL encode the discoveryURL to make it a query string parameter for
     // the HumanitiesCommonsIdpEnroller provision action
-    return 'https://registry-dev.commons.mla.org/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' .  urlencode($discoveryUrlEncoded);
+    return 'https://registry-dev.commons.mla.org/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' . $discoveryUrlEncoded;
 
   } else {
     // Need to URL encode the entityID before adding it as a query string
@@ -27,12 +27,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     return $returnUrl . '&entityID=' . urlencode($entityId);
   }
 }
-echo "<pre>";
-var_dump( parse_url( outputUrl( 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth' ) ) );
-var_dump( parse_url( outputUrl('https://login-dev.commons.mla.org/idp/shibboleth') ) );
-var_dump( parse_url( outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth', true ) ) );
-echo "</pre>";
-die();
+
 ?>
 
 <!-- login items desktop -->
