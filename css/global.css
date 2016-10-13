@@ -170,6 +170,11 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
     margin-bottom: 10px;
   }
 
+.login-items-desktop {
+  display: block;
+  margin-left: 100px;
+}
+
 img.legacy_mla {
   border-radius: 4px;
   box-shadow: 1px 1px 4px #ccc;
@@ -193,9 +198,10 @@ img.legacy_mla {
   margin: 0 auto 100px auto !important;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width: 480px) {
 
   .login-items-desktop { display: none !important; }
+  .login-items-mobile { display: block !important; }
   .sidebar { display: none !important; }
   .container { margin-top: 50px; }
 
@@ -210,16 +216,32 @@ img.legacy_mla {
 
 }
 
+/*@media only screen and ( min-width: 320px ) and ( max-width: 480px ) {
+  .login-items-mobile { display: auto !important; }
+}*/
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .login-items-desktop { display: none !important; }
+  .login-items-desktop { display: block !important; }
   .sidebar { display: none; }
+  .google-logo {
+    margin-left: 130px !important;
+  }
 }
 
 @media only screen and (min-width: 720px) and (max-width: 900px) {
+
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
   .login-items-desktop { display: none !important; }
+
+}
+
+@media only screen and (min-width: 768px) {
+  #customHeader .customimage img { margin-left: 100px; }
+  #customHeader h1 { margin-left: 220px; }
+  .login-items-mobile { display: none; }
+  .login-items-desktop { margin-left: 50px; }
 }
 
 @media only screen and (min-width: 992px) {
