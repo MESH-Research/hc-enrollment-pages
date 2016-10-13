@@ -15,11 +15,11 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     // Need to URL encode the entityID before adding it as a query string
     // parameter to the link.
-    $discoveryUrlEncoded = $returnUrl . '&entityID=' . urlencode($entityId);
+    $discoveryUrlEncoded = $returnUrl . '&entityID=' . urlencode( $entityId );
 
     // URL encode the discoveryURL to make it a query string parameter for
     // the HumanitiesCommonsIdpEnroller provision action
-    return 'https://registry-dev.commons.mla.org/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' . $discoveryUrlEncoded;
+    return 'https://registry-dev.commons.mla.org/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' . urlencode( $discoveryUrlEncoded );
 
   } else {
     // Need to URL encode the entityID before adding it as a query string
@@ -60,7 +60,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     <div class="row with-flex">
       <div class="eleven columns align-self-center" style="display:inherit">
-        <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth', true ); ?>">
+        <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth' ); ?>">
           <img class="hc-signin" src="/img/hc_signin2.png"></img>
         </a>
       </div> <!-- /.eleven.columns -->
@@ -104,23 +104,13 @@ function outputUrl( $entityId, $newLogin = false ) {
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
 
-  <?php if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
-    <div class="row with-flex">
-      <div class="eleven columns align-self-center">
-        <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth', true ); ?>">
-          <img class="hc-signin" src="/img/hc_signin2.png"></img>
-        </a>
-      </div> <!-- /.eleven.columns -->
-    </div> <!-- /.row.with-flex -->
-  <?php else : ?>
-    <div class="row with-flex">
-      <div class="eleven columns align-self-center">
-        <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth' ); ?>">
-          <img class="hc-signin" src="/img/hc_signin2.png"></img>
-        </a>
-      </div> <!-- /.eleven.columns -->
-    </div> <!-- /.row.with-flex -->
-  <?php endif; ?>
+  <div class="row with-flex">
+    <div class="eleven columns align-self-center">
+      <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth' ); ?>">
+        <img class="hc-signin" src="/img/hc_signin2.png"></img>
+      </a>
+    </div> <!-- /.eleven.columns -->
+  </div> <!-- /.row.with-flex -->
 
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
