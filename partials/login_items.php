@@ -35,7 +35,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row with-flex">
 
-    <div class="four columns align-self-center" style="margin-bottom: 10px;">
+    <div class="one-half column align-self-center" style="margin-bottom: 10px;">
       <a href="<?php echo outputUrl( 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth' ); ?>">
         <img class="hc-signin" src="/img/twitter_signin.png"></img>
       </a>
@@ -58,13 +58,11 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row with-flex">
 
-    <div class="row with-flex">
-      <div class="eleven columns align-self-center" style="display:inherit">
+      <div class="one-half column align-self-center" style="display:inherit">
         <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth' ); ?>">
           <img class="hc-signin" src="/img/hc_signin2.png"></img>
         </a>
       </div> <!-- /.eleven.columns -->
-    </div> <!-- /.row.with-flex -->
 
     <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl('https://mla-idp-dev.mla.org/idp/shibboleth'); ?>">

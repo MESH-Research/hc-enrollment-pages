@@ -198,6 +198,14 @@ img.legacy_mla {
   margin: 0 auto 100px auto !important;
 }
 
+.column-sidebar {
+	display: none;
+}
+
+.column-content {
+	width: 100%;
+}
+
 @media only screen and (min-width : 320px) and (max-width: 480px) {
 
   .login-items-desktop { display: none !important; }
@@ -225,7 +233,7 @@ img.legacy_mla {
   .login-items-desktop { display: block !important; }
   .sidebar { display: none; }
   .google-logo {
-    margin-left: 130px !important;
+    /*margin-left: 130px !important;*/
   }
 }
 
@@ -237,11 +245,19 @@ img.legacy_mla {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   #customHeader .customimage img { margin-left: 100px; }
   #customHeader h1 { margin-left: 220px; }
   .login-items-mobile { display: none; }
   .login-items-desktop { margin-left: 50px; }
+
+	.column-sidebar {
+		display: block;
+	}
+	.column-content {
+		width: unset !important;
+	}
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -271,4 +287,8 @@ img.legacy_mla {
   }
 
   .login-items-mobile { display: none !important; }
+}
+
+img {
+	max-width: 100%;
 }

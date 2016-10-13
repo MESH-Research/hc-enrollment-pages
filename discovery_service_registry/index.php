@@ -19,18 +19,20 @@
 
           <div class="container">
             <div class="row">
-              <div class="eleven columns align-self-center login_registry_text">
+              <div class="nine columns align-self-center login_registry_text column-content">
                 <!--<h3>Thank you for registering!</h3>-->
                 <h3>Select your login method</h3>
                 <p>Please choose the login method you would prefer to use to login to the Commons.</p>
-              </div> <!-- /.eleven.columns -->
+		<?php include('../partials/login_items.php'); ?>
+              </div>
+              <div class="three columns align-self-center login_registry_text column-sidebar">
+		      <img src="/img/hub_graphic_240.png" class="center">
+              </div>
             </div> <!-- /.row -->
 
-            <?php include('../partials/login_items.php'); ?>
 
           </div> <!-- /.container -->
 
-        <?php include('../partials/sidebar.php'); ?>
 
       <?php /*
         <div class="section">
