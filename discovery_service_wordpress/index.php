@@ -20,11 +20,11 @@
           <div class="row">
             <div class="eleven columns align-self-center">
               <h2 style="text-align: center;">Select your login method</h2>
-              <p>Make sure you always sign in to the Commons using the same method.</p>
+              <p style="text-align: center;">Make sure you always sign in to the Commons using the same method.</p>
+              <?php include('../partials/login_items.php'); ?>
             </div> <!-- /.eleven.columns -->
           </div> <!-- /.row -->
 
-          <?php include('../partials/login_items.php'); ?>
         </div> <!-- /.container -->
 
         <?php include('../partials/sidebar.php'); ?>

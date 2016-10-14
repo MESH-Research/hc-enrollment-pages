@@ -22,14 +22,13 @@
               <div class="eight columns align-self-center login_registry_text column-content">
                 <!--<h3>Thank you for registering!</h3>-->
                 <h3>Select your login method</h3>
-                <p>Make sure you always sign in to the Commons using the same method.</p>
+                <p style="text-align: center;">Make sure you always sign in to the Commons using the same method.</p>
 		            <?php include('../partials/login_items.php'); ?>
               </div>
               <div class="three columns align-self-center login_registry_text column-sidebar">
-		      <img src="/img/hub_graphic_240.png" class="center">
+		            <img src="/img/hub_graphic_240.png" class="center">
               </div>
             </div> <!-- /.row -->
-
 
           </div> <!-- /.container -->
 
