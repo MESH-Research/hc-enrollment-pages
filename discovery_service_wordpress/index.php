@@ -20,6 +20,7 @@
           <div class="row">
             <div class="eleven columns align-self-center">
               <h2 style="text-align: center;">Select your login method</h2>
+              <p>Make sure you always sign in to the Commons using the same method.</p>
             </div> <!-- /.eleven.columns -->
           </div> <!-- /.row -->
 

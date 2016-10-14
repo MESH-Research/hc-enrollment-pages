@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width" />
 <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
 <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
@@ -11,7 +12,7 @@
 <script type="text/javascript" src="jquery.countdown360.js" charset="utf-8"></script>
 <?php endif; ?>
 <!--<link rel='stylesheet' type='text/css' href="http://registry-dev.commons.mla.org/registry/css/comanage.css" />-->
-<link rel="stylesheet" type="text/css" href="/css/global.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/global.css" />
 
 <script type='text/javascript' src='//use.typekit.net/bgx6tpq.js'></script>
 <script type='text/javascript'>

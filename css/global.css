@@ -164,15 +164,18 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   text-align: center;
 }
 
-.login-items-mobile { }
+.login-items-mobile {
+  display: none;
+}
 
   .login-items-mobile > .row {
     margin-bottom: 10px;
   }
 
-.login-items-desktop {
-  display: block;
-  margin-left: 100px;
+.login-items-desktop { }
+
+.login-items-desktop img, .login-items-mobile img {
+	max-width: 100%;
 }
 
 img.legacy_mla {
@@ -206,10 +209,10 @@ img.legacy_mla {
 	width: 100%;
 }
 
-@media only screen and (min-width : 320px) and (max-width: 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
   .login-items-desktop { display: none !important; }
-  .login-items-mobile { display: block !important; }
+  .login-items-mobile { display: block; }
   .sidebar { display: none !important; }
   .container { margin-top: 50px; }
 
@@ -218,30 +221,37 @@ img.legacy_mla {
     margin-top: 10px;
   }
 
-  #customHeader > h1 {
-    margin-left: 230px;
+  #customHeader h1 {
+    margin-left: 0 !important;
+    padding-top: 60px !important;
+  }
+
+  .mobile-container {
+    padding: 0 !important;
+  }
+
+  .create_new_login {
+    margin-bottom: 0;
   }
 
 }
 
-/*@media only screen and ( min-width: 320px ) and ( max-width: 480px ) {
-  .login-items-mobile { display: auto !important; }
-}*/
-
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
   .login-items-desktop { display: block !important; }
   .sidebar { display: none; }
   .google-logo {
     /*margin-left: 130px !important;*/
   }
+
 }
 
 @media only screen and (min-width: 720px) and (max-width: 900px) {
 
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
-  .login-items-desktop { display: none !important; }
+  .login-items-desktop { display: block !important; }
 
 }
 
@@ -253,9 +263,6 @@ img.legacy_mla {
 
 	.column-sidebar {
 		display: block;
-	}
-	.column-content {
-		width: unset !important;
 	}
 
 }
@@ -286,9 +293,6 @@ img.legacy_mla {
     margin-left: 250px;
   }
 
-  .login-items-mobile { display: none !important; }
-}
+  .login-items-mobile { display: none; }
 
-img {
-	max-width: 100%;
 }
