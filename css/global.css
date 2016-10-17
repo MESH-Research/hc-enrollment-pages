@@ -239,6 +239,11 @@ img.legacy_mla {
     margin-bottom: 0;
   }
 
+  .section_after_submission {
+    width: unset;
+    text-align: center;
+  }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
