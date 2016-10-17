@@ -209,6 +209,11 @@ img.legacy_mla {
 	width: 100%;
 }
 
+.noGutter {
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
   .login-items-desktop { display: none !important; }

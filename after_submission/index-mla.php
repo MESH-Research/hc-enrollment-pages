@@ -7,7 +7,7 @@
 
 <body>
 
-  <div class="container full-width-container">
+  <div class="container full-width-container noGutter">
     <div class="row">
       <div class="twelve columns">
         <?php include('../partials/header.php'); ?>
