@@ -176,7 +176,7 @@
   <?php include('../partials/header.php'); ?>
 
   <!-- This div is shown during the pause for 15 seconds. -->
-  <div class="section" id="waiting" style="display:none;">
+  <div class="section" id="waiting" style="display:inherit;">
     <div class="container">
       <div class="row">
         <h1>You are registered!</h1>
@@ -190,7 +190,7 @@
           radius    : 60,
           seconds   : 15,
           fillStyle : '#000',
-          strokeStyle: '#B61601',
+          strokeStyle: '#006650',
           fontColor: '#fff',
           autostart : false
         }).start()
