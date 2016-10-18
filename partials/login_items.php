@@ -37,13 +37,13 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     <div class="one-half column align-self-center" style="margin-bottom: 10px;">
       <a href="<?php echo outputUrl( 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth' ); ?>">
-        <img class="hc-signin" src="/img/twitter_signin.png" />
+        <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
     <div class="one-half column align-self-center offset-by-one google-logo">
       <a href="<?php echo outputUrl('https://login-dev.commons.mla.org/idp/shibboleth'); ?>">
-        <img src="/img/google_button.png" width="291" height="70" />
+        <img src="/img/google_button.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -60,13 +60,13 @@ function outputUrl( $entityId, $newLogin = false ) {
 
       <div class="one-half column align-self-center" style="display:inherit">
         <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth' ); ?>">
-          <img class="hc-signin" src="/img/hc_signin2.png" />
+          <img class="hc-signin" src="/img/hc_signin3.png" />
         </a>
       </div> <!-- /.eleven.columns -->
 
     <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl('https://mla-idp-dev.mla.org/idp/shibboleth'); ?>">
-        <img class="legacy_mla" src="/img/mla_signin_black_text.png" />
+        <img class="legacy_mla" src="/img/mla_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -89,7 +89,7 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
       <a href="<?php echo outputUrl( 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth' ); ?>">
-        <img class="hc-signin" src="/img/twitter_signin.png" />
+        <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
@@ -105,7 +105,7 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
       <a href="<?php echo outputUrl( 'https://hcommons-test.commons.mla.org/idp/shibboleth' ); ?>">
-        <img class="hc-signin" src="/img/hc_signin2.png" />
+        <img class="hc-signin" src="/img/hc_signin3.png" />
       </a>
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
@@ -113,7 +113,7 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
       <a href="<?php echo outputUrl('https://mla-idp-dev.mla.org/idp/shibboleth'); ?>">
-        <img class="legacy_mla" src="/img/mla_signin_black_text.png" />
+        <img class="legacy_mla" src="/img/mla_signin3.png" />
       </a>
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
