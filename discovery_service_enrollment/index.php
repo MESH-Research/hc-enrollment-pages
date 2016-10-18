@@ -190,7 +190,7 @@
           radius    : 60,
           seconds   : 15,
           fillStyle : '#000',
-          strokeStyle: 'maroon',
+          strokeStyle: '#B61601',
           fontColor: '#fff',
           autostart : false
         }).start()
