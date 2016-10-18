@@ -78,7 +78,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 .sidebar {
   background-color: white;
   border: none;
-  /*margin-top: 55px;*/
+  margin-top: 55px;
   width: 267px;
   position: absolute;
   right: 10px;
@@ -162,6 +162,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 
 .login_registry_text {
   text-align: center;
+  margin-top: unset;
 }
 
 .login-items-mobile {
