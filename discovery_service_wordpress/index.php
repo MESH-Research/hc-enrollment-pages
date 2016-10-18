@@ -18,16 +18,15 @@
 
         <div class="container">
           <div class="row">
-            <div class="eleven columns align-self-center">
+            <div class="eight columns align-self-center">
               <h2 style="text-align: center;">Select your login method</h2>
               <p style="text-align: center;">Make sure you always sign in to the Commons using the same method.</p>
               <?php include('../partials/login_items.php'); ?>
             </div> <!-- /.eleven.columns -->
+            <?php include('../partials/sidebar.php'); ?>
           </div> <!-- /.row -->
 
         </div> <!-- /.container -->
-
-        <?php include('../partials/sidebar.php'); ?>
 
       <?php /*
         <div class="section">

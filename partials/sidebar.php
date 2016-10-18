@@ -1,4 +1,3 @@
-  <div class="sidebar">
-    <!-- sidebar width/height: 267x494 -->
-    <img src="/img/hub_graphic_240.png" class="center" width="240" />
-  </div>
+<div class="sidebar three columns align-self-center login_registry_text column-sidebar">
+  <img src="/img/hub_graphic_240.png" class="center">
+</div>

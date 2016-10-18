@@ -25,9 +25,7 @@
                 <p style="text-align: center;">Make sure you always sign in to the Commons using the same method.</p>
 		            <?php include('../partials/login_items.php'); ?>
               </div>
-              <div class="three columns align-self-center login_registry_text column-sidebar">
-		            <img src="/img/hub_graphic_240.png" class="center">
-              </div>
+              <?php include('../partials/sidebar.php'); ?>
             </div> <!-- /.row -->
 
           </div> <!-- /.container -->
