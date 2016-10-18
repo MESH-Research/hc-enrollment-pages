@@ -21,7 +21,7 @@
           </div> <!-- /.row -->
         </div> <!-- /.container -->
         <?php include('../partials/sidebar.php'); ?>
-      </div> <!-- /.eleven.columns -->
+      </div> <!-- /.ten.columns -->
     </div> <!-- /.row -->
   </div> <!-- /.container.full-width-container -->
 
