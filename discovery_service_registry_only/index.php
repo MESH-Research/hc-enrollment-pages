@@ -13,22 +13,17 @@
 
   <?php include('../partials/header.php'); ?>
 
-    <div class="container">
-      <div class="row">
-        <div class="eleven columns align-self-center login_registry_text">
-          <h2>Select your login method</h2>
-          <p>Please choose the login method you would prefer to use to login to COmanage.</p>
-        </div> <!-- /.ten.columns -->
-      </div> <!-- /.row -->
+  <div class="container">
+    <div class="row">
+      <div class="eight columns align-self-center">
+        <h2 style="text-align: center;">Select your login method</h2>
+        <p style="text-align: center;">Make sure you always sign in to the Commons using the same method.</p>
+        <?php include('../partials/login_items.php'); ?>
+      </div> <!-- /.eleven.columns -->
+      <?php include('../partials/sidebar.php'); ?>
+    </div> <!-- /.row -->
 
-      <?php include('../partials/login_items.php'); ?>
-
-    </div> <!-- /.container -->
-
-  <?php
-    include('../partials/sidebar.php');
-    include('../partials/footer.php');
-  ?>
+  </div> <!-- /.container -->
 
 <?php /*
   <div class="section">
@@ -58,7 +53,11 @@
     </div>
   </div>
 */ ?>
+    </div> <!-- /.eight.columns -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
 
+  <?php include('../partials/footer.php'); ?>
 
 </body>
 </html>

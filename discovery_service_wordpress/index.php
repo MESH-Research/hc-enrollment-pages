@@ -56,7 +56,7 @@
           </div>
         </div>
       */ ?>
-      </div> <!-- /.eleven.columns -->
+    </div> <!-- /.eight.columns -->
     </div> <!-- /.row -->
   </div> <!-- /.container -->
 
