@@ -41,7 +41,7 @@ function outputUrl( $entityId, $newLogin = false ) {
       </a>
     </div> <!-- /.one-half.column -->
 
-    <div class="one-half column align-self-center offset-by-one google-logo">
+    <div class="one-half column align-self-center google-logo">
       <a href="<?php echo outputUrl('https://login-dev.commons.mla.org/idp/shibboleth'); ?>">
         <img src="/img/google_button.png" />
       </a>

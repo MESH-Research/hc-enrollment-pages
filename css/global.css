@@ -215,6 +215,17 @@ img.legacy_mla {
   padding: 0;
 }
 
+.google-logo {
+  max-width: unset;
+  width: 277px;
+  box-shadow: 1px 1px 4px 0px #ccc;
+  -webkit-box-shadow: 1px 1px 4px 0px #ccc;
+  -mozilla-box-shadow: 1px 1px 4px 0px #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: 4px;
+  -mozilla-box-shadow: 4px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
   .login-items-desktop { display: none !important; }
