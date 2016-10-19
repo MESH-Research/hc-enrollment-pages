@@ -21,6 +21,8 @@
   <div class="contentWidth">
     <?php
 
+    var_dump( $currentUrl );
+
     //for now, lets only target the discovery_service_wordpress page
     if( $currentUrl['path'] == '/discovery_service_wordpress/index.php' || is_array( $registryUrlSociety ) ) :
 
