@@ -20,11 +20,9 @@
 <header id="customHeader">
   <div class="contentWidth">
     <?php
-
-    var_dump( $registryUrlSociety );
-
+    
     //for now, lets only target the discovery_service_wordpress page
-    if( $currentUrl['path'] == '/discovery_service_wordpress/index.php' || is_array( $registryUrlSociety ) ) :
+    if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
 
     switch( $host[0] ) :
       case "mla" :
