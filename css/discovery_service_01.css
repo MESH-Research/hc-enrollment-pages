@@ -24,3 +24,22 @@ input {
 form {
     margin-bottom: 2px;
 }
+
+.login-items-desktop .one-half {
+  margin: 5px;
+}
+
+.login-items-desktop a {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  border-radius: 4px;
+}
+
+.login-items-desktop a img {
+  border-radius: 4px;
+  height: 60px;
+}
+
+.login-items-desktop a:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(0, 0, 0, 0.3) 0px 1px 4px;
+}
