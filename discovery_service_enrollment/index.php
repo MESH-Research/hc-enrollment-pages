@@ -195,8 +195,8 @@
           autostart : false
         }).start()
       </script>
-    </div>
-  </div>
+    </div> <!-- /.container -->
+  </div> <!-- /#waiting -->
 
   <!-- This div is shown if the policy parameter and/or the entityID
        is not determined so that the user can manually click to
@@ -208,59 +208,26 @@
         <h2>Select your login method</h2>
         <p>Please choose the login method you would prefer to use login to the Commons.</p>
       </div>
-    </div>
-  </div>
+    </div> <!-- /.container -->
+  </div> <!-- /#thanks -->
 
   <!-- This div is shown if the policy parameter and/or the entityID
        is not determined so that the user can manually click to
        continue the flow. -->
   <div class="section" id="choose" style="display:none;">
     <div class="container">
-      <div class="row with-flex">
-        <div class="one-half column align-self-center">
-          <?php
-            // Get the 'return' URL included by the SP from the query string.
-            $returnUrl = $_GET["return"];
+      <div class="row">
+        <div class="eight columns align-self-center column-content">
+          <?php include('../partials/login_items.php'); ?>
+        </div> <!-- /.eight.columns -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div> <!-- /#choose -->
+<?php include('../partials/sidebar.php'); ?>
+  <?php
 
-            // The entityID for the HC alpha test IdP
-            $entityID = 'https://hcommons-test.commons.mla.org/idp/shibboleth';
-
-            // Need to URL encode the entityID before adding it as a query string
-            // parameter to the link.
-            echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
-          ?>
-          <img class="hc-signin" src="/img/hc_signin2_360.png"></img>
-          </a>
-        </div>
-        <div class="one-half column align-self-center">
-          <?php
-            // Get the 'return' URL included by the SP from the query string.
-            $returnUrl = $_GET["return"];
-
-            // The entityID for the HC IdP that uses Google for authentication.
-            $entityID = 'https://login-dev.commons.mla.org/idp/shibboleth';
-
-            // Need to URL encode the entityID before adding it as a query string
-            // parameter to the link.
-            echo '<a href="' . $returnUrl . '&entityID=' . urlencode($entityID) . '">';
-          ?>
-          <img src="/img/google.png"></img>
-          </a>
-        </div>
-<?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
-        <div class="one-third column align-self-center">
-          <a href="">
-          <img src="/img/orcid_128x128.png"></img>
-          </a>
-        </div>
-*/ ?>
-      </div>
-    </div>
-  </div>
-
-  <?php include('../partials/sidebar.php'); ?>
-
-  <?php include('../partials/footer.php'); ?>
+  include('../partials/footer.php');
+   ?>
 
 <?php /*
   <div class="section">
