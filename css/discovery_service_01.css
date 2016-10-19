@@ -24,15 +24,3 @@ input {
 form {
     margin-bottom: 2px;
 }
-
-.hc-signin {
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px #ccc;
-    padding: 4px;
-    transition: all 0.2s;
-}
-
-.hc-signin:hover {
-    box-shadow: 1px 1px 4px #aaa;
-    transition: all 0.2s;
-}

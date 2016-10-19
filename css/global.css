@@ -127,10 +127,6 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   font-size: 15px;
 }
 
-.hc-signin {
-  float: left !important;
-}
-
 .flash_msg {
   text-align: center;
   padding: 10px;
@@ -179,13 +175,6 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 	max-width: 100%;
 }
 
-img.legacy_mla {
-  border-radius: 4px;
-  box-shadow: 1px 1px 4px #ccc;
-  padding: 4px;
-  transition: all 0.2s;
-}
-
 .container {
   margin-top: 30px;
   margin-bottom: 100px;
@@ -213,18 +202,6 @@ img.legacy_mla {
 .noGutter {
   margin: 0;
   padding: 0;
-}
-
-.google-logo {
-  max-width: unset;
-  width: 277px;
-  box-shadow: 1px 1px 4px 0px #ccc;
-  -webkit-box-shadow: 1px 1px 4px 0px #ccc;
-  -mozilla-box-shadow: 1px 1px 4px 0px #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: 4px;
-  -mozilla-box-shadow: 4px;
-  margin-top: -9px;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {

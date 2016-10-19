@@ -35,7 +35,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row with-flex">
 
-    <div class="one-half column align-self-center" style="margin-bottom: 10px;">
+    <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl( 'https://twitter-gateway.hcommons-dev.org/idp/shibboleth' ); ?>">
         <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
