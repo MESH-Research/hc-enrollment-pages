@@ -256,7 +256,7 @@ img.legacy_mla {
     text-align: center;
   }
 
-  #waiting.section {
+  .discovery-service-enrollment .section {
     width: unset !important;
   }
 
