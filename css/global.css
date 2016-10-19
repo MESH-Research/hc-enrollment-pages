@@ -224,6 +224,7 @@ img.legacy_mla {
   border-radius: 4px;
   -webkit-box-shadow: 4px;
   -mozilla-box-shadow: 4px;
+  margin-top: -9px;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
