@@ -1,4 +1,7 @@
 <?php
+  // TODO check if referer exists before trying to access
+  // e.g.
+  // $referer = array_key_exists('HTTP_REFERER', $_SERVER) ? parse_url( $_SERVER['HTTP_REFERER'] ) : '';
   $referer = parse_url( $_SERVER['HTTP_REFERER'] );
 ?>
 <html lang="en">

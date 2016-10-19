@@ -8,6 +8,9 @@
 function outputUrl( $entityId, $newLogin = false ) {
 
   // Get the 'return' URL included by the SP from the query string.
+  // TODO check for array key before trying to access
+  // e.g.
+  // $returnUrl = array_key_exists('return', $_GET) ? $_GET["return"] : '';
   $returnUrl = $_GET["return"];
 
   //lets check if the user is trying to create a new login

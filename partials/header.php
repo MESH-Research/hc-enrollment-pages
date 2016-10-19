@@ -1,4 +1,6 @@
 <?php
+  // TODO if $referer is not an array that contains 'host' (like if browser didn't send a referer), need a fallback.
+  // check if array key exists, and have some fallback in case it doesn't
   $host = explode( '.', $referer['host'] );
   $currentUrl = parse_url( $_SERVER['REQUEST_URI'] );
   $registryUrl = pathinfo( $currentUrl['path'] );
