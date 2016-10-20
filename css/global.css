@@ -5,7 +5,6 @@ body {
 
 html {
   height: 100%;
-  font-family: proxima-nova, Verdana, sans-serif !important;
 }
 
 body > .section {
@@ -178,6 +177,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 .container {
   margin-top: 30px;
   margin-bottom: 100px;
+  font-family: proxima-nova, sans-serif;
 }
 
   .container h3 {
