@@ -37,7 +37,7 @@ form {
 
 .login-items-desktop a img {
   border-radius: 4px;
-  height: 60px;
+  /*height: 60px;*/
 }
 
 .login-items-desktop a:hover {
