@@ -33,7 +33,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 }
 
   #customHeader h1 {
-    font-weight: 700;
+    font-weight: normal;
     font-size: 3em;
     font-family: lexia, sans-serif;
     margin-left: 200px;
