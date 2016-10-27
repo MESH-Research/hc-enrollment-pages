@@ -282,6 +282,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
   .login-items-mobile { display: none !important; }
+  #customFooter { width: 95% }
 
 }
 
