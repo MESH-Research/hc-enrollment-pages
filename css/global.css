@@ -204,6 +204,16 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   padding: 0;
 }
 
+div.IdPSelectPreferredIdPImg {
+  height: unset;
+}
+#idpSelectPreferredIdPTile {
+  height: unset;
+}
+#idpSelectListButton {
+  padding: 0;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
   .login-items-desktop { display: none !important; }

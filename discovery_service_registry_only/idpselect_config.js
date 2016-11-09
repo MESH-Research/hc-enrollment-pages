@@ -27,7 +27,7 @@ function IdPSelectUIParms(){
     this.showListFirst = false;      // Do we start with a list of IdPs or just the dropdown
     this.samlIdPCookieTTL = 730;     // in days
     this.setFocusTextBox = true;     // Set to false to supress focus 
-    this.testGUI = true;
+    this.testGUI = false;
 
 
     //

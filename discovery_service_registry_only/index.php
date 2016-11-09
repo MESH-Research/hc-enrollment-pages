@@ -25,7 +25,6 @@
 
   </div> <!-- /.container -->
 
-<?php /*
   <div class="section">
     <div class="container" style="text-align:center;">
       <div id="idpSelect" style="display:inline-block;"></div>
@@ -52,7 +51,6 @@
       </noscript>
     </div>
   </div>
-*/ ?>
     </div> <!-- /.eight.columns -->
     </div> <!-- /.row -->
   </div> <!-- /.container -->
