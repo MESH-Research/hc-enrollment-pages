@@ -1,4 +1,5 @@
 <?php
+require_once "../env.php";
 
 /**
  * Outputs URL based off entity ID
@@ -18,13 +19,14 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     // Need to URL encode the entityID before adding it as a query string
     // parameter to the link.
-    $discoveryUrlEncoded = $returnUrl . '&entityID=' . urlencode( $entityId );
+    $discoveryUrlEncoded = rtrim( $returnUrl, '/' ) . '&entityID=' . urlencode( $entityId );
 
     // URL encode the discoveryURL to make it a query string parameter for
     // the HumanitiesCommonsIdpEnroller provision action
-    return 'https://registry.hcommons.org/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' . urlencode( $discoveryUrlEncoded );
 
-  } else {
+    return REGISTRY_SERVER . '/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' . urlencode( $discoveryUrlEncoded );
+ 
+ } else {
     // Need to URL encode the entityID before adding it as a query string
     // parameter to the link.
     return $returnUrl . '&entityID=' . urlencode($entityId);
@@ -39,14 +41,16 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row with-flex">
 
     <div class="one-half column align-self-center">
-      <a href="<?php echo outputUrl( 'https://twitter-gateway.hcommons.org/idp/shibboleth' ); ?>">
+
+      <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
         <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
     <div class="one-half column align-self-center google-logo">
-      <a href="<?php echo outputUrl('https://google-gateway.hcommons.org/idp/shibboleth'); ?>">
-        <img src="/img/google_button.png" />
+
+      <a href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
+       <img src="/img/google_button.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -62,14 +66,14 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row with-flex">
 
       <div class="one-half column align-self-center" style="display:inherit">
-        <a href="<?php echo outputUrl( 'https://hcommons.org/idp/shibboleth' ); ?>">
-          <img class="hc-signin" src="/img/hc_signin3.png" />
+       <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
+         <img class="hc-signin" src="/img/hc_signin3.png" />
         </a>
       </div> <!-- /.eleven.columns -->
 
     <div class="one-half column align-self-center">
-      <a href="<?php echo outputUrl('https://mla-idp.hcommons.org/idp/shibboleth'); ?>">
-        <img class="legacy_mla" src="/img/mla_signin3.png" />
+     <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
+       <img class="legacy_mla" src="/img/mla_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -91,32 +95,32 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( 'https://twitter-gateway.hcommons.org/idp/shibboleth' ); ?>">
-        <img class="hc-signin" src="/img/twitter_signin3.png" />
+     <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
+       <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
 
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl('https://google-gateway.hcommons.org/idp/shibboleth'); ?>">
-        <img src="/img/google_button.png" />
+     <a href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
+       <img src="/img/google_button.png" />
       </a>
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
 
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( 'https://hcommons.org/idp/shibboleth' ); ?>">
-        <img class="hc-signin" src="/img/hc_signin3.png" />
+     <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
+       <img class="hc-signin" src="/img/hc_signin3.png" />
       </a>
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
 
   <div class="row with-flex">
     <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl('https://mla-idp.hcommons.org/idp/shibboleth'); ?>">
-        <img class="legacy_mla" src="/img/mla_signin3.png" />
+     <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
+       <img class="legacy_mla" src="/img/mla_signin3.png" />
       </a>
     </div> <!-- /.eleven.columns -->
   </div> <!-- /.row.with-flex -->
@@ -134,8 +138,7 @@ function outputUrl( $entityId, $newLogin = false ) {
         <br />
         <br />
         <h5>Don't see your login server?</h5>
-        <p>Click <a href="<?php echo outputUrl( 'https://hcommons.org/idp/shibboleth', true ); ?>">here to create a new login account with the Humanities Commons
-        login server</a>. You can then use it login to Humanities Commons.</p>
+       <p>Click <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">here to create a new login account with the Humanities Commons login server</a>. You can then use it login to Humanities Commons.</p>
       </div> <!-- /.eight.column -->
 
     </div> <!-- /.create_new_login -->

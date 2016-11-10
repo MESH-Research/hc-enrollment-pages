@@ -155,7 +155,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
     border-radius: 10px;
   }
 
-.login_registry_text {
+.discovery-service-registry .sidebar {
   text-align: center;
   margin-top: unset;
 }

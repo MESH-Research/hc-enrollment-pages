@@ -4,4 +4,5 @@ registry*
 secure
 node_modules/*
 .env
+env.php
 .git/config
