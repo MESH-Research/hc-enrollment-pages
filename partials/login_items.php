@@ -23,7 +23,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     // URL encode the discoveryURL to make it a query string parameter for
     // the HumanitiesCommonsIdpEnroller provision action
-    return 'https://registry-dev.commons.mla.org/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' . urlencode( $discoveryUrlEncoded );
+    return REGISTRY_SERVER . '/registry/humanities_commons_idp_enroller/humanities_commons_idp_enroller_accounts/provision?target=' . urlencode( $discoveryUrlEncoded );
 
   } else {
     // Need to URL encode the entityID before adding it as a query string
