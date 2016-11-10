@@ -19,7 +19,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     // Need to URL encode the entityID before adding it as a query string
     // parameter to the link.
-    $discoveryUrlEncoded = $returnUrl . '&entityID=' . urlencode( $entityId );
+    $discoveryUrlEncoded = rtrim( $returnUrl, '/' ) . '&entityID=' . urlencode( $entityId );
 
     // URL encode the discoveryURL to make it a query string parameter for
     // the HumanitiesCommonsIdpEnroller provision action
