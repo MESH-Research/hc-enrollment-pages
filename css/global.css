@@ -209,10 +209,26 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   padding: 0;
 }
 
+.login-items-desktop .one-half {
+  margin: 5px;
+}
+
+.login-items-desktop a {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  border-radius: 4px;
+}
+
+.login-items-desktop a img {
+  border-radius: 4px;
+}
+
+.login-items-desktop a:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(0, 0, 0, 0.3) 0px 1px 4px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
-  .login-items-desktop { display: none !important; }
-  .login-items-mobile { display: block; }
   .sidebar { display: none !important; }
   .container { margin-top: 50px; }
 
@@ -248,12 +264,16 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-  .login-items-desktop { display: block !important; }
-
   .sidebar { display: none !important; }
   .google-logo {
     /*margin-left: 130px !important;*/
   }
+
+  .login-items-desktop .row div {
+    width: unset;
+  }
+
+
 
   #customFooter { width: 95% !important; }
 
@@ -263,7 +283,6 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
-  .login-items-desktop { display: block !important; }
   .sidebar { display: none }
 
 }
@@ -271,12 +290,9 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 @media (min-width: 768px) {
   #customHeader .customimage img { margin-left: 100px; }
   #customHeader h1 { margin-left: 220px; }
-  .login-items-mobile { display: none; }
   .login-items-desktop { margin-left: 50px; }
 
-	.column-sidebar {
-		display: block;
-	}
+	.column-sidebar { display: block; }
 
 }
 

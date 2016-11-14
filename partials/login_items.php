@@ -37,7 +37,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 <!-- login items desktop -->
 <div class="login-items-desktop">
 
-  <div class="row with-flex">
+  <div class="row">
 
     <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
@@ -60,7 +60,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     */ ?>
   </div> <!-- /.row.with-flex -->
 
-  <div class="row with-flex">
+  <div class="row">
 
       <div class="one-half column align-self-center" style="display:inherit">
         <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
@@ -85,46 +85,6 @@ function outputUrl( $entityId, $newLogin = false ) {
 </div> <!-- /.login-items-desktop -->
 
 <!-- end login-items-desktop -->
-
-<!-- login-items-mobile -->
-
-<div class="six columns login-items-mobile offset-by-three">
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
-        <img class="hc-signin" src="/img/twitter_signin3.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
-        <img src="/img/google_button.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-        <img class="hc-signin" src="/img/hc_signin3.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img class="legacy_mla" src="/img/mla_signin3.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-</div> <!-- /.login-items-mobile -->
-
-<!-- end login-items-mobile -->
 
   <?php
   //we only want the user to see this option when in the discovery_service_registry enrollment flow
