@@ -160,6 +160,11 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   margin-top: unset;
 }
 
+.discovery-service-registry .create_new_login h5 {
+  font-size: 2rem;
+  text-align: left;
+}
+
 .login-items-mobile {
   display: none;
 }
