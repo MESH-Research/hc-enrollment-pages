@@ -134,12 +134,11 @@ function outputUrl( $entityId, $newLogin = false ) {
   if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
 
   <div class="row create_new_login">
-    <div class="eleven columns align-self-center u-cf">
+    <div class="eleven columns align-self-center u-cf offset-by-one">
         <br />
         <br />
-        <h5>Don't see your login server?</h5>
-       <p>Click <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">here to create a new login account with the Humanities Commons login server</a>. You can then use it login to Humanities Commons.</p>
-      </div> <!-- /.eight.column -->
+       <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</h5>.</p>
+     </div> <!-- /.eight.column -->
 
     </div> <!-- /.create_new_login -->
 
