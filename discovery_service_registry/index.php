@@ -21,7 +21,7 @@
             <div class="row">
               <div class="eight columns align-self-center login_registry_text column-content">
                 <!--<h3>Thank you for registering!</h3>-->
-                <h3>Select your login method</h3>
+                <h3>Select your log-in method</h3>
                 <p style="text-align: center;font-weight:bold">Make sure you always sign in to the Commons using the same method.</p>
 		            <?php include('../partials/login_items.php'); ?>
               </div>

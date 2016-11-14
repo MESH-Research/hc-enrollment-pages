@@ -134,9 +134,8 @@ function outputUrl( $entityId, $newLogin = false ) {
     <div class="eleven columns align-self-center u-cf">
         <br />
         <br />
-        <h5>Don't see your login server?</h5>
-        <p>Click <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">here to create a new login account with the Humanities Commons
-        login server</a>. You can then use it login to Humanities Commons.</p>
+        <h5>Don't see your log-in server?</h5>
+        <p>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</a>.</p>
       </div> <!-- /.eight.column -->
 
     </div> <!-- /.create_new_login -->
