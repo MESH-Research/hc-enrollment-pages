@@ -41,7 +41,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <?php
   //lets switch positions of buttons when the user comes in from mla.<server>
-  if( isset( $host[0] ) && $host == "mla" ) :
+  if( isset( $host[0] ) && $host[0] == "mla" ) :
   ?>
 
     <div class="one-half column align-self-center">
@@ -85,7 +85,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
     <?php
     //lets switch positions of buttons when the user comes in from mla.<server>
-    if( isset( $host[0] ) && $host == "mla" ) :
+    if( isset( $host[0] ) && $host[0] == "mla" ) :
     ?>
 
       <div class="one-half column align-self-center">
