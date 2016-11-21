@@ -22,7 +22,7 @@
 <header id="customHeader">
   <div class="contentWidth">
     <?php
-    
+
     //for now, lets only target the discovery_service_wordpress page
     if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
 
@@ -55,7 +55,7 @@
     else :
     ?>
     <!-- example markup for your header field -->
-    <h1>Registration</h1>
+    <h1>Membership</h1>
     <div class="customImage"><img src="/img/double_hc_55.png" /></div>
     <?php endif; ?>
 </header> <!-- /#customHeader -->
