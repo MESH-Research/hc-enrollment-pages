@@ -17,12 +17,18 @@
 
   }
 
-  var_dump( $referer );
-
 ?>
 
 <pre>
+  <p>server vars:</p>
   <?php var_dump( $_SERVER ); ?>
+  <br/>
+  <p>query string decoded:</p>
+  <?php var_dump( urldecode( $_SERVER['QUERY_STRING'] ) ); ?>
+  <br />
+  <p>cookie vars dump: </p>
+  <?php var_dump( $_SESSION ); ?>
+  <br />
 </pre>
 
 <header id="customHeader">
