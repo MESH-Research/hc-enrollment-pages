@@ -99,9 +99,6 @@ function outputUrl( $entityId, $newLogin = false ) {
     //we only want the user to see this option when in the discovery_service_registry enrollment flow
     if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false && $registryUrl['dirname'] == '/discovery_service_registry' ) :
   ?>
-  <!-- output nothing -->
-  <?php elseif( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
-
   <div class="row create_new_login">
     <div class="eleven columns align-self-center u-cf offset-by-one">
         <br />
