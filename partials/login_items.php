@@ -63,7 +63,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <?php if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false &&
   $registryUrl['dirname'] == '/discovery_service_registry' ||
-  strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false &&
+  strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) !== false &&
   $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
     <!-- output nothing -->
   <?php else : ?>
@@ -97,7 +97,8 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <?php
     //we only want the user to see this option when in the discovery_service_registry enrollment flow
-    if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false && $registryUrl['dirname'] == '/discovery_service_registry' ) :
+    if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false && $registryUrl['dirname'] == '/discovery_service_registry' &&
+    strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) !== false && $registryUrl['dirname'] == '/discovery_service_registry' ) :
   ?>
   <div class="row create_new_login">
     <div class="eleven columns align-self-center u-cf offset-by-one">
