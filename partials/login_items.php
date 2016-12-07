@@ -1,6 +1,8 @@
 <?php
 require_once "../env.php";
 
+var_dump( $_GET['return'] );
+
 /**
  * Outputs URL based off entity ID
  * @param  string $entityId  base url to use
@@ -30,7 +32,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     // parameter to the link.
     return $returnUrl . '&entityID=' . urlencode($entityId);
   }
-  
+
 }
 
 ?>
