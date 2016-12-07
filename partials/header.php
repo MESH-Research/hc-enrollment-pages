@@ -17,6 +17,8 @@
 
   }
 
+  var_dump( $host );
+
 ?>
 
 <pre>

@@ -40,8 +40,6 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row">
 
   <?php
-  var_dump( $host[0] );
-
   //lets switch positions of buttons when the user comes in from mla.<server>
   if( isset( $host[0] ) && $host[0] == "mla" && $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
   ?>
@@ -85,10 +83,7 @@ function outputUrl( $entityId, $newLogin = false ) {
         </a>
       </div> <!-- /.eleven.columns -->
 
-    <?php
-    //lets switch positions of buttons when the user comes in from mla.<server>
-    if( isset( $host[0] ) && $host[0] == "mla" && $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
-    ?>
+    <?php if( isset( $host[0] ) && $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
       <div class="one-half column align-self-center">
         <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
