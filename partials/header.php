@@ -1,7 +1,6 @@
 <?php
 
   $srv = $_SERVER['HTTP_COOKIE'];
-  var_dump( $srv );
 
   // TODO if $referer is not an array that contains 'host' (like if browser didn't send a referer), need a fallback.
   // check if array key exists, and have some fallback in case it doesn't
