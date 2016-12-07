@@ -30,6 +30,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     // parameter to the link.
     return $returnUrl . '&entityID=' . urlencode($entityId);
   }
+  
 }
 
 ?>

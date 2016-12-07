@@ -17,7 +17,7 @@
 
   }
 
-  var_dump( $host );
+  var_dump( $referer );
 
 ?>
 
