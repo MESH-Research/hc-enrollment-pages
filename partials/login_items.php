@@ -61,7 +61,10 @@ function outputUrl( $entityId, $newLogin = false ) {
     */ ?>
   </div> <!-- /.row.with-flex -->
 
-  <?php if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false && $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
+  <?php if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false &&
+  $registryUrl['dirname'] == '/discovery_service_registry' ||
+  strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false &&
+  $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
     <!-- output nothing -->
   <?php else : ?>
   <div class="row">
@@ -93,8 +96,11 @@ function outputUrl( $entityId, $newLogin = false ) {
 <!-- end login-items-desktop -->
 
   <?php
-  //we only want the user to see this option when in the discovery_service_registry enrollment flow
-  if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
+    //we only want the user to see this option when in the discovery_service_registry enrollment flow
+    if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false && $registryUrl['dirname'] == '/discovery_service_registry' ) :
+  ?>
+  <!-- output nothing -->
+  <?php elseif( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
 
   <div class="row create_new_login">
     <div class="eleven columns align-self-center u-cf offset-by-one">

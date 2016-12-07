@@ -20,12 +20,6 @@
 
   }
 
-
-  $test = "_saml_idp=aHR0cHM6Ly9oY29tbW9ucy10ZXN0LmNvbW1vbnMubWxhLm9yZy9pZHAvc2hpYmJvbGV0aA%3D%3D; CAKEPHP=0ipffd97htf8n8bosajl6nnml2; cm_registry_tz_auto=America/New_York";
-  if( strpos( $test, '_saml_idp' ) !== false ) {
-    echo "test is there";
-  }
-
 ?>
 
 <header id="customHeader">
