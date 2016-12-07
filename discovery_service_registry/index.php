@@ -21,8 +21,14 @@
             <div class="row">
               <div class="eight columns align-self-center login_registry_text column-content">
                 <!--<h3>Thank you for registering!</h3>-->
+                
+                <?php if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) !== false ) : ?>
+                <h3>Select your new log-in method</h3>
+                <?php else : ?>
                 <h3>Select your log-in method</h3>
                 <p style="text-align: center;font-weight:bold">Make sure you always sign in to the Commons using the same method.</p>
+                <?php endif; ?>
+
 		            <?php include('../partials/login_items.php'); ?>
               </div>
               <?php include('../partials/sidebar.php'); ?>

@@ -61,6 +61,9 @@ function outputUrl( $entityId, $newLogin = false ) {
     */ ?>
   </div> <!-- /.row.with-flex -->
 
+  <?php if( strpos( $srv, 'CAKEPHP' ) !== false && strpos( $srv, '_saml_idp' ) == false && $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
+    <!-- output nothing -->
+  <?php else : ?>
   <div class="row">
 
       <div class="one-half column align-self-center" style="display:inherit">
@@ -82,6 +85,8 @@ function outputUrl( $entityId, $newLogin = false ) {
       </a>
     </div> */ ?>
   </div> <!-- /.row.with-flex -->
+
+  <?php endif; ?>
 
 </div> <!-- /.login-items-desktop -->
 

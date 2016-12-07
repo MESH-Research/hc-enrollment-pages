@@ -1,4 +1,7 @@
 <?php
+
+  $srv = $_SERVER['HTTP_COOKIE'];
+
   // TODO if $referer is not an array that contains 'host' (like if browser didn't send a referer), need a fallback.
   // check if array key exists, and have some fallback in case it doesn't
   $host = explode( '.', $referer['host'] );
@@ -15,6 +18,12 @@
 
     $registryUrlSociety = false;
 
+  }
+
+
+  $test = "_saml_idp=aHR0cHM6Ly9oY29tbW9ucy10ZXN0LmNvbW1vbnMubWxhLm9yZy9pZHAvc2hpYmJvbGV0aA%3D%3D; CAKEPHP=0ipffd97htf8n8bosajl6nnml2; cm_registry_tz_auto=America/New_York";
+  if( strpos( $test, '_saml_idp' ) !== false ) {
+    echo "test is there";
   }
 
 ?>
