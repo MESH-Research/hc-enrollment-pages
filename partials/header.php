@@ -19,6 +19,10 @@
 
 ?>
 
+<pre>
+  <?php var_dump( $_SERVER ); ?>
+</pre>
+
 <header id="customHeader">
   <div class="contentWidth">
     <?php
