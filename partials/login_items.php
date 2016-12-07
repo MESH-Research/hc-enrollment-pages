@@ -40,26 +40,11 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row">
 
-  <?php
-  //lets switch positions of buttons when the user comes in from mla.<server>
-  if( isset( $host[0] ) && $host[0] == "mla" && $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
-  ?>
-
-    <div class="one-half column align-self-center">
-      <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img class="legacy_mla" src="/img/mla_signin3.png" />
-      </a>
-    </div> <!-- /.one-half.column -->
-
-  <?php else : ?>
-
     <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
         <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
-
-  <?php endif; ?>
 
     <div class="one-half column align-self-center google-logo">
       <a href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
@@ -84,23 +69,11 @@ function outputUrl( $entityId, $newLogin = false ) {
         </a>
       </div> <!-- /.eleven.columns -->
 
-    <?php if( isset( $host[0] ) && $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
-
-      <div class="one-half column align-self-center">
-        <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
-          <img class="hc-signin" src="/img/twitter_signin3.png" />
-        </a>
-      </div> <!-- /.one-half.column -->
-
-    <?php else : ?>
-
       <div class="one-half column align-self-center">
         <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-          <img class="legacy_mla" src="/img/mla_signin3.png" />
+          <img class="legacy_mla" src="/img/mla_signin4.png" />
         </a>
       </div> <!-- /.one-half.column -->
-
-    <?php endif; ?>
 
     <?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
       <div class="one-third column align-self-center">
