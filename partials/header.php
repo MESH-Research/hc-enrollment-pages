@@ -21,6 +21,32 @@
 
   }
 
+
+  function check_for_saml_cake( $srv  ) {
+
+    $http_cookie = explode( ' ', $srv );
+    $cookie = array(
+      'CAKEPHP' => false,
+      '_saml_idp' => false
+    );
+
+   foreach( $http_cookie as $item ) {
+
+    if( strpos( $item, 'CAKEPHP' ) !== false ) {
+      $cookie['CAKEPHP'] = true;
+    }
+
+    if( strpos( $item, '_saml_idp' ) !== false ) {
+      $cookie['_saml_idp'] = true;
+    }
+
+   }
+
+   return $cookie;
+
+  }
+
+  $check_saml_cake = check_for_saml_cake( $srv );
 ?>
 
 <header id="customHeader">
