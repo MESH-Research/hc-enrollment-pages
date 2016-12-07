@@ -40,6 +40,8 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row">
 
   <?php
+  var_dump( $host[0] );
+
   //lets switch positions of buttons when the user comes in from mla.<server>
   if( isset( $host[0] ) && $host[0] == "mla" && $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
   ?>
