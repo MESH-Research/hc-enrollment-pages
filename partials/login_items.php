@@ -1,7 +1,7 @@
 <?php
 require_once "../env.php";
 
-var_dump( $_GET['return'] );
+var_dump( parse_url( $_GET['return'] ) );
 
 /**
  * Outputs URL based off entity ID
