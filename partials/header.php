@@ -52,7 +52,6 @@
 
   $check_saml_cake = check_for_saml_cake( $srv );
 
-  var_dump( $check_saml_cake );
 ?>
 
 <header id="customHeader">
