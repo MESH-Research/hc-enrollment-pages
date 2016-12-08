@@ -20,7 +20,12 @@
 
   }
 
-
+/**
+ * Checks HTTP_COOKIE for CAKEPHP and _saml_idp content
+ *
+ * @param  string $srv    Content of HTTP_COOKIE to explode and loop through
+ * @return array $cookie  Returned cookie containing array keys that are boolean indicating if CAKEPHP or _saml_idp exist
+ */
   function check_for_saml_cake( $srv  ) {
 
     $http_cookie = explode( ' ', $srv );
@@ -46,6 +51,8 @@
   }
 
   $check_saml_cake = check_for_saml_cake( $srv );
+
+  var_dump( $check_saml_cake );
 ?>
 
 <header id="customHeader">
