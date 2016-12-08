@@ -61,7 +61,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     */ ?>
   </div> <!-- /.row.with-flex -->
 
-  <?php if( $check_saml_cake['CAKEPHP'] == false && $check_saml_cake['_saml_idp'] == true &&
+  <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false &&
   $registryUrl['dirname'] == '/discovery_service_registry' ||
   $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true &&
   $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
