@@ -173,61 +173,67 @@
   });
   </script>
 
-  <?php include('../partials/header.php'); ?>
+<?php include('../partials/header.php'); ?>
 
-  <!-- This div is shown during the pause for 15 seconds. -->
-  <div class="section" id="waiting" style="display:none;">
-    <div class="container">
-      <div class="row">
-        <h1>You are registered!</h1>
-        <p>We are completing the final registration details now.</p>
-        <p>You will be automatically redirected to the Commons in 15 seconds...</p>
-        <p></p>
-      </div>
-      <div class="row" id="countdown"></div>
-      <script type="text/javascript" charset="utf-8">
-        $('#countdown').countdown360({
-          radius    : 60,
-          seconds   : 15,
-          fillStyle : '#000',
-          strokeStyle: '#006650',
-          fontColor: '#fff',
-          autostart : false
-        }).start()
-      </script>
-    </div> <!-- /.container -->
-  </div> <!-- /#waiting -->
+<div class="container">
+  <div class="row">
+    <div class="eleven columns">
 
-  <!-- This div is shown if the policy parameter and/or the entityID
-       is not determined so that the user can manually click to
-       continue the flow. -->
-  <div class="section" id="thanks" style="display:none;">
-    <div class="container">
-      <div class="row">
-        <h2>Thank you for registering!</h2>
-        <h2>Select your login method</h2>
-        <p>Please choose the login method you would prefer to use login to the Commons.</p>
-      </div>
-    </div> <!-- /.container -->
-  </div> <!-- /#thanks -->
+      <!-- This div is shown during the pause for 15 seconds. -->
+      <div class="section" id="waiting" style="display:none;">
+        <div class="container">
+          <div class="row">
+            <h1>You are registered!</h1>
+            <p>We are completing the final registration details now.</p>
+            <p>You will be automatically redirected to the Commons in 15 seconds...</p>
+            <p></p>
+          </div>
+          <div class="row" id="countdown"></div>
+          <script type="text/javascript" charset="utf-8">
+            $('#countdown').countdown360({
+              radius    : 60,
+              seconds   : 15,
+              fillStyle : '#000',
+              strokeStyle: '#006650',
+              fontColor: '#fff',
+              autostart : false
+            }).start()
+          </script>
+        </div> <!-- /.container -->
+      </div> <!-- /#waiting -->
 
-  <!-- This div is shown if the policy parameter and/or the entityID
-       is not determined so that the user can manually click to
-       continue the flow. -->
-  <div class="section" id="choose" style="display:none;">
-    <div class="container">
-      <div class="row">
-        <div class="eight columns align-self-center column-content">
-          <?php include('../partials/login_items.php'); ?>
-        </div> <!-- /.eight.columns -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div> <!-- /#choose -->
-<?php include('../partials/sidebar.php'); ?>
-  <?php
+      <!-- This div is shown if the policy parameter and/or the entityID
+           is not determined so that the user can manually click to
+           continue the flow. -->
+      <div class="section" id="thanks" style="display:none;">
+        <div class="container">
+          <div class="row">
+            <h2>Thank you for registering!</h2>
+            <h2>Select your login method</h2>
+            <p>Please choose the login method you would prefer to use login to the Commons.</p>
+          </div>
+        </div> <!-- /.container -->
+      </div> <!-- /#thanks -->
 
-  include('../partials/footer.php');
-   ?>
+      <!-- This div is shown if the policy parameter and/or the entityID
+           is not determined so that the user can manually click to
+           continue the flow. -->
+      <div class="section" id="choose" style="display:none;">
+        <div class="container">
+          <div class="row">
+            <div class="eleven columns align-self-center column-content">
+              <?php include('../partials/login_items.php'); ?>
+            </div> <!-- /.eight.columns -->
+          </div> <!-- /.row -->
+        </div> <!-- /.container -->
+      </div> <!-- /#choose -->
+
+    <?php include('../partials/sidebar.php'); ?>
+
+    </div> <!-- /.eleven.columns -->
+  </div> <!-- /.row -->
+</div> <!-- /.container -->
+<?php include('../partials/footer.php'); ?>
 
   <div class="section">
     <div class="container" style="text-align:center;">

@@ -30,6 +30,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     // parameter to the link.
     return $returnUrl . '&entityID=' . urlencode($entityId);
   }
+
 }
 
 ?>
@@ -37,7 +38,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 <!-- login items desktop -->
 <div class="login-items-desktop">
 
-  <div class="row with-flex">
+  <div class="row">
 
     <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
@@ -60,7 +61,13 @@ function outputUrl( $entityId, $newLogin = false ) {
     */ ?>
   </div> <!-- /.row.with-flex -->
 
-  <div class="row with-flex">
+  <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false &&
+  $registryUrl['dirname'] == '/discovery_service_registry' ||
+  $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true &&
+  $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
+    <!-- output nothing -->
+  <?php else : ?>
+  <div class="row">
 
       <div class="one-half column align-self-center" style="display:inherit">
         <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
@@ -68,11 +75,11 @@ function outputUrl( $entityId, $newLogin = false ) {
         </a>
       </div> <!-- /.eleven.columns -->
 
-    <div class="one-half column align-self-center">
-      <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img class="legacy_mla" src="/img/mla_signin3.png" />
-      </a>
-    </div> <!-- /.one-half.column -->
+      <div class="one-half column align-self-center">
+        <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
+          <img class="legacy_mla" src="/img/mla_signin4.png" />
+        </a>
+      </div> <!-- /.one-half.column -->
 
     <?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
       <div class="one-third column align-self-center">
@@ -82,61 +89,22 @@ function outputUrl( $entityId, $newLogin = false ) {
     </div> */ ?>
   </div> <!-- /.row.with-flex -->
 
+  <?php endif; ?>
+
 </div> <!-- /.login-items-desktop -->
 
 <!-- end login-items-desktop -->
 
-<!-- login-items-mobile -->
-
-<div class="six columns login-items-mobile offset-by-three">
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
-        <img class="hc-signin" src="/img/twitter_signin3.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
-        <img src="/img/google_button.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-        <img class="hc-signin" src="/img/hc_signin3.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-  <div class="row with-flex">
-    <div class="eleven columns align-self-center">
-      <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img class="legacy_mla" src="/img/mla_signin3.png" />
-      </a>
-    </div> <!-- /.eleven.columns -->
-  </div> <!-- /.row.with-flex -->
-
-</div> <!-- /.login-items-mobile -->
-
-<!-- end login-items-mobile -->
-
   <?php
-  //we only want the user to see this option when in the discovery_service_registry enrollment flow
-  if( $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
-
+    //we only want the user to see this option when in the discovery_service_registry enrollment flow
+    if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false &&
+    $registryUrl['dirname'] == '/discovery_service_registry' ) :
+  ?>
   <div class="row create_new_login">
-    <div class="eleven columns align-self-center u-cf">
+    <div class="eleven columns align-self-center u-cf offset-by-one">
         <br />
         <br />
-        <h5>Don't see your login server?</h5>
-        <p>Click <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">here to create a new login account with the Humanities Commons
-        login server</a>. You can then use it login to Humanities Commons.</p>
+        <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</h5>.</p>
       </div> <!-- /.eight.column -->
 
     </div> <!-- /.create_new_login -->

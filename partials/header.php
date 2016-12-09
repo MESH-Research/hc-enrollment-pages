@@ -1,4 +1,7 @@
 <?php
+
+  $srv = $_SERVER['HTTP_COOKIE'];
+
   // TODO if $referer is not an array that contains 'host' (like if browser didn't send a referer), need a fallback.
   // check if array key exists, and have some fallback in case it doesn't
   $host = explode( '.', $referer['host'] );
@@ -17,12 +20,44 @@
 
   }
 
+/**
+ * Checks HTTP_COOKIE for CAKEPHP and _saml_idp content
+ *
+ * @param  string $srv    Content of HTTP_COOKIE to explode and loop through
+ * @return array $cookie  Returned cookie containing array keys that are boolean indicating if CAKEPHP or _saml_idp exist
+ */
+  function check_for_saml_cake( $srv  ) {
+
+    $http_cookie = explode( ' ', $srv );
+    $cookie = array(
+      'CAKEPHP' => false,
+      '_saml_idp' => false
+    );
+
+   foreach( $http_cookie as $item ) {
+
+    if( strpos( $item, 'CAKEPHP' ) !== false ) {
+      $cookie['CAKEPHP'] = true;
+    }
+
+    if( strpos( $item, '_saml_idp' ) !== false ) {
+      $cookie['_saml_idp'] = true;
+    }
+
+   }
+
+   return $cookie;
+
+  }
+
+  $check_saml_cake = check_for_saml_cake( $srv );
+
 ?>
 
 <header id="customHeader">
   <div class="contentWidth">
     <?php
-    
+
     //for now, lets only target the discovery_service_wordpress page
     if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
 
@@ -55,7 +90,7 @@
     else :
     ?>
     <!-- example markup for your header field -->
-    <h1>Registration</h1>
+    <h1>Membership</h1>
     <div class="customImage"><img src="/img/double_hc_55.png" /></div>
     <?php endif; ?>
 </header> <!-- /#customHeader -->
