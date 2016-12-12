@@ -23,11 +23,11 @@ function IdPSelectUIParms(){
     this.myEntityID = null;          // If non null then this string must match the string provided in the DS parms
     this.preferredIdP = null;        // Array of entityIds to always show
     this.hiddenIdPs = [
-        'https://google-gateway.hcommons.org/idp/shibboleth',
-        'https://hcommons.org/idp/shibboleth',
-        'https://hc-idphcommons.org/idp/shibboleth',
-        'https://twitter-gateway.hcommons.org/idp/shibboleth',
-        'https://mla-idp.hcommons.org/idp/shibboleth',
+        'https://hcommons-dev.org/idp/shibboleth',
+        'https://login-dev.commons.mla.org/idp/shibboleth',
+        'https://twitter-gateway.hcommons-dev.org/idp/shibboleth',
+        'https://hcommons-test.commons.mla.org/idp/shibboleth',
+        'https://mla-idp-dev.mla.org/idp/shibboleth',
     ];          // Array of entityIds to delete
     this.ignoreKeywords = false;     // Do we ignore the <mdui:Keywords/> when looking for candidates
     this.showListFirst = false;      // Do we start with a list of IdPs or just the dropdown
