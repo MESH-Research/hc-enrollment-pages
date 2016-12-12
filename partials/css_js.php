@@ -3,6 +3,7 @@
 <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
 <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
 <link rel="stylesheet" type="text/css" href="idpselect.css" />
+<script type="text/javascript" src="/partials/js/env.js"></script>
 <?php
   $url = parse_url( $_SERVER['REQUEST_URI'] );
   $path = pathinfo( $url['path'] );
