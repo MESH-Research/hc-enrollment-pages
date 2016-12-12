@@ -26,7 +26,7 @@
   </div> <!-- /.container -->
 
   <div class="section">
-    <div class="container container_incommon_top" style="text-align:center;">
+    <div class="container" style="text-align:center;">
       <div id="idpSelect" style="display:inline-block;"></div>
       <?php require_once "../partials/incommon.php"; ?>
       <noscript>
