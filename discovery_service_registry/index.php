@@ -36,12 +36,10 @@
 
           </div> <!-- /.container -->
 
-
         <div class="section">
           <div class="container" style="text-align:center;">
             <div id="idpSelect" style="display:inline-block;"></div>
-            <script src="/partials/js/incommon.js" type="text/javascript" language="javascript"></script>
-            <script src="idpselect.js" type="text/javascript" language="javascript"></script>
+            <?php require_once "../partials/incommon.php"; ?>
             <noscript>
               <!-- If you need to care about non javascript browsers you will need to
                    generate a hyperlink to a non-js DS.
