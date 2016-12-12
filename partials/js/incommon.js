@@ -1,9 +1,8 @@
-<script type="text/javascript" src="env.js"></script>
-
 /** @class IdP Selector UI */
 function IdPSelectUIParms(){
 
     console.log(hcommons_test_idp);
+
     //
     // Adjust the following to fit into your local configuration
     //
