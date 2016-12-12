@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
 <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
-<script type="text/javascript" src="/js/env.js"></script> <!-- for incommon -->
+<script type="text/javascript" src="/partials/js/env.js"></script> <!-- for incommon -->
 <link rel="stylesheet" type="text/css" href="idpselect.css" />
 <?php
   $url = parse_url( $_SERVER['REQUEST_URI'] );
