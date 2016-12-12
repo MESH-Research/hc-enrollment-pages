@@ -1,6 +1,9 @@
- 
+<script type="text/javascript" src="env.js"></script>
+
 /** @class IdP Selector UI */
 function IdPSelectUIParms(){
+
+    console.log(hcommons_test_idp);
     //
     // Adjust the following to fit into your local configuration
     //
@@ -15,7 +18,7 @@ function IdPSelectUIParms(){
     //this.defaultReturn = "https://example.org/Shibboleth.sso/DS?SAMLDS=1&target=https://example.org/secure";
     this.defaultReturnIDParam = null;
     this.helpURL = 'https://wiki.shibboleth.net/confluence/display/SHIB2/DSRoadmap';
-    this.ie6Hack = null;             // An array of structures to disable when drawing the pull down (needed to 
+    this.ie6Hack = null;             // An array of structures to disable when drawing the pull down (needed to
                                      // handle the ie6 z axis problem
     this.insertAtDiv = 'idpSelect';  // The div where we will insert the data
     this.maxResults = 10;            // How many results to show at once or the number at which to
@@ -32,14 +35,14 @@ function IdPSelectUIParms(){
     this.ignoreKeywords = false;     // Do we ignore the <mdui:Keywords/> when looking for candidates
     this.showListFirst = false;      // Do we start with a list of IdPs or just the dropdown
     this.samlIdPCookieTTL = 730;     // in days
-    this.setFocusTextBox = true;     // Set to false to supress focus 
+    this.setFocusTextBox = true;     // Set to false to supress focus
     this.testGUI = false;
 
 
     //
-    // Language support. 
+    // Language support.
     //
-    // The minified source provides "en", "de", "pt-br" and "jp".  
+    // The minified source provides "en", "de", "pt-br" and "jp".
     //
     // Override any of these below, or provide your own language
     //
