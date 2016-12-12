@@ -1,8 +1,6 @@
 /** @class IdP Selector UI */
 function IdPSelectUIParms(){
 
-    console.log(hcommons_test_idp);
-
     //
     // Adjust the following to fit into your local configuration
     //
@@ -25,11 +23,11 @@ function IdPSelectUIParms(){
     this.myEntityID = null;          // If non null then this string must match the string provided in the DS parms
     this.preferredIdP = null;        // Array of entityIds to always show
     this.hiddenIdPs = [
-        'https://hcommons-dev.org/idp/shibboleth',
-        'https://login-dev.commons.mla.org/idp/shibboleth',
-        'https://twitter-gateway.hcommons-dev.org/idp/shibboleth',
-        'https://hcommons-test.commons.mla.org/idp/shibboleth',
-        'https://mla-idp-dev.mla.org/idp/shibboleth',
+        hcommons_idp,
+        google_gateway_idp,
+        twitter_gateway_idp,
+        hcommons_test_idp,
+        mla_idp,
     ];          // Array of entityIds to delete
     this.ignoreKeywords = false;     // Do we ignore the <mdui:Keywords/> when looking for candidates
     this.showListFirst = false;      // Do we start with a list of IdPs or just the dropdown
