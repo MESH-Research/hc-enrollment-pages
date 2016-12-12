@@ -114,8 +114,15 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 }
 
 .create_new_login {
-  margin-bottom: 100px;
   text-align: center;
+}
+
+.container_incommon {
+  margin-bottom: unset !important;
+}
+
+.container_incommon_top {
+  margin-top: unset !important;
 }
 
 .section_after_submission {
