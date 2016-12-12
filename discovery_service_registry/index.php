@@ -17,7 +17,7 @@
 
         <?php include('../partials/header.php'); ?>
 
-          <div class="container">
+          <div class="container container_incommon">
             <div class="row">
               <div class="eight columns align-self-center login_registry_text column-content">
                 <!--<h3>Thank you for registering!</h3>-->
@@ -37,7 +37,7 @@
           </div> <!-- /.container -->
 
         <div class="section">
-          <div class="container container_incommon_top" style="text-align:center;">
+          <div class="container" style="text-align:center;">
             <div id="idpSelect" style="display:inline-block;"></div>
             <?php require_once "../partials/incommon.php"; ?>
             <noscript>
