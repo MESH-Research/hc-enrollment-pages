@@ -226,6 +226,14 @@ div.IdPSelectPreferredIdPImg {
   padding: 0;
 }
 
+#idpSelectIdPSelector {
+  border: unset;
+}
+
+#idpSelectSelectButton, #idpSelectListButton {
+  width: unset;
+}
+
 .login-items-desktop .one-half {
   margin: 5px;
 }
