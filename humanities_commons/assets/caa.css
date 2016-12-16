@@ -1,0 +1,165 @@
+<!-- some quick and dirty example styles for the CSS field -->
+body {
+  /* padding-bottom: 100px; offset custom fixed footer */
+}
+.modelbox table.ui-widget, .modelbox .boxtitle  {
+  font-family: proxima-nova, Verdana, sans-serif;
+}
+
+/* hide reset form field in enrollment flow */
+.submitCell > .ui-button {
+    display: none;
+}
+
+#customHeader,
+#customHeader .contentWidth {
+  position: relative;
+}
+#customHeader {
+  padding: 1.5em;
+  color: black;
+}
+#customHeader h1 {
+  font-weight: normal;
+  font-size: 3em;
+  font-family: proxima-nova, sans-serif;
+  /*margin-left: 200px;*/
+}
+#customHeader .customElement {
+  position: absolute;
+  right: 10px;
+  bottom: -1em;
+}
+
+#customHeader .customImage img {
+  position: absolute;
+  top: -.7em;
+  left: -110px;
+  height: auto;
+}
+
+.customImage {
+    margin-bottom: 10px;
+}
+                                                      
+#customFooter {
+  position: relative;
+  color: black;
+  font-size: 1.4em;
+  margin-top: 2em;
+  padding: 1em 1.5em;
+  width: 95%;
+  font-size: 14px;
+  border-top: solid 1px #b3b3b3;
+  margin: 100px 10px 0 10px;
+}
+
+.sidebar {
+   background-color: white;
+   border: none;
+   margin-top: 55px;
+}
+
+.sidebar > img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+#enrollmentFlowSteps {
+  display: none;
+}
+
+.pageTitle {
+     display: none;
+}
+
+.boxtitle > span.required {
+     display: none;
+}
+
+.contentFooterWithoutSidebar {
+  color: black;
+  text-align: left;
+  font-family: proxima-nova, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  padding: 15px 0 15px 15px 15px;
+}
+
+#secondaryMenu, #row3 {
+    display: none;
+}
+
+#redirect-box-content {
+     display: inherit;
+}
+
+@media (min-device-width : 320px) and (max-device-width: 480px) {
+
+  .contentWidth {
+       min-width: 70% !important;
+   }
+
+  #customheader h1 {  
+    margin-left: 0px !important;
+  }
+
+  .customImage img {
+    margin-top: 10px !important;
+    position: inherit !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  #enrollmentFlowIntro { 
+    margin-left: 0.5em !important; 
+    width: 90% !important;
+}
+
+  #customFooter {
+    width: unset;
+  }
+
+   .modelbox table tr>:nth-child(2) input[type=text] {
+         min-width: 100%;
+    }
+
+   #redirect-box { width: 70% !important; }
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #customFooter {  width: 95%; }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 900px) {
+     #customHeader .customImage img {  margin-left: 100px; }
+     #customHeader h1 { margin-left: 250px; }
+}
+
+@media only screen and (min-width: 992px) {
+     .contentFooterWithoutSidebar {
+         width: 685px !important;
+     }
+
+     #customHeader .customImage img {  margin-left: 100px; }
+     #customHeader h1 { margin-left: 250px; }
+}
+
+@media only screen and (min-width: 1200px) {
+     .contentFooterWithoutSidebar {
+         width: 900px !important;
+     }
+    
+     #customHeader .customImage img {
+         margin-left: 100px; 
+     }
+
+     #customHeader h1 {
+          margin-left: 250px;
+     }
+}
