@@ -1,0 +1,75 @@
+html {
+  font-family: proxima-nova, Verdana, sans-serif !important;
+}
+
+.humanities_commons_idp_enroller_accounts.provision #secondaryMenu, .humanities_commons_idp_enroller_accounts.provision #row3, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #secondaryMenu, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #row3 {
+    display: none !important; 
+}
+
+.contentFooterWithoutSidebar {
+  color: black;
+  text-align: left;
+  font-family: proxima-nova, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  padding: 15px 0 15px 15px 15px;
+}
+
+#customFooter {
+  position: relative;
+  color: black;
+  font-size: 1.4em;
+  margin-top: 2em;
+  padding: 1em 1.5em;
+  width: 98%;
+  font-size: 14px;
+  border-top: solid 1px #b3b3b3;
+  margin: 100px 10px 0 10px;
+}
+
+
+.terms-page #row1, .terms-page #row3, .guidelines-page #row1, .guidelines-page #row3, .privacy-page #row1, .privacy-page #row3 { display: none; }
+.terms-page #main, .guidelines-page #main, .privacy-page #main { margin-top: 20px; }
+.terms-page #breadcrumbs, .guidelines-page #breadcrumbs, .privacy-page #breadcrumbs { display: none; }
+
+#newContainer {
+    width: 500px;
+    margin: 20px auto 0 auto !important;
+}
+
+     #newContainer a { cursor: pointer }
+
+
+@media (min-device-width : 320px) and (max-device-width: 480px) {
+  .contentWidth {
+       min-width: 70% !important;
+   }
+
+  #customheader h1 {  
+    margin-left: 0px !important;
+  }
+
+  .customImage img {
+    margin-top: 10px !important;
+    position: inherit !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  #customFooter {
+    width: unset;
+  }
+
+  .modelbox table tr > :nth-child(2) input[type=text] {
+    min-width: 100%;
+  }
+
+.humanities_commons_idp_enroller_accounts.provision .ui-widget input {
+    min-width: 50% !important;
+}
+
+}
