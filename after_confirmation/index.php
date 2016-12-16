@@ -11,7 +11,7 @@
       <div class="row">
         <h1>Your Registration is Complete!</h1>
 	<p>You are now registered for the Humanities Commons. Yay!</p>
-	<h2><a href="https://alpha.hcommons.org/wp-login.php?redirect_to=https%3A%2F%2Falpha.hcommons.org%2F&action=shibboleth">Click here and then choose the login server you registered and get started!</h2>
+	<h2><a href="https://hcommons.org/wp-login.php?redirect_to=https%3A%2F%2Fhcommons.org%2F&action=shibboleth">Click here and then choose the login server you registered and get started!</h2>
       </div>
     </div>
   </div>
