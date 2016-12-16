@@ -10,6 +10,8 @@
 				'<?php echo HC_ACCOUNT_CREATE_GATEWAY; ?>',
 			];
 		</script>
+		<script src="/lib/shibboleth-embedded-ds-1.1.0/json2.js" type="text/javascript" language="javascript"></script>
+		<script src="/lib/shibboleth-embedded-ds-1.1.0/typeahead.js" type="text/javascript" language="javascript"></script>
 		<script src="/lib/shibboleth-embedded-ds-1.1.0/idpselect_languages.js" type="text/javascript" language="javascript"></script>
 		<script src="/lib/shibboleth-embedded-ds-1.1.0/idpselect_config.js" type="text/javascript" language="javascript"></script>
 		<script src="/lib/shibboleth-embedded-ds-1.1.0/idpselect.js" type="text/javascript" language="javascript"></script>
