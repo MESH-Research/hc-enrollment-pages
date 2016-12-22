@@ -2,8 +2,21 @@ html {
   font-family: proxima-nova, Verdana, sans-serif !important;
 }
 
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell input {
+  background-color: #006650 !important;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  background: none !important;
+  border-radius: 4px;
+}
+
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default { background-color: #006650 !important; }
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default:hover { background-color: #009978 !important; }
+
 .humanities_commons_idp_enroller_accounts.provision #secondaryMenu, .humanities_commons_idp_enroller_accounts.provision #row3, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #secondaryMenu, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #row3 {
-    display: none !important; 
+  display: none !important;
 }
 
 .contentFooterWithoutSidebar {
@@ -47,7 +60,7 @@ html {
        min-width: 70% !important;
    }
 
-  #customheader h1 {  
+  #customheader h1 {
     margin-left: 0px !important;
   }
 

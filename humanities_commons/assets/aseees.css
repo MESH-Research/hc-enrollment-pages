@@ -2,6 +2,27 @@
 body {
   /* padding-bottom: 100px; offset custom fixed footer */
 }
+
+.co_petitions.start #main .ui-icon-circle-arrow-e { display:none }
+
+.co_petitions.start #main .enrollmentFlowStartButton.ui-button.ui-state-default,
+#petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #ef4f54 !important; }
+
+.co_petitions.start #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #ef4f54 !important; }
+
+.co_petitions.start #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
+
+.co_petitions.start #main .forwardbutton.ui-state-default,
+#petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #ef4f54 !important;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  background: none !important;
+  border-radius: 4px;
+}
+
 .modelbox table.ui-widget, .modelbox .boxtitle  {
   font-family: proxima-nova, Verdana, sans-serif !important;
 }
@@ -41,7 +62,7 @@ body {
 .customImage {
     margin-bottom: 10px;
 }
-                                                      
+
 #customFooter {
   position: relative;
   color: black;
@@ -106,7 +127,7 @@ body {
        min-width: 70% !important;
    }
 
-  #customheader h1 {  
+  #customheader h1 {
     margin-left: 0px !important;
   }
 
@@ -119,8 +140,8 @@ body {
     display: none;
   }
 
-  #enrollmentFlowIntro { 
-    margin-left: 0.5em !important; 
+  #enrollmentFlowIntro {
+    margin-left: 0.5em !important;
     width: 90% !important;
 }
 
@@ -154,9 +175,9 @@ body {
      .contentFooterWithoutSidebar {
          width: 900px !important;
      }
-    
+
      #customHeader .customImage img {
-         margin-left: 100px; 
+         margin-left: 100px;
      }
 
      #customHeader h1 {
