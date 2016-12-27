@@ -5,7 +5,7 @@ body {
 
 .co_petitions.start #main .ui-icon-circle-arrow-e { display:none }
 
-.co_petitions.start #main .enrollmentFlowStartButton.ui-button.ui-state-default, ,
+.co_petitions.start #main .enrollmentFlowStartButton.ui-button.ui-state-default,
 #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #069 !important; }
 .co_petitions.start #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #08c !important; }
 .co_petitions.start #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
