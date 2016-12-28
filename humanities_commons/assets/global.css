@@ -3,14 +3,14 @@ body {
 }
 
 /** AJS enrollment styles **/
-.ajs-enrollment #main .ui-icon-circle-arrow-e { display:none }
+.ajs-enrollment #main .ui-icon-circle-arrow-e { display: none; }
 .ajs-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #069 !important; }
+.ajs-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #069 !important; }
 .ajs-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #08c !important; }
 .ajs-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
 .ajs-enrollment #main .forwardbutton.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell input {
+.ajs-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
   background-color: #069 !important;
   border-radius: 4px;
   border-width: 0;
@@ -27,15 +27,15 @@ body {
 
 
 /** CAA enrollment styles **/
-.caa-enrollment #main .ui-icon-circle-arrow-e { display:none }
+.caa-enrollment #main .ui-icon-circle-arrow-e { display: none; }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #fdc74a !important; }
+.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #fdc74a !important; }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #fdc74a !important; }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
 .caa-enrollment #main .forwardbutton.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell input {
-  background-color: #fdc74a;
+.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #fdc74a !important;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
@@ -50,14 +50,14 @@ body {
 }
 
 /** ASEEES enrollment styles **/
-.aseees-enrollment #main .ui-icon-circle-arrow-e { display:none }
+.aseees-enrollment #main .ui-icon-circle-arrow-e { display: none; }
 .aseees-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #ef4f54 !important; }
+.aseees-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #ef4f54 !important; }
 .aseees-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #ef4f54 !important; }
 .aseees-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
 .aseees-enrollment #main .forwardbutton.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell input {
+.aseees-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
   background-color: #ef4f54 !important;
   border-radius: 4px;
   border-width: 0;
@@ -73,15 +73,15 @@ body {
 }
 
 /** MLA enrollment styles **/
-.mla-enrollment #main .ui-icon-circle-arrow-e { display:none }
+.mla-enrollment #main .ui-icon-circle-arrow-e { display: none; }
 .mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #0087ff !important; }
+.mla-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #0087ff !important; }
 .mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #fdc74a !important; }
 .mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
 .mla-enrollment #main .forwardbutton.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell input {
-  background-color: #0087ff;
+.mla-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #0087ff !important;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
@@ -98,13 +98,13 @@ body {
 /** HC enrollment styles **/
 .hc-enrollment #main .ui-icon-circle-arrow-e { display:none }
 .hc-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #006650 !important; }
+.hc-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #006650 !important; }
 .hc-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #009978 !important; }
 .hc-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
 .hc-enrollment #main .forwardbutton.ui-state-default,
-#petitionerAttributes_co_petition_attrs_submit .submitCell input {
-  background-color: #006650;
+.hc-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #006650 !important;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
