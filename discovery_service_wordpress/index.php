@@ -25,10 +25,8 @@
               <h2 style="text-align: center;">Select your log-in method</h2>
               <?php if( isset( $host[0] ) && $host[0] == 'mla' ) : ?>
               <div class="row mla-text">
-                <div class="eleven columns offset-by-one align-self-center">
-                  <mark>If you are already a member of <i>MLA Commons</i>, please select "Legacy MLA Commons" and log in with that username and password.</mark>
-                </div>
-              </div>
+                <!-- add any text/div here -->
+              </div> <!-- /.row.mla-text -->
               <?php endif; ?>
               <p style="text-align: center;font-weight:bold;">Make sure you always sign in to the Commons using the same method.</p>
               <?php include('../partials/login_items.php'); ?>
