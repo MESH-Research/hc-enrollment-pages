@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
 <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
-<link rel="stylesheet" type="text/css" href="/lib/shibboleth-embedded-ds-1.1.0/idpselect.css" />
+<!--<link rel="stylesheet" type="text/css" href="/lib/shibboleth-embedded-ds-1.1.0/idpselect.css" />-->
 <?php
   $url = parse_url( $_SERVER['REQUEST_URI'] );
   $path = pathinfo( $url['path'] );
