@@ -69,11 +69,18 @@ function outputUrl( $entityId, $newLogin = false ) {
   <?php else : ?>
   <div class="row">
 
+      <!-- special patch to demo hc id account link scenario -->
+      <?php
+        //we only want the user to see this option when in the discovery_service_registry enrollment flow
+        if( $check_saml_cake['CAKEPHP'] == true &&
+        $registryUrl['dirname'] == '/discovery_service_registry' ) :
+      ?>
       <div class="one-half column align-self-center" style="display:inherit">
         <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
           <img class="hc-signin" src="/img/hc_signin3.png" />
         </a>
-      </div> <!-- /.eleven.columns -->
+      </div> <!-- /.one-half.column -->
+      <?php endif; ?>
 
       <div class="one-half column align-self-center">
         <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
