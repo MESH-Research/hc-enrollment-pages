@@ -59,29 +59,24 @@ function outputUrl( $entityId, $newLogin = false ) {
       </a>
     </div>
     */ ?>
-  </div> <!-- /.row.with-flex -->
+  </div> <!-- /.row -->
 
+  <div class="row">
+    
   <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false &&
   $registryUrl['dirname'] == '/discovery_service_registry' ||
   $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true &&
-  $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
-    <!-- output nothing -->
-  <?php else : ?>
-  <div class="row">
+  $registryUrl['dirname'] == '/discovery_service_registry' ||
+  $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
-      <!-- special patch to demo hc id account link scenario -->
-      <?php
-        //we only want the user to see this option when in the discovery_service_registry enrollment flow
-        if( $check_saml_cake['CAKEPHP'] == true &&
-        $registryUrl['dirname'] == '/discovery_service_registry' ||
-        $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
-      ?>
-      <div class="one-half column align-self-center" style="display:inherit">
-        <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-          <img class="hc-signin" src="/img/hc_signin3.png" />
-        </a>
-      </div> <!-- /.one-half.column -->
-      <?php endif; ?>
+    <!-- special patch to demo hc id account link scenario -->
+    <div class="one-half column align-self-center" style="display:inherit">
+      <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
+        <img class="hc-signin" src="/img/hc_signin3.png" />
+      </a>
+    </div> <!-- /.one-half.column -->
+
+  <?php else : ?>
 
       <div class="one-half column align-self-center">
         <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
@@ -95,10 +90,9 @@ function outputUrl( $entityId, $newLogin = false ) {
       <img src="/img/orcid_128x128.png"></img>
       </a>
     </div> */ ?>
-  </div> <!-- /.row.with-flex -->
 
   <?php endif; ?>
-
+  </div> <!-- /.row -->
 </div> <!-- /.login-items-desktop -->
 
 <!-- end login-items-desktop -->
