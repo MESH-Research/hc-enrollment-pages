@@ -73,7 +73,8 @@ function outputUrl( $entityId, $newLogin = false ) {
       <?php
         //we only want the user to see this option when in the discovery_service_registry enrollment flow
         if( $check_saml_cake['CAKEPHP'] == true &&
-        $registryUrl['dirname'] == '/discovery_service_registry' ) :
+        $registryUrl['dirname'] == '/discovery_service_registry' ||
+        $registryUrl['dirname'] == '/discovery_service_wordpress' ) :
       ?>
       <div class="one-half column align-self-center" style="display:inherit">
         <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
