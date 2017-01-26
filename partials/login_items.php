@@ -62,7 +62,7 @@ function outputUrl( $entityId, $newLogin = false ) {
   </div> <!-- /.row -->
 
   <div class="row">
-    
+
   <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false &&
   $registryUrl['dirname'] == '/discovery_service_registry' ||
   $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true &&
@@ -78,11 +78,17 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <?php else : ?>
 
-      <div class="one-half column align-self-center">
-        <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-          <img class="legacy_mla" src="/img/mla_signin4.png" />
-        </a>
-      </div> <!-- /.one-half.column -->
+    <div class="one-half column align-self-center" style="display:inherit">
+      <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
+        <img class="hc-signin" src="/img/hc_signin3.png" />
+      </a>
+    </div> <!-- /.one-half.column -->
+
+    <div class="one-half column align-self-center">
+      <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
+        <img class="legacy_mla" src="/img/mla_signin4.png" />
+      </a>
+    </div> <!-- /.one-half.column -->
 
     <?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
       <div class="one-third column align-self-center">
