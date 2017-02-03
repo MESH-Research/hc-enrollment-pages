@@ -27,9 +27,14 @@
               <div class="row mla-text">
                 <!-- add any text/div here -->
               </div> <!-- /.row.mla-text -->
-              <?php endif; ?>
-              <p style="text-align: center;font-weight:bold;">Make sure you always sign in to the Commons using the same method.</p>
-              <?php include('../partials/login_items.php'); ?>
+              <?php endif;
+                if( isset( $_COOKIE['last_login'] ) ) : ?>
+                 <p style="text-align: center; font-weight:bold;">You last attempted to login with <?php echo $_COOKIE['last_login']; ?></p>
+                <?php else : ?>
+                <p style="text-align: center;font-weight:bold;">Make sure you always sign in to the Commons using the same method.</p>
+              <?php
+                endif;
+              include('../partials/login_items.php'); ?>
             </div> <!-- /.eleven.columns -->
             <?php include('../partials/sidebar.php'); ?>
           </div> <!-- /.row -->

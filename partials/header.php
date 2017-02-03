@@ -31,7 +31,8 @@
     $http_cookie = explode( ' ', $srv );
     $cookie = array(
       'CAKEPHP' => false,
-      '_saml_idp' => false
+      '_saml_idp' => false,
+      '_shib_session_' => false
     );
 
    foreach( $http_cookie as $item ) {
@@ -42,6 +43,10 @@
 
     if( strpos( $item, '_saml_idp' ) !== false ) {
       $cookie['_saml_idp'] = true;
+    }
+
+    if( strpos( $item, '_shib_session_' ) !== false ) {
+      $cookie['_shib_session_'] = true;
     }
 
    }

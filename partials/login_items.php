@@ -41,13 +41,13 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row">
 
     <div class="one-half column align-self-center">
-      <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
+      <a data-login="Twitter" href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
         <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
     <div class="one-half column align-self-center google-logo">
-      <a href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
+      <a data-login="Google" href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
         <img src="/img/google_button.png" />
       </a>
     </div> <!-- /.one-half.column -->
@@ -63,15 +63,12 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row">
 
-  <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false &&
-  $registryUrl['dirname'] == '/discovery_service_registry' ||
-  $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true &&
-  $registryUrl['dirname'] == '/discovery_service_registry' ||
-  $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
+  <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
+      $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
     <div class="one-half column align-self-center" style="display:inherit">
-      <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
+      <a data-login="HC Gateway" href="<?php echo outputUrl( HC_GATEWAY ); ?>">
         <img class="hc-signin" src="/img/hc_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
@@ -79,7 +76,7 @@ function outputUrl( $entityId, $newLogin = false ) {
   <?php else : ?>
 
     <div class="one-half column align-self-center">
-      <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
+      <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
         <img class="legacy_mla" src="/img/mla_signin4.png" />
       </a>
     </div> <!-- /.one-half.column -->
