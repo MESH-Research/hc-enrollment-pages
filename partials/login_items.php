@@ -78,12 +78,6 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <?php else : ?>
 
-    <div class="one-half column align-self-center" style="display:inherit">
-      <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-        <img class="hc-signin" src="/img/hc_signin3.png" />
-      </a>
-    </div> <!-- /.one-half.column -->
-
     <div class="one-half column align-self-center">
       <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
         <img class="legacy_mla" src="/img/mla_signin4.png" />
