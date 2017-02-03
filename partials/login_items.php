@@ -73,7 +73,10 @@ function outputUrl( $entityId, $newLogin = false ) {
       </a>
     </div> <!-- /.one-half.column -->
 
-  <?php else : ?>
+  <?php endif;
+  if( $registryUrl['dirname'] == '/discovery_service_wordpress' ||
+    $registryUrl['dirname'] == '/discovery_service_registry_only' ||
+    $check_saml_cake['_shib_session_'] == true ) : ?>
 
     <div class="one-half column align-self-center">
       <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
