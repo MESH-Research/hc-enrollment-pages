@@ -63,8 +63,10 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row">
 
-  <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
-      $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
+  <?php 
+
+//if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
+      if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
     <div class="one-half column align-self-center" style="display:inherit">
