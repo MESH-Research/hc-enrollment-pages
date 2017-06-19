@@ -263,6 +263,15 @@ div.IdPSelectPreferredIdPImg {
     line-height: 1.7;
   }
 
+#idpSelectSelectButton {
+  background-color: #006650 !important;
+  color: white;
+}
+
+.IdPSelectHelpButton {
+  margin-left: 5px !important;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
   .sidebar { display: none !important; }
