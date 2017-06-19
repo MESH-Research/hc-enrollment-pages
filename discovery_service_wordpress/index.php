@@ -41,8 +41,10 @@
 
         </div> <!-- /.container -->
 
-<?php //require_once "../partials/incommon.php"; ?>
-<?php include('../partials/footer.php'); ?>
+<?php
+require_once "../partials/incommon.php";
+include('../partials/footer.php');
+?>
 
 </body>
 </html>
