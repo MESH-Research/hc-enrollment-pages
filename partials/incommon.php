@@ -38,5 +38,5 @@
 				</noscript>
 			</div>
 		</div> <!-- /.section -->
-	</div> <!-- /.eight.columns -->
+	</div> <!-- /.six.columns -->
 </div> <!-- /.row -->
