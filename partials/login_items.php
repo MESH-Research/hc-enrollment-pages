@@ -65,8 +65,8 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <?php
 
-//if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
-      if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
+if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
+  $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
     <div class="one-half column align-self-center" style="display:inherit">
@@ -114,3 +114,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     </div> <!-- /.create_new_login -->
 
   <?php endif; ?>
+
+<?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) :
+  require_once "incommon.php";
+endif; ?>
