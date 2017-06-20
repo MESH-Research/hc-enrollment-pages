@@ -263,9 +263,11 @@ div.IdPSelectPreferredIdPImg {
     line-height: 1.7;
   }
 
-#idpSelectSelectButton {
+#idpSelectSelectButton, #idpSelectListButton {
   background-color: #006650 !important;
   color: white;
+  padding: 10px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.118);
 }
 
 .IdPSelectHelpButton {
