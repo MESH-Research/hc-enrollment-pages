@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="eight columns align-self-center">
+	<div class="six columns align-self-center offset-by-two">
 		<div class="section">
 			<div class="container container_incommon_top" style="text-align:center;">
 				<div id="idpSelect" style="display:inline-block;"></div>
