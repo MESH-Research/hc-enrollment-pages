@@ -37,7 +37,7 @@
           </div> <!-- /.container -->
 
 <?php
-require_once "../partials/incommon.php";
+//require_once "../partials/incommon.php";
 include('../partials/footer.php');
 ?>
 
