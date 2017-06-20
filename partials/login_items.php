@@ -63,7 +63,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row">
 
-  <?php 
+  <?php
 
 //if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
       if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
@@ -108,7 +108,7 @@ function outputUrl( $entityId, $newLogin = false ) {
     <div class="eleven columns align-self-center u-cf offset-by-one">
         <br />
         <br />
-        <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</h5>.</p>
+        <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</a></h5>.</p>
       </div> <!-- /.eight.column -->
 
     </div> <!-- /.create_new_login -->
