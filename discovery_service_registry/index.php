@@ -37,7 +37,11 @@
           </div> <!-- /.container -->
 
 <?php
-//require_once "../partials/incommon.php";
+//only triggers after user accepts email invite
+if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false ) {
+  require_once "../partials/incommon.php";
+}
+
 include('../partials/footer.php');
 ?>
 
