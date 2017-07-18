@@ -173,7 +173,7 @@ body {
 .sidebar {
    background-color: white;
    border: none;
-   margin-top: 55px;
+   margin-top: 105px;
 }
 
 .sidebar > img.center {
@@ -204,12 +204,16 @@ body {
   padding: 15px 0 15px 15px;
 }
 
-#secondaryMenu, #row3 {
-    display: none;
+#secondaryMenu, #row3, .duplicate-error-message #row3, .duplicate-error-message .row1-dropdown {
+  display: none;
+}
+
+body.pages.display.duplicate-error-message #fpDashboard {
+  display: none;
 }
 
 #redirect-box-content {
-     display: inherit;
+  display: inherit;
 }
 
 @media (min-device-width : 320px) and (max-device-width: 480px) {

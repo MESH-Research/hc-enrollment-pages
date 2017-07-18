@@ -31,7 +31,8 @@
     $http_cookie = explode( ' ', $srv );
     $cookie = array(
       'CAKEPHP' => false,
-      '_saml_idp' => false
+      '_saml_idp' => false,
+      '_shib_session_' => false
     );
 
    foreach( $http_cookie as $item ) {
@@ -44,6 +45,10 @@
       $cookie['_saml_idp'] = true;
     }
 
+    if( strpos( $item, '_shib_session_' ) !== false ) {
+      $cookie['_shib_session_'] = true;
+    }
+
    }
 
    return $cookie;
@@ -51,6 +56,11 @@
   }
 
   $check_saml_cake = check_for_saml_cake( $srv );
+
+/*echo "<pre>";
+var_dump( $check_saml_cake );
+var_dump( $_SERVER );
+echo "</pre>";*/ 
 
 ?>
 

@@ -41,13 +41,13 @@ function outputUrl( $entityId, $newLogin = false ) {
   <div class="row">
 
     <div class="one-half column align-self-center">
-      <a href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
+      <a data-login="Twitter" href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
         <img class="hc-signin" src="/img/twitter_signin3.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
     <div class="one-half column align-self-center google-logo">
-      <a href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
+      <a data-login="Google" href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
         <img src="/img/google_button.png" />
       </a>
     </div> <!-- /.one-half.column -->
@@ -59,27 +59,32 @@ function outputUrl( $entityId, $newLogin = false ) {
       </a>
     </div>
     */ ?>
-  </div> <!-- /.row.with-flex -->
+  </div> <!-- /.row -->
 
-  <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == false &&
-  $registryUrl['dirname'] == '/discovery_service_registry' ||
-  $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true &&
-  $registryUrl['dirname'] == '/discovery_service_registry' ) : ?>
-    <!-- output nothing -->
-  <?php else : ?>
   <div class="row">
 
-      <div class="one-half column align-self-center" style="display:inherit">
-        <a href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-          <img class="hc-signin" src="/img/hc_signin3.png" />
-        </a>
-      </div> <!-- /.eleven.columns -->
+  <?php
 
-      <div class="one-half column align-self-center">
-        <a href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-          <img class="legacy_mla" src="/img/mla_signin4.png" />
-        </a>
-      </div> <!-- /.one-half.column -->
+if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
+  $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
+
+    <!-- special patch to demo hc id account link scenario -->
+    <div class="one-half column align-self-center" style="display:inherit">
+      <a data-login="HC Gateway" href="<?php echo outputUrl( HC_GATEWAY ); ?>">
+        <img class="hc-signin" src="/img/hc_signin3.png" />
+      </a>
+    </div> <!-- /.one-half.column -->
+
+  <?php endif;
+  if( $registryUrl['dirname'] == '/discovery_service_wordpress' ||
+    $registryUrl['dirname'] == '/discovery_service_registry_only' ||
+    $check_saml_cake['_shib_session_'] == true ) : ?>
+
+    <div class="one-half column align-self-center">
+      <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
+        <img class="legacy_mla" src="/img/mla_signin4.png" />
+      </a>
+    </div> <!-- /.one-half.column -->
 
     <?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
       <div class="one-third column align-self-center">
@@ -87,10 +92,9 @@ function outputUrl( $entityId, $newLogin = false ) {
       <img src="/img/orcid_128x128.png"></img>
       </a>
     </div> */ ?>
-  </div> <!-- /.row.with-flex -->
 
   <?php endif; ?>
-
+  </div> <!-- /.row -->
 </div> <!-- /.login-items-desktop -->
 
 <!-- end login-items-desktop -->
@@ -104,9 +108,13 @@ function outputUrl( $entityId, $newLogin = false ) {
     <div class="eleven columns align-self-center u-cf offset-by-one">
         <br />
         <br />
-        <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</h5>.</p>
+        <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</a></h5>.</p>
       </div> <!-- /.eight.column -->
 
     </div> <!-- /.create_new_login -->
 
   <?php endif; ?>
+
+<?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) :
+  require_once "incommon.php";
+endif; ?>
