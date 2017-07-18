@@ -11,12 +11,18 @@
 						'<?php echo LEGACY_MLA_GATEWAY; ?>',
 						'<?php echo HC_ACCOUNT_CREATE_GATEWAY; ?>',
 					];
+					var humanitiesCommonsPreferredIdPs = [
+						'<?php echo GOOGLE_GATEWAY; ?>',
+						'<?php echo TWITTER_GATEWAY; ?>',
+						'<?php echo HC_GATEWAY; ?>',
+						'<?php echo LEGACY_MLA_GATEWAY; ?>',
+					];
 				</script>
-				<script src="/lib/shibboleth-embedded-ds-1.1.0/json2.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.1.0/typeahead.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.1.0/idpselect_languages.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.1.0/idpselect_config.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.1.0/idpselect.js" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/json2.js" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/typeahead.js" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect_languages.js" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect_config.js" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect.js" type="text/javascript" language="javascript"></script>
 				<noscript>
 					<!-- If you need to care about non javascript browsers you will need to
 					     generate a hyperlink to a non-js DS.
