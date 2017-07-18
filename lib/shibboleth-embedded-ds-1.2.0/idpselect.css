@@ -175,13 +175,14 @@ ul.IdPSelectDropDown {
     padding-left: 0px;
     border: 1px solid black;
     z-index: 6;
-    position: absolute;   
+    position: absolute !important;   
 }
 
 ul.IdPSelectDropDown li {
     background-color: white;
     cursor: default;
     padding: 0px 3px;
+    margin-bottom: 0 !important;
 }
 
 ul.IdPSelectDropDown li.IdPSelectCurrent {
