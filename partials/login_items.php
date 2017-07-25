@@ -116,5 +116,5 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
   <?php endif; ?>
 
 <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) :
-  require_once "incommon.php";
+  //require_once "incommon.php";
 endif; ?>

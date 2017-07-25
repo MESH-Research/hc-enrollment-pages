@@ -25,17 +25,16 @@ body {
   background: none !important;
 }
 
-
-/** CAA enrollment styles **/
-.caa-enrollment #main .ui-icon-circle-arrow-e { display: none; }
+/** CAA Enrollment styles **/
+.caa-enrollment #main .ui-icon-circle-arrow-e { display:none }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #fdc74a !important; }
-.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #fdc74a !important; }
+.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #006650 !important; }
+.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #877682 !important; }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
 .caa-enrollment #main .forwardbutton.ui-state-default,
 .caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
-  background-color: #fdc74a !important;
+  background-color: #680c2c !important;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
