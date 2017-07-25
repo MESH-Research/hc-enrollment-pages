@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
 <link rel="stylesheet" type="text/css" href="/css/discovery_service_01.css" />
-<!--<link rel="stylesheet" type="text/css" href="/lib/shibboleth-embedded-ds-1.1.0/idpselect.css" />-->
+<link rel="stylesheet" type="text/css" href="/lib/shibboleth-embedded-ds-1.2.0/idpselect.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="/lib/js-cookie/src/js.cookie.js"></script>
 <?php
@@ -22,9 +22,15 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
+
+if( Cookies.get('_saml_idp') && Cookies.get('_saml_idp').split(' ').length > 1 ) {
+   Cookies.set("last_login", "an Institutional account");
+} 
+
   $('.login-items-desktop a', $(this)).on('click', function(event) {
     //event.preventDefault();
     Cookies.set("last_login", $(this).data('login'));
   });
+
 });
 </script>

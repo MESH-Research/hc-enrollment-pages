@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>MLA Commons Email Verification</title>
+  <title>ASEEES Commons Email Verification</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-5" />
   <?php include('../partials/css_js.php'); ?>
 </head>
@@ -16,12 +16,12 @@
           <div class="row">
             <div class="ten columns align-self-center section_after_submission">
               <h3>Please verify your e-mail address.</h3>
-              <p>Check your e-mail for a note with the subject "Activate your <?php echo strtoupper( $host[0] ); ?> Commons Account". In that message you will find a link. Please click on it so that we can verify your e-mail address and you can complete the registration process.</p>
-            </div> <!-- /.eleven.columns -->
+              <p>Check your e-mail for a note with the subject "Activate your ASEEES Commons Account". In that message you will find a link. Please click on it so that we can verify your e-mail address and you can complete the registration process.</p>
+            </div> <!-- /.ten.columns -->
           </div> <!-- /.row -->
         </div> <!-- /.container -->
         <?php include('../partials/sidebar.php'); ?>
-      </div> <!-- /.ten.columns -->
+      </div> <!-- /.twelve.columns -->
     </div> <!-- /.row -->
   </div> <!-- /.container.full-width-container -->
 
