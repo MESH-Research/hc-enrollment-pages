@@ -28,7 +28,7 @@ body {
 /** CAA Enrollment styles **/
 .caa-enrollment #main .ui-icon-circle-arrow-e { display:none }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #006650 !important; }
+.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default { background-color: #680c2c !important; }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover { background-color: #877682 !important; }
 .caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
