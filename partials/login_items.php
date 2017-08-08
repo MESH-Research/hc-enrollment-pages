@@ -82,7 +82,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
 
     <div class="one-half column align-self-center">
       <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img class="legacy_mla" src="/img/mla_new.png" />
+        <img class="legacy_mla" src="/img/mla-commons_new.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
