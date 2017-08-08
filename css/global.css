@@ -180,7 +180,9 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
     margin-bottom: 10px;
   }
 
-.login-items-desktop { }
+.login-items-desktop .row {
+  margin-bottom: 10px;
+}
 
 .login-items-desktop img, .login-items-mobile img {
 	max-width: 100%;
