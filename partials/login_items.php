@@ -40,13 +40,13 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row">
 
-    <div class="one-half column align-self-center">
+    <div class="five columns align-self-center">
       <a data-login="Twitter" href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
         <img class="hc-signin" src="/img/twitter_new.png" />
       </a>
     </div> <!-- /.one-half.column -->
 
-    <div class="one-half column align-self-center google-logo">
+    <div class="five columns align-self-center google-logo">
       <a data-login="Google" href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
         <img src="/img/google_button_new.png" />
       </a>
@@ -69,7 +69,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
   $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
-    <div class="one-half column align-self-center" style="display:inherit">
+    <div class="five columns align-self-center" style="display:inherit">
       <a data-login="HC Gateway" href="<?php echo outputUrl( HC_GATEWAY ); ?>">
         <img class="hc-signin" src="/img/humanities-commons_new.png" />
       </a>
@@ -80,7 +80,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
     $registryUrl['dirname'] == '/discovery_service_registry_only' ||
     $check_saml_cake['_shib_session_'] == true ) : ?>
 
-    <div class="one-half column align-self-center">
+    <div class="five columns align-self-center">
       <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
         <img class="legacy_mla" src="/img/mla-commons_new.png" />
       </a>
