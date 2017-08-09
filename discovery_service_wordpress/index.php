@@ -21,7 +21,7 @@
 
         <div class="container">
           <div class="row">
-            <div class="eight columns align-self-center">
+            <div class="eight columns align-self-center offset-by-two">
               <h2 style="text-align: center;">Select your log-in method</h2>
               <?php if( isset( $host[0] ) && $host[0] == 'mla' ) : ?>
               <div class="row mla-text">
