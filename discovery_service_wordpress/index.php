@@ -29,7 +29,7 @@
               </div> <!-- /.row.mla-text -->
               <?php endif;
                 if( isset( $_COOKIE['last_login'] ) ) : ?>
-                 <div class="four columns align-self-center" id="last_login_container"></div> 
+                 <div class="eight columns align-self-center offset-by-one" id="last_login_container"></div> 
                  <!--<p style="text-align: center; font-weight:bold;">You last attempted to log in with <?php echo $_COOKIE['last_login']; ?></p>
                 <?php else : ?>
                 <p style="text-align: center;font-weight:bold;">Make sure you always sign in to the Commons using the same method.</p>-->
