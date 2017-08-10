@@ -242,7 +242,10 @@ div.IdPSelectPreferredIdPImg {
 
 .login-items-desktop a {
   display: block;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  /*box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;*/
   border-radius: 4px;
 }
 
@@ -250,8 +253,20 @@ div.IdPSelectPreferredIdPImg {
   border-radius: 4px;
 }
 
+.google-login {
+  background-color: #f4c20d;
+}
+
+.twitter-login {
+  background-color: #00aced;
+}
+
+.hc-login {
+  background-color: #006650;å
+}
+
 .login-items-desktop a:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(0, 0, 0, 0.3) 0px 1px 4px;
+  /*box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(0, 0, 0, 0.3) 0px 1px 4px;*/
 }
 
 .mla-text {
