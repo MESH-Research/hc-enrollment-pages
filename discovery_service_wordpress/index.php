@@ -27,11 +27,12 @@
               <div class="row mla-text">
                 <!-- add any text/div here -->
               </div> <!-- /.row.mla-text -->
+              <div id="last_login_container"></div>
               <?php endif;
                 if( isset( $_COOKIE['last_login'] ) ) : ?>
-                 <p style="text-align: center; font-weight:bold;">You last attempted to log in with <?php echo $_COOKIE['last_login']; ?></p>
+                 <!--<p style="text-align: center; font-weight:bold;">You last attempted to log in with <?php echo $_COOKIE['last_login']; ?></p>
                 <?php else : ?>
-                <p style="text-align: center;font-weight:bold;">Make sure you always sign in to the Commons using the same method.</p>
+                <p style="text-align: center;font-weight:bold;">Make sure you always sign in to the Commons using the same method.</p>-->
               <?php
                 endif;
               include('../partials/login_items.php'); ?>
@@ -42,7 +43,7 @@
         </div> <!-- /.container -->
 
 <?php
-//require_once "../partials/incommon.php";
+require_once "../partials/incommon.php";
 include('../partials/footer.php');
 ?>
 

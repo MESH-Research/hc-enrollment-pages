@@ -40,15 +40,17 @@ function outputUrl( $entityId, $newLogin = false ) {
 
   <div class="row">
 
-    <div class="five columns align-self-center">
+    <div class="five columns align-self-center login-item twitter-login">
       <a data-login="Twitter" href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
-        <img class="hc-signin" src="/img/twitter_new.png" />
+        <span>Twitter</span>
+        <!--<img class="hc-signin" src="/img/twitter_new.png" />-->
       </a>
     </div> <!-- /.one-half.column -->
 
-    <div class="five columns align-self-center google-logo">
+    <div class="five columns align-self-center google-logo google-login login-item">
       <a data-login="Google" href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
-        <img src="/img/google_button_new.png" />
+        <span>Google</span>
+        <!--<img src="/img/google_button_new.png" />-->
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -69,9 +71,10 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
   $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
-    <div class="five columns align-self-center" style="display:inherit">
+    <div class="five columns align-self-center login-item hc-login" style="display:inherit">
       <a data-login="HC Gateway" href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-        <img class="hc-signin" src="/img/humanities-commons_new.png" />
+        <span>Humanities Commons</span>
+        <!--<img class="hc-signin" src="/img/humanities-commons_new.png" />-->
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -80,9 +83,10 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
     $registryUrl['dirname'] == '/discovery_service_registry_only' ||
     $check_saml_cake['_shib_session_'] == true ) : ?>
 
-    <div class="five columns align-self-center">
+    <div class="five columns align-self-center login-item mla-login">
       <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img class="legacy_mla" src="/img/mla-commons_new.png" />
+        <span>Legacy MLA</span>
+        <!--<img class="legacy_mla" src="/img/mla-commons_new.png" />-->
       </a>
     </div> <!-- /.one-half.column -->
 

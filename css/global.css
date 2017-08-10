@@ -280,6 +280,11 @@ div.IdPSelectPreferredIdPImg {
   margin-left: 5px !important;
 }
 
+#last_login_container {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
   .sidebar { display: none !important; }
