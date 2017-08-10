@@ -27,7 +27,7 @@
               <div class="row mla-text">
                 <!-- add any text/div here -->
               </div> <!-- /.row.mla-text -->
-              <div id="last_login_container"></div>
+              <div id="last_login_container">test</div> 
               <?php endif;
                 if( isset( $_COOKIE['last_login'] ) ) : ?>
                  <!--<p style="text-align: center; font-weight:bold;">You last attempted to log in with <?php echo $_COOKIE['last_login']; ?></p>
