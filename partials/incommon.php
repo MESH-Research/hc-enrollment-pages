@@ -1,7 +1,8 @@
+<!--<div class="container">-->
 <div class="row">
-	<div class="six columns align-self-center offset-by-three">
-		<div class="section">
-			<div class="container container_incommon_top" style="text-align:center;">
+	<div class="five columns align-self-center offset-by-three">
+		<!-- <div class="section">
+			<div class="container container_incommon_top" style="text-align:center;"> -->
 				<div id="idpSelect" style="display:inline-block;"></div>
 				<script type="text/javascript">
 					var humanitiesCommonsHiddenIdPs = [
@@ -42,7 +43,8 @@
 					<a href="http://federation.org/DS/DS?entityID=https%3A%2F%2FyourentityId.edu.edu%2Fshibboleth&return=https%3A%2F%2Fyourreturn.edu%2FShibboleth.sso%2FDS%3FSAMLDS%3D1%26target%3Dhttps%3A%2F%2Fyourreturn.edu%2F">this link</a>.
 
 				</noscript>
-			</div>
-		</div> <!-- /.section -->
+			<!-- </div> -->
+		<!-- </div> --> <!-- /.section -->
 	</div> <!-- /.six.columns -->
 </div> <!-- /.row -->
+<!--</div> --><!-- /.container -->
