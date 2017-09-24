@@ -21,21 +21,19 @@
 
         <div class="container">
           <div class="row">
-            <div class="eight columns align-self-center offset-by-two">
-              <h2 style="text-align: center;">Select your log-in method</h2>
+            <div class="seven columns align-self-center offset-by-two">
+               <div class="titles_container">
+                 <h2>How would you like to log in?</h2>
+                 <p>Choose a login method you have already linked to your account</p>
+                 <p><a href="https://hcommons-dev.org/remind-me/">I don't remember how I logged in</a></p>
+               </div><!-- /.titles_container -->
+
               <?php if( isset( $host[0] ) && $host[0] == 'mla' ) : ?>
               <div class="row mla-text">
                 <!-- add any text/div here -->
               </div> <!-- /.row.mla-text -->
               <?php endif;
-                if( isset( $_COOKIE['last_login'] ) ) : ?>
-                 <div class="eight columns align-self-center offset-by-one" id="last_login_container"></div>
-                 <!--<p style="text-align: center; font-weight:bold;">You last attempted to log in with <?php echo $_COOKIE['last_login']; ?></p>-->
-                <?php else : ?>
-                 <!--<p style="text-align: center;font-weight:bold;">Make sure you always sign in to the Commons using the same method.</p>-->
-              <?php
-                endif;
-              include('../partials/login_items.php'); ?>
+                include('../partials/login_items.php'); ?>
             </div> <!-- /.eleven.columns -->
             <?php include('../partials/sidebar.php'); ?>
           </div> <!-- /.row -->

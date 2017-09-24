@@ -215,6 +215,30 @@ body.pages.display.duplicate-error-message #fpDashboard {
   display: inherit;
 }
 
+.IdPSelectPreferredIdPButton {
+  width: 100% !important;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  padding: 10px;
+}
+
+.IdPSelectPreferredIdPImg {
+  max-width: unset;
+  height: 69px;
+}
+
+.IdPSelectIdPImg {
+  display: unset !important;
+  max-width: unset !important;
+  max-height: unset !important;
+  float: unset !important;
+  margin-right: unset !important;
+  margin-left: 280px;
+}
+
 @media (min-device-width : 320px) and (max-device-width: 480px) {
 
   .contentWidth {

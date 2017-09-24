@@ -172,14 +172,6 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   text-align: left;
 }
 
-.login-items-mobile {
-  display: none;
-}
-
-  .login-items-mobile > .row {
-    margin-bottom: 10px;
-  }
-
 .login-items-desktop .row {
   margin-bottom: 10px;
 }
@@ -236,6 +228,26 @@ div.IdPSelectPreferredIdPImg {
   width: unset;
 }
 
+/** controls incommon options in login screen **/
+#idpSelectIdPSelector #idpSelectIdPEntryTile { display: none; }
+/*#idpSelectIdPSelector .IdPSelectautoDispatchTile { display: none; }*/
+
+.container_incommon_top .button_container { display:none; }
+.container_incommon_top .linked_login_container { display:none; }
+
+#idpSelectIdPSelector #idpSelectInput { 
+  width: 71% !important;
+  height: unset !important; 
+  padding: 15px !important ;
+}
+
+#idpSelectIdPSelector #idpSelectSelectButton {
+  height: unset !important;
+  padding: 5px 20px !important;
+}
+.titles_container { text-align: center !important; }
+.titles_container a { color: #006ccc !important; }
+
 .login-items-desktop .one-half {
   margin: 5px;
 }
@@ -243,7 +255,7 @@ div.IdPSelectPreferredIdPImg {
 .login-items-desktop a {
   display: block;
   text-align: center;
-  padding: 20px;
+ /* padding: 20px; */
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -251,11 +263,26 @@ div.IdPSelectPreferredIdPImg {
   border-radius: 4px;
 }
 
+.uni_cred_login { 
+  padding: 20px;
+  color: #006ccc !important;
+  font-weight: normal !important;
+}
+
+  .uni_cred_login:hover { text-decoration: underline !important; }
+
 .login-items-desktop a img {
   border-radius: 4px;
 }
 
-.google-login {
+.login-item {
+  margin-bottom: 20px;  
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/*.google-login {
   background-color: #f4c20d;
 }
 
@@ -264,8 +291,8 @@ div.IdPSelectPreferredIdPImg {
 }
 
 .hc-login {
-  background-color: #006650;å
-}
+  background-color: #006650;
+}*/
 
 #last_login_container {
   overflow: hidden;
@@ -300,7 +327,44 @@ div.IdPSelectPreferredIdPImg {
 
 .IdPSelectHelpButton {
   margin-left: 5px !important;
+  text-align: left !important;
 }
+
+.IdPSelectPreferredIdPButton {
+  width: 100% !important;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+.IdPSelectPreferredIdPImg {
+  max-width: unset;
+  height: 69px;
+}
+
+.IdPSelectIdPImg {
+  display: unset !important;
+  max-width: unset !important;
+  max-height: unset !important;
+  float: unset !important;
+  margin-right: unset !important;
+  margin-left: 280px !important;
+}
+
+#idpSelectPreferredIdPTile .IdPSelectTextDiv:first-child { display: none; }
+.IdPSelectPreferredIdPButton { margin-bottom: 30px !important;  }
+
+.IdPSelectPreferredIdPButton .IdPSelectTextDiv {
+  text-align: left !important;
+  font-size: 20px !important;
+  margin: -50px 0 15px 16px !important;
+  height: unset !important;
+  color: black !important;
+}
+
+  .IdPSelectPreferredIdPButton .IdPSelectTextDiv:hover { text-decoration: none !important; }
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 

@@ -86,7 +86,7 @@
       break;
       default :
     ?>
-    <h1>HC Login</h1>
+    <h1>Choose a Login Method</h1>
     <div class="customImage"><img src="/img/double_hc_55.png" /></div>
     <?php
       break;
