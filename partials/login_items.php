@@ -51,13 +51,13 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
     <div class="full-width align-self-center login-item twitter-login">
       <a data-login="Twitter" href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
        <!-- <span>Twitter</span> -->
-        <img src="/img/new_logos_fall_17/twitter_fall_17.png" height="64" width="64" />
+        <img alt="Twitter Login" src="/img/new_logos_fall_17/twitter_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
     <div class="full-width align-self-center google-logo google-login login-item">
       <a data-login="Google" href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
-        <img src="/img/new_logos_fall_17/google_fall_17.png" height="64" width="64" />
+        <img alt="Google Login" src="/img/new_logos_fall_17/google_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -77,7 +77,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
     <!-- special patch to demo hc id account link scenario -->
     <div class="full-width align-self-center login-item hc-login" style="display:inherit">
       <a data-login="HC Gateway" href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-        <img src="/img/new_logos_fall_17/hc_favicon_fall_17.png" height="64" width="64" />
+        <img alt="HC Login" src="/img/new_logos_fall_17/hc_favicon_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -88,7 +88,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
 
     <div class="full-width align-self-center login-item mla-login">
       <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img src="/img/new_logos_fall_17/legacy_mla_fall_17.png" height="64" width="64" />
+        <img alt="Legacy MLA Login" src="/img/new_logos_fall_17/legacy_mla_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
