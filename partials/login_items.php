@@ -34,7 +34,7 @@ function outputUrl( $entityId, $newLogin = false ) {
 }
 
 //check for account linking flow
-if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) : 
+if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true && $registryUrl['dirname'] !== '/discovery_service_wordpress' ) : 
 
 ?>
 
@@ -99,12 +99,14 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
       </a>
     </div> */ ?>
 
-  <?php endif; ?>
+  <?php endif;
+if( $registryUrl['dirname'] !== '/discovery_service_registry_only' ) :
+ ?>
 
-    <div class="full-width align-self-center login-item">
+    <div class="full-width align-self-center uni-login login-item">
       <a href="#" class="uni_cred_login">Use my university credentials</a> 
     </div>
-
+<?php endif; ?>
   </div> <!-- /.row -->
 </div> <!-- /.login-items-desktop -->
 

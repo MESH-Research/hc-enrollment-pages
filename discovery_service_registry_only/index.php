@@ -15,7 +15,7 @@
 
   <div class="container container_incommon">
     <div class="row">
-      <div class="eight columns align-self-center">
+      <div class="eight columns align-self-center offset-by-two">
         <h2 style="text-align: center;">Select your log-in method</h2>
         <p style="text-align: center;font-weight:bold">Make sure you always sign in to the Commons using the same method.</p>
         <?php include('../partials/login_items.php'); ?>

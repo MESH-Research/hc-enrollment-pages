@@ -8,7 +8,9 @@
 <head>
   <title>Humanities Commons Draft IdP Discovery Page WordPress</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-5" />
-  <?php include( '../partials/css_js.php' ); ?>
+  <?php include( '../partials/css_js.php' ); 
+	include( '../env.php' );
+  ?>
 </head>
 
 <body>
@@ -19,13 +21,12 @@
 
         <?php include('../partials/header.php'); ?>
 
-        <div class="container">
+        <div class="container wordpress-container">
           <div class="row">
             <div class="seven columns align-self-center offset-by-two">
                <div class="titles_container">
-                 <h2>How would you like to log in?</h2>
-                 <p>Choose a login method you have already linked to your account</p>
-                 <p><a href="https://hcommons-dev.org/remind-me/">I don't remember how I logged in</a></p>
+                 <h5>Choose a login method you have already linked to your account</h5>
+                 <p><a href="https://<?php echo constant('HC_DOMAIN'); ?>/remind-me/">Forgotten how you logged in?</a></p>
                </div><!-- /.titles_container -->
 
               <?php if( isset( $host[0] ) && $host[0] == 'mla' ) : ?>

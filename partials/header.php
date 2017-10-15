@@ -86,7 +86,6 @@
       break;
       default :
     ?>
-    <h1>Choose a Login Method</h1>
     <div class="customImage"><img src="/img/double_hc_55.png" /></div>
     <?php
       break;

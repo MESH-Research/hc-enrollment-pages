@@ -213,6 +213,20 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 div.IdPSelectPreferredIdPImg {
   height: unset;
 }
+
+.uni_name {
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+.uni-login { display: none !important; }
+#idpSelect .IdPSelectautoDispatchArea { display: none !important; }
+
+/*.IdPSelectPreferredIdPButton .IdPSelectTextDiv {
+  text-align: center !important;
+  margin-top: 20px !important;
+}*/
+
 #idpSelectPreferredIdPTile {
   height: unset;
 }
@@ -245,11 +259,28 @@ div.IdPSelectPreferredIdPImg {
   height: unset !important;
   padding: 5px 20px !important;
 }
+
+.IdPSelectautoDispatchArea {
+margin-top: 0 !important;
+}
+
+.container_incommon_top #idpSelect {
+margin-top: 0 !important;
+}
+
 .titles_container { text-align: center !important; }
-.titles_container a { color: #006ccc !important; }
+   .titles_container a { color: #006ccc !important; }
 
 .login-items-desktop .one-half {
   margin: 5px;
+}
+
+.wordpress-container {
+margin-bottom: 0 !important;
+}
+
+.login-items-desktop {
+margin-bottom: 0;
 }
 
 .login-items-desktop a {
@@ -330,7 +361,18 @@ div.IdPSelectPreferredIdPImg {
   text-align: left !important;
 }
 
+#customHeader {
+   min-height: 80px;
+}
+
+.last_login_text {
+   display: none;
+   text-align: center;
+   margin-bottom: 0;
+}
+
 .IdPSelectPreferredIdPButton {
+
 /*width: unset !important;*/
   width: 100% !important;
   border: 2px solid black;
@@ -356,23 +398,27 @@ margin-left: 150px !important;
  /* margin-left: 280px !important;*/
 }
 
-#idpSelectPreferredIdPTile .IdPSelectTextDiv:first-child { display: none; }
+/*#idpSelectPreferredIdPTile .IdPSelectTextDiv:first-child { display: none; }*/
 .IdPSelectPreferredIdPButton { margin-bottom: 30px !important;  }
 
 .IdPSelectPreferredIdPButton .IdPSelectTextDiv {
-  text-align: left !important;
+  text-align: left;
   font-size: 20px !important;
-  margin: -50px 0 15px 16px !important;
-  height: unset !important;
-  color: black !important;
+  margin: -50px 0 15px 16px;
+  height: unset;
+  color: black;
 }
 
   .IdPSelectPreferredIdPButton .IdPSelectTextDiv:hover { text-decoration: none !important; }
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
+  #idpSelectIdPSelector { width: 100% !important; }
+  .IdPSelectPreferredIdPButton { width: unset !important; } 
+  .IdPSelectIdPImg { margin: 0 100px !important;  }
+
   .sidebar { display: none !important; }
-  .container { margin-top: 50px; }
+  .container { margin-top: 50px; padding: unset !important; }
 
   .customImage > img {
     margin-left: 100px;
