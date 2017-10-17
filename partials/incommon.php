@@ -1,8 +1,11 @@
+<!--<div class="container">-->
 <div class="row">
+
 	<div class="ten columns align-self-center">
 		<!--<div class="section">-->
 			<div class="container_incommon_top" style="text-align:center;">
 				<p class="last_login_text">You recently logged into Humanities Commons using:</p>
+
 				<div id="idpSelect" style="display:inline-block;"></div>
 				<script type="text/javascript">
 					var humanitiesCommonsHiddenIdPs = [
@@ -45,9 +48,12 @@
 					<a href="http://federation.org/DS/DS?entityID=https%3A%2F%2FyourentityId.edu.edu%2Fshibboleth&return=https%3A%2F%2Fyourreturn.edu%2FShibboleth.sso%2FDS%3FSAMLDS%3D1%26target%3Dhttps%3A%2F%2Fyourreturn.edu%2F">this link</a>.
 
 				</noscript>
+
                               <div class="button_container"><a href="#">< Back</a></div>
                               <p class="linked_login_container">Or <a href="#">log in another way</a></p>
 			</div>
+
 		<!-- </div> --> <!-- /.section -->
 	</div> <!-- /.six.columns -->
 </div> <!-- /.row -->
+<!--</div> --><!-- /.container -->

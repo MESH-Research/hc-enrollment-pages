@@ -12,12 +12,38 @@ html {
   border-radius: 4px;
 }
 
-.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default { background-color: #006650 !important; }
-.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default:hover { background-color: #009978 !important; }
+/*.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default { background-color: #006650 !important; }*/
+
+ .humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default:hover { background-color: #009978 !important; }
+
 
 .humanities_commons_idp_enroller_accounts.provision #secondaryMenu, .humanities_commons_idp_enroller_accounts.provision #row3, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #secondaryMenu, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #row3 {
-  display: none !important;
+    display: none !important; 
 }
+
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier input[type="submit"].mdl-button {  background-color: #006650 !important;  }
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier #navigation-drawer, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #banner, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #desktop-hamburger { display: none !important; }
+.pages #banner { display: none !important }
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell input {
+  background: #006660 !important;
+  padding: 0 16px !important;
+}
+
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier .mdl-layout--fixed-drawer > .mdl-layout__content { margin-left: unset !important; }
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier .co-info-topbox { margin-bottom: 0 !important; }
+.co_petitions.petitionerAttributes #navigation-drawer { display: none !important; } 
+.co_petitions.petitionerAttributes .mdl-layout__content { margin-left: 0 !important; }
+.pages #navigation-drawer { display: none !important; }
+.pages .mdl-layout__content { margin-left: 0 !important; }
+
+.h_c_confirmers #banner { display: none !important; }
+.h_c_confirmers #user-menu { display: none !important; }
+
+/*#comanage-wrapper .mdl-layout__drawer {
+display: none !important;
+}*/
+
+.pages.terms-page #customFooter { display: none !important; }
 
 .contentFooterWithoutSidebar {
   color: black;
@@ -60,7 +86,7 @@ html {
        min-width: 70% !important;
    }
 
-  #customheader h1 {
+  #customheader h1 {  
     margin-left: 0px !important;
   }
 
