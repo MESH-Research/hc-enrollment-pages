@@ -21,11 +21,11 @@
 
 					var HC_DOMAIN = '<?php echo HC_DOMAIN; ?>';
 				</script>
-				<script src="/lib/shibboleth-embedded-ds-1.2.0/json2.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.2.0/typeahead.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect_languages.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect_config.js" type="text/javascript" language="javascript"></script>
-				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect.js" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/json2.js?v101617" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/typeahead.js?v101617" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect_languages.js?v101617" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect_config.js?v101617" type="text/javascript" language="javascript"></script>
+				<script src="/lib/shibboleth-embedded-ds-1.2.0/idpselect.js?v101617" type="text/javascript" language="javascript"></script>
 				<noscript>
 					<!-- If you need to care about non javascript browsers you will need to
 					     generate a hyperlink to a non-js DS.
