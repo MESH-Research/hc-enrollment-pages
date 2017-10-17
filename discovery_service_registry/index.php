@@ -19,7 +19,7 @@
 
           <div class="container container_incommon">
             <div class="row">
-              <div class="eight columns align-self-center login_registry_text column-content">
+              <div class="eight columns align-self-center login_registry_text column-content offset-by-two">
                 <!--<h3>Thank you for registering!</h3>-->
 
                 <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) : ?>

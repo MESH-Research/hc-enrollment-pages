@@ -178,14 +178,6 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   text-align: left;
 }
 
-.login-items-mobile {
-  display: none;
-}
-
-  .login-items-mobile > .row {
-    margin-bottom: 10px;
-  }
-
 .login-items-desktop .row {
   margin-bottom: 10px;
 }
@@ -234,6 +226,20 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 div.IdPSelectPreferredIdPImg {
   height: unset;
 }
+
+.uni_name {
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+.uni-login { display: none !important; }
+#idpSelect .IdPSelectautoDispatchArea { display: none !important; }
+
+/*.IdPSelectPreferredIdPButton .IdPSelectTextDiv {
+  text-align: center !important;
+  margin-top: 20px !important;
+}*/
+
 #idpSelectPreferredIdPTile {
   height: unset;
 }
@@ -249,6 +255,7 @@ div.IdPSelectPreferredIdPImg {
   width: unset;
 }
 
+/* feature-slim-incommon-3.1
 #idpSelect { 
   width: 100%; 
   margin-left: 12px !important;
@@ -262,27 +269,82 @@ div.IdPSelectPreferredIdPImg {
   color: black;
   padding: 10px;
 }
+*/
+
+/** controls incommon options in login screen **/
+/*#idpSelectIdPSelector #idpSelectIdPEntryTile { display: none; }
+#idpSelectIdPSelector .IdPSelectautoDispatchTile { display: none; }*/
+
+.container_incommon_top .button_container { display:none; }
+.container_incommon_top .linked_login_container { display:none; }
+
+#idpSelectIdPSelector #idpSelectInput { 
+  width: 71% !important;
+  height: unset !important; 
+  padding: 15px !important ;
+}
+
+#idpSelectIdPSelector #idpSelectSelectButton {
+  height: unset !important;
+  padding: 5px 20px !important;
+}
+
+.IdPSelectautoDispatchArea {
+margin-top: 0 !important;
+}
+
+.container_incommon_top #idpSelect {
+margin-top: 0 !important;
+}
+
+.titles_container { text-align: center !important; }
+   .titles_container a { color: #006ccc !important; }
 
 .login-items-desktop .one-half {
   margin: 5px;
 }
 
+.wordpress-container {
+margin-bottom: 0 !important;
+}
+
+.login-items-desktop {
+margin-bottom: 0;
+}
+
 .login-items-desktop a {
   display: block;
   text-align: center;
+
   padding: 20px;
   color: white;
+
   text-decoration: none;
   font-weight: bold;
   /*box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;*/
   border-radius: 4px;
 }
 
+.uni_cred_login { 
+  padding: 20px;
+  color: #006ccc !important;
+  font-weight: normal !important;
+}
+
+  .uni_cred_login:hover { text-decoration: underline !important; }
+
 .login-items-desktop a img {
   border-radius: 4px;
 }
 
-.google-login {
+.login-item {
+  margin-bottom: 20px;  
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/*.google-login {
   background-color: #f4c20d;
 }
 
@@ -291,12 +353,8 @@ div.IdPSelectPreferredIdPImg {
 }
 
 .hc-login {
-  background-color: #0B6550;
-}
-
-.mla-login {
-  background-color: #CA0A37;
-}
+  background-color: #006650;
+}*/
 
 #last_login_container {
   overflow: hidden;
@@ -331,12 +389,67 @@ div.IdPSelectPreferredIdPImg {
 
 .IdPSelectHelpButton {
   margin-left: 5px !important;
+  text-align: left !important;
 }
+
+#customHeader {
+   min-height: 80px;
+}
+
+.last_login_text {
+   display: none;
+   text-align: center;
+   margin-bottom: 0;
+}
+
+.IdPSelectPreferredIdPButton {
+
+/*width: unset !important;*/
+  width: 100% !important;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  height: 70px;
+}
+
+.IdPSelectPreferredIdPImg {
+  max-width: unset;
+  height: 69px;
+}
+
+.IdPSelectIdPImg {
+  display: unset !important;
+  max-width: unset !important;
+  max-height: unset !important;
+  float: unset !important;
+  margin-right: unset !important;
+margin-left: 150px !important;
+ /* margin-left: 280px !important;*/
+}
+
+/*#idpSelectPreferredIdPTile .IdPSelectTextDiv:first-child { display: none; }*/
+.IdPSelectPreferredIdPButton { margin-bottom: 30px !important;  }
+
+.IdPSelectPreferredIdPButton .IdPSelectTextDiv {
+  text-align: left;
+  font-size: 20px !important;
+  margin: -50px 0 15px 16px;
+  height: unset;
+  color: black;
+}
+
+  .IdPSelectPreferredIdPButton .IdPSelectTextDiv:hover { text-decoration: none !important; }
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
+  #idpSelectIdPSelector { width: 100% !important; }
+  .IdPSelectPreferredIdPButton { width: unset !important; } 
+  .IdPSelectIdPImg { margin: 0 100px !important;  }
+
   .sidebar { display: none !important; }
-  .container { margin-top: 50px; }
+  .container { margin-top: 50px; padding: unset !important; }
 
   .customImage > img {
     margin-left: 100px;
@@ -365,7 +478,7 @@ div.IdPSelectPreferredIdPImg {
     width: unset !important;
   }
 
-  .google-logo img { width: 318px; }
+  /*.google-logo img { width: 318px; }*/
 
   #idpSelectIdPSelector { margin-left: unset !important; }
   #idpSelectInput { width: 65% !important; }
@@ -403,7 +516,7 @@ div.IdPSelectPreferredIdPImg {
 
   #customHeader .customImage img {  margin-left: 100px; }
   #customHeader h1 { margin-left: 250px; }
-  .google-logo img { width: 318px; }
+ /* .google-logo img { width: 318px; }*/
 
 }
 

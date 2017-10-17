@@ -33,24 +33,31 @@ function outputUrl( $entityId, $newLogin = false ) {
 
 }
 
+//check for account linking flow
+if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true && $registryUrl['dirname'] !== '/discovery_service_wordpress' ) : 
+
 ?>
 
+<div id="saml_idp" data-saml-idp="true"></div>
+<div id="cakephp" data-cakephp="true"></div>
+
+<?php endif; ?>
+
 <!-- login items desktop -->
-<div class="login-items-desktop">
+<div class="container login-items-desktop">
 
   <div class="row">
 
-    <div class="five columns align-self-center login-item twitter-login">
+    <div class="full-width align-self-center login-item twitter-login">
       <a data-login="Twitter" href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
-        <span>Twitter</span>
-        <!--<img class="hc-signin" src="/img/twitter_new.png" />-->
+       <!-- <span>Twitter</span> -->
+        <img alt="Twitter Login" src="/img/new_logos_fall_17/twitter_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
-    <div class="five columns align-self-center google-logo google-login login-item">
+    <div class="full-width align-self-center google-logo google-login login-item">
       <a data-login="Google" href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
-        <span>Google</span>
-        <!--<img src="/img/google_button_new.png" />-->
+        <img alt="Google Login" src="/img/new_logos_fall_17/google_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -61,20 +68,16 @@ function outputUrl( $entityId, $newLogin = false ) {
       </a>
     </div>
     */ ?>
-  </div> <!-- /.row -->
+ <!-- </div> --> <!-- /.row -->
 
-  <div class="row">
+  <!-- <div class="row"> -->
 
-  <?php
-
-if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ||
-  $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
+  <?php if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
-    <div class="five columns align-self-center login-item hc-login" style="display:inherit">
+    <div class="full-width align-self-center login-item hc-login" style="display:inherit">
       <a data-login="HC Gateway" href="<?php echo outputUrl( HC_GATEWAY ); ?>">
-        <span>Humanities Commons</span>
-        <!--<img class="hc-signin" src="/img/humanities-commons_new.png" />-->
+        <img alt="HC Login" src="/img/new_logos_fall_17/hc_favicon_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -83,10 +86,9 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
     $registryUrl['dirname'] == '/discovery_service_registry_only' ||
     $check_saml_cake['_shib_session_'] == true ) : ?>
 
-    <div class="five columns align-self-center login-item mla-login">
+    <div class="full-width align-self-center login-item mla-login">
       <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <span>Legacy MLA</span>
-        <!--<img class="legacy_mla" src="/img/mla-commons_new.png" />-->
+        <img alt="Legacy MLA Login" src="/img/new_logos_fall_17/legacy_mla_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
 
@@ -97,7 +99,14 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
       </a>
     </div> */ ?>
 
-  <?php endif; ?>
+  <?php endif;
+if( $registryUrl['dirname'] !== '/discovery_service_registry_only' ) :
+ ?>
+
+    <div class="full-width align-self-center uni-login login-item">
+      <a href="#" class="uni_cred_login">Use my university credentials</a> 
+    </div>
+<?php endif; ?>
   </div> <!-- /.row -->
 </div> <!-- /.login-items-desktop -->
 
@@ -120,5 +129,5 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
   <?php endif; ?>
 
 <?php if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) :
-  //require_once "incommon.php";
+  require_once "incommon.php";
 endif; ?>
