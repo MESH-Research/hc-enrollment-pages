@@ -13,13 +13,15 @@ function outputUrl( $entityId, $newLogin = false ) {
   // e.g.
   // $returnUrl = array_key_exists('return', $_GET) ? $_GET["return"] : '';
   $returnUrl = $_GET["return"];
+  $queryString = parse_url( $returnUrl, PHP_URL_QUERY );
+  $queryString['entityID'] = $entityId;
 
   //lets check if the user is trying to create a new login
   if( $newLogin == true ) {
 
     // Need to URL encode the entityID before adding it as a query string
     // parameter to the link.
-    $discoveryUrlEncoded = rtrim( $returnUrl, '/' ) . '&entityID=' . urlencode( $entityId );
+    $discoveryUrlEncoded = $returnUrl . '?' . http_build_query( $queryString );
 
     // URL encode the discoveryURL to make it a query string parameter for
     // the HumanitiesCommonsIdpEnroller provision action
@@ -28,7 +30,7 @@ function outputUrl( $entityId, $newLogin = false ) {
   } else {
     // Need to URL encode the entityID before adding it as a query string
     // parameter to the link.
-    return $returnUrl . '&entityID=' . urlencode($entityId);
+    return $returnUrl . '?' . http_build_query( $queryString );
   }
 
 }
