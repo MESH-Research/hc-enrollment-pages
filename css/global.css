@@ -99,6 +99,10 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
   display: none;
 }
 
+.email_error {
+  clear: both !important;
+}
+
 .boxtitle > span.required {
   display: none;
 }
@@ -188,7 +192,7 @@ body.discovery-service-enrollment > .section, body.discovery-service-registry > 
 
 #idpSelectInput { width: 75% !important; }
 .humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell input {
-  background: #006650 !important;
+  background: #006650;
   padding: unset;
   color: black;
 }
@@ -232,8 +236,8 @@ div.IdPSelectPreferredIdPImg {
   margin-top: 20px !important;
 }
 
-.uni-login { display: none !important; }
-#idpSelect .IdPSelectautoDispatchArea { display: none !important; }
+/*.uni-login { display: none !important; }
+#idpSelect .IdPSelectautoDispatchArea { display: none !important; }*/
 
 /*.IdPSelectPreferredIdPButton .IdPSelectTextDiv {
   text-align: center !important;
@@ -315,10 +319,7 @@ margin-bottom: 0;
 .login-items-desktop a {
   display: block;
   text-align: center;
-
-  padding: 20px;
   color: white;
-
   text-decoration: none;
   font-weight: bold;
   /*box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;*/

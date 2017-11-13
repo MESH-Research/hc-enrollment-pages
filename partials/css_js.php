@@ -80,13 +80,14 @@ if( $(this).find('.IdPSelectIdPImg').attr('alt') == 'HC Login' ) {
 	  $('.login-items-desktop').hide();
 	  $('.container_incommon_top .linked_login_container').show();
 	  $('.titles_container').hide();
+          $('.container_incommon_top .button_container').hide();
 	}
 
       $('#idpSelectIdPSelector #idpSelectIdPEntryTile').hide();
  
   } //end if on idpbutton visible
 
-/*  $('.uni_cred_login').on('click', function(event) {
+  $('.uni_cred_login').on('click', function(event) {
 
     event.preventDefault();
     $('.login-items-desktop').hide();
@@ -99,18 +100,17 @@ if( $(this).find('.IdPSelectIdPImg').attr('alt') == 'HC Login' ) {
     }
 
     $('#idpSelectIdPSelector #idpSelectIdPEntryTile').show(); 
-    $('.container_incommon_top .button_container').show();
+    //$('.container_incommon_top .button_container').show();
 
-  });*/
+  });
 
-
-  $('.container_incommon_top .button_container').on('click', function(event) {
+  /*$('.container_incommon_top .button_container').on('click', function(event) {
     
     event.preventDefault();
 
     display_default_login();   
     $('.IdPSelectPreferredIdPButton').hide();
-  });
+  });*/
 
 
    $('.linked_login_container').on('click', function(event) {

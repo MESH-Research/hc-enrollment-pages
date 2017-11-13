@@ -49,7 +49,7 @@
 
 				</noscript>
 
-                              <div class="button_container"><a href="#">< Back</a></div>
+                            <!--  <div class="button_container"><a href="#">< Back</a></div> -->
                               <p class="linked_login_container">Or <a href="#">log in another way</a></p>
 			</div>
 

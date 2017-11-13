@@ -119,6 +119,14 @@ body {
 
 #banner, #right-sidebar { display: none !important }
 
+.co_petitions.hc-enrollment #navigation-drawer, .co_petitions.hc-enrollment #desktop-hamburger {
+    display: none !important;
+}
+
+.co_petitions.hc-enrollment #main {
+   margin-left: 0 !important;
+}
+
 .modelbox table.ui-widget, .modelbox .boxtitle  {
   font-family: proxima-nova, Verdana, sans-serif;
 }
