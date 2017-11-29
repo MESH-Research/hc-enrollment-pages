@@ -15,7 +15,7 @@
 						'<?php echo LEGACY_MLA_GATEWAY; ?>',
 						'<?php echo HC_ACCOUNT_CREATE_GATEWAY; ?>',
 					];
-					var humanitiesCommonsPreferredIdPs = [
+					var humanitiesCommonsPreferredIdPs = [ 
 						'<?php echo GOOGLE_GATEWAY; ?>',
 						'<?php echo TWITTER_GATEWAY; ?>',
 						'<?php echo HC_GATEWAY; ?>',
