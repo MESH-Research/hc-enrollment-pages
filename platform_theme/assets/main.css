@@ -3,30 +3,84 @@ html {
 }
 
 .humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell input {
-  background-color: #006650 !important;
+  background-color: #006650;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
   color: #fff;
   text-decoration: none;
-  padding: 10px;
-  background: none !important;
   border-radius: 4px;
 }
 
-/*.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default { background-color: #006650 !important; }*/
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default { background-color: #006650 !important; }
 
- .humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default:hover { background-color: #009978 !important; }
+.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell .ui-state-default:hover { background-color: #009978 !important; }
 
 
 .humanities_commons_idp_enroller_accounts.provision #secondaryMenu, .humanities_commons_idp_enroller_accounts.provision #row3, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #secondaryMenu, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #row3 {
     display: none !important; 
 }
 
-.humanities_commons_idp_enroller_co_petitions.collectIdentifier input[type="submit"].mdl-button {  background-color: #006650 !important;  }
-.humanities_commons_idp_enroller_co_petitions.collectIdentifier #navigation-drawer, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #banner, .humanities_commons_idp_enroller_co_petitions.collectIdentifier #desktop-hamburger { display: none !important; }
-.pages #banner { display: none !important }
-.humanities_commons_idp_enroller_co_petitions.collectIdentifier #tabs-attributes .submitCell input {
-  background: #006660 !important;
-  padding: 0 16px !important;
+.humanities_commons_idp_enroller_co_petitions #navigation-drawer, 
+.humanities_commons_idp_enroller_co_petitions #banner,
+.humanities_commons_idp_enroller_co_petitions #desktop-hamburger,
+.pages.terms-page #banner, 
+.pages.terms-page #top-menu #user-menu #login {
+    display: none !important;
+}
+
+.humanities_commons_idp_enroller_co_petitions #main,
+.humanities_commons_idp_enroller_co_petitions #main .modelbox {
+    margin-left: 0 !important;
+}
+
+.email_error {
+  clear: both !important;
+  margin-bottom: 15px;
+}
+
+   .email_error .ui-icon-circle-close, .enrollment_flow_msg_dupe .ui-icon-circle-close {  display: none; }
+
+.h_c_confirmers .enrollment_flow_msg a.cancelbutton.ui-button.ui-corner-all.ui-widget {
+   font-size:  11px !important;
+}
+
+.h_c_confirmers #banner, .h_c_confirmers #login { display: none !important }
+.h_c_confirmers .enrollment_flow_msg {
+   clear: both;
+}
+
+.h_c_confirmers #navigation-drawer {
+      display: none;
+}
+
+.h_c_confirmers .invitation {
+  margin-bottom: 30px;
+}
+
+.h_c_confirmers .email_error p, .h_c_confirmers .enrollment_flow_msg,  .h_c_confirmers .enrollment_flow_msg_dupe {
+   font-size: 15px;
+   color: red;
+}
+
+.h_c_confirmers .fields {
+   margin-top: 20px;
+}
+
+.h_c_confirmers .checkbutton {
+  margin: 0 10px;
+}
+
+.h_c_confirmers #titleNavContainer {
+   overflow: hidden;
+}
+
+.h_c_confirmers #customFooter { margin: 600px 10px 0 10px; }
+
+.duplicate-error-message #logout {
+    display: none;
+}
+
+.hc-enrollment #navigation {
+    display: none !important;
 }
 
 .humanities_commons_idp_enroller_co_petitions.collectIdentifier .mdl-layout--fixed-drawer > .mdl-layout__content { margin-left: unset !important; }
@@ -55,6 +109,8 @@ display: none !important;
   color: #b3b3b3;
   padding: 15px 0 15px 15px 15px;
 }
+
+.co_themes #customFooter { margin-left: 240px; }
 
 #customFooter {
   position: relative;
