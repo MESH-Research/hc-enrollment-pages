@@ -236,8 +236,8 @@ div.IdPSelectPreferredIdPImg {
   margin-top: 20px !important;
 }
 
-/*.uni-login { display: none !important; }
-#idpSelect .IdPSelectautoDispatchArea { display: none !important; }*/
+.uni-login { display: none !important; }
+/*#idpSelect .IdPSelectautoDispatchArea { display: none !important; }*/
 
 /*.IdPSelectPreferredIdPButton .IdPSelectTextDiv {
   text-align: center !important;
@@ -276,11 +276,12 @@ div.IdPSelectPreferredIdPImg {
 */
 
 /** controls incommon options in login screen **/
-/*#idpSelectIdPSelector #idpSelectIdPEntryTile { display: none; }
-#idpSelectIdPSelector .IdPSelectautoDispatchTile { display: none; }*/
+#idpSelectIdPSelector #idpSelectIdPEntryTile { display: none; }
+#idpSelectIdPSelector .IdPSelectautoDispatchTile { display: none; }
 
 .container_incommon_top .button_container { display:none; }
 .container_incommon_top .linked_login_container { display:none; }
+
 
 #idpSelectIdPSelector #idpSelectInput { 
   width: 71% !important;

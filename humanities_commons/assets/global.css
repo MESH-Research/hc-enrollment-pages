@@ -127,6 +127,8 @@ body {
    margin-left: 0 !important;
 }
 
+.co_petitions .mdl-layout__drawer { display: none !important }
+
 .modelbox table.ui-widget, .modelbox .boxtitle  {
   font-family: proxima-nova, Verdana, sans-serif;
 }
@@ -140,6 +142,10 @@ body {
 .co_petitions.petitionerAttributes .mdl-layout__content { margin-left: 0 !important; }
 .pages #navigation-drawer { display: none !important; }
 .pages .mdl-layout__content { margin-left: 0 !important; }
+
+.co_petitions .mdl-layout__drawer { display: none !important; }
+.co_petitions #main { margin-left: 0 !important; }
+.co_petitions #desktop-hamburger { display: none !important; }
 
 #customHeader,
 #customHeader .contentWidth {

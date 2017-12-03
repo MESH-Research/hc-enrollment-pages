@@ -75,7 +75,9 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
 
   <!-- <div class="row"> -->
 
-  <?php if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
+  <?php if( $registryUrl['dirname'] == '/discovery_service_wordpress' ||
+ $registryUrl['dirname'] == '/discovery_service_registry_only' ||
+ $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
     <div class="full-width align-self-center login-item hc-login" style="display:inherit">
@@ -91,7 +93,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
 
     <div class="full-width align-self-center login-item mla-login">
       <a data-login="your MLA <i>Commons</i> ID" href="<?php echo outputUrl( LEGACY_MLA_GATEWAY ); ?>">
-        <img alt="Legacy MLA Login" src="/img/new_logos_fall_17/legacy_mla_fall_17.png" height="64" width="64" />
+        <img alt="Legacy MLA Login" src="/img/new_logos_fall_17/legacy_mla_fall_17.png" height="55" width="70" />
       </a>
     </div> <!-- /.one-half.column -->
 
