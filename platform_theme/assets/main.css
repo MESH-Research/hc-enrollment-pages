@@ -23,6 +23,8 @@ html {
 .humanities_commons_idp_enroller_co_petitions #banner,
 .humanities_commons_idp_enroller_co_petitions #desktop-hamburger,
 .humanities_commons_idp_enroller_co_petitions #breadcrumbs,
+.humanities_commons_idp_enroller_accounts #banner,
+.humanities_commons_idp_enroller_accounts #top-menu #user-menu #login,
 .pages.terms-page #banner,
 .pages.terms-page #top-menu #user-menu #login {
     display: none !important;
