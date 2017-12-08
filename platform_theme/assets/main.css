@@ -25,12 +25,19 @@ html {
 .humanities_commons_idp_enroller_co_petitions #breadcrumbs,
 .humanities_commons_idp_enroller_accounts #banner,
 .humanities_commons_idp_enroller_accounts #top-menu #user-menu #login,
+.co_petitions #banner,
+.co_petitions #top-menu #user-menu #login,
+.co_petitions #comanage-wrapper #navigation-drawer,
+.co_petitions #desktop-hamburger,
+.co_petitions #breadcrumbs,
+.co_petitions #user,
 .pages.terms-page #banner,
 .pages.terms-page #top-menu #user-menu #login {
     display: none !important;
 }
 
 .humanities_commons_idp_enroller_co_petitions #main,
+.co_petitions #main,
 .humanities_commons_idp_enroller_co_petitions #main .modelbox {
     margin-left: 0 !important;
 }
