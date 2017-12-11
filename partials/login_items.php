@@ -76,8 +76,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
   <!-- <div class="row"> -->
 
   <?php if( $registryUrl['dirname'] == '/discovery_service_wordpress' ||
- $registryUrl['dirname'] == '/discovery_service_registry_only' ||
- $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true ) : ?>
+ $registryUrl['dirname'] == '/discovery_service_registry_only' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
     <div class="full-width align-self-center login-item hc-login" style="display:inherit">

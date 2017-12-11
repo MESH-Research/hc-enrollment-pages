@@ -29,7 +29,7 @@ html {
 .co_petitions #top-menu #user-menu #login,
 .co_petitions #comanage-wrapper #navigation-drawer,
 .co_petitions #desktop-hamburger,
-.co_petitions #breadcrumbs,
+.co_petitions.start #breadcrumbs,
 .co_petitions #user,
 .pages.terms-page #banner,
 .pages.terms-page #top-menu #user-menu #login {
