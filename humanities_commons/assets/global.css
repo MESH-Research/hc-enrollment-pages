@@ -124,7 +124,7 @@ body {
   display: none !important;
 }
 
-.co_petitions .mdl-layout__drawer { display: none !important }
+.co_petitions.start .mdl-layout__drawer { display: none !important }
 
 .modelbox table.ui-widget, .modelbox .boxtitle  {
   font-family: proxima-nova, Verdana, sans-serif;
@@ -179,12 +179,11 @@ body {
   position: relative;
   color: black;
   font-size: 1.4em;
-  margin-top: 2em;
   padding: 1em 1.5em;
   width: 95%;
   font-size: 14px;
   border-top: solid 1px #b3b3b3;
-  margin: 100px 10px 0 10px;
+  margin: 0px 10px;
 }
 
 .sidebar {
@@ -198,8 +197,12 @@ body {
     margin: 0 auto;
 }
 
-#enrollmentFlowSteps {
+.co_petitions.start #enrollmentFlowSteps, .co_petitions.petitionerAttributes #enrollmentFlowSteps {
   display: none;
+}
+
+iframe#tandc_content {
+   height: 500px !important;
 }
 
 .pageTitle {
