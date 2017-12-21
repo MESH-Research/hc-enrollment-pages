@@ -25,19 +25,39 @@ html {
 .humanities_commons_idp_enroller_co_petitions #breadcrumbs,
 .humanities_commons_idp_enroller_accounts #banner,
 .humanities_commons_idp_enroller_accounts #top-menu #user-menu #login,
-.co_petitions #banner,
-.co_petitions #top-menu #user-menu #login,
-.co_petitions #comanage-wrapper #navigation-drawer,
-.co_petitions #desktop-hamburger,
+.co_petitions.petitionerAttributes #banner,
+.co_petitions.petitionerAttributes #top-menu #user-menu #login,
+.co_petitions.petitionerAttributes #comanage-wrapper #navigation-drawer,
+.co_petitions.petitionerAttributes #desktop-hamburger,
+.co_petitions.petitionerAttributes #breadcrumbs,
 .co_petitions.start #breadcrumbs,
-.co_petitions #user,
+.co_petitions.start #user,
+.pages.terms-page #desktop-hamburger,
+.pages.terms-page .mdl-layout__drawer-button,
+.pages.terms-page #user-menu,
+.pages.terms-page #navigation-drawer,
 .pages.terms-page #banner,
-.pages.terms-page #top-menu #user-menu #login {
+.pages.terms-page #top-menu #user-menu #login,
+.pages.guidelines-page #desktop-hamburger,
+.pages.guidelines-page .mdl-layout__drawer-button,
+.pages.guidelines-page #user-menu,
+.pages.guidelines-page #navigation-drawer,
+.pages.guidelines-page #comanage-wrapper #banner,
+.pages.guidelines-page #top-menu #user-menu #login,
+.pages.privacy-page #desktop-hamburger,
+.pages.privacy-page #banner,
+.pages.privacy-page #user-menu,
+.pages.privacy-page #navigation-drawer,
+.pages.privacy-page header#banner,
+.pages.privacy-page #top-menu #user-menu #login {
     display: none !important;
 }
 
 .humanities_commons_idp_enroller_co_petitions #main,
-.co_petitions #main,
+.co_petitions.start #main,
+.pages.terms-page #main,
+.pages.guidelines-page #main,
+.pages.privacy-page #main,
 .humanities_commons_idp_enroller_co_petitions #main .modelbox {
     margin-left: 0 !important;
 }
