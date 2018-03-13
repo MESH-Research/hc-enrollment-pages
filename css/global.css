@@ -236,8 +236,8 @@ div.IdPSelectPreferredIdPImg {
   margin-top: 20px !important;
 }
 
-.uni-login { display: none !important; }
-/*#idpSelect .IdPSelectautoDispatchArea { display: none !important; }*/
+/*.uni-login { display: none !important; }
+#idpSelect .IdPSelectautoDispatchArea { display: none !important; }*/
 
 /*.IdPSelectPreferredIdPButton .IdPSelectTextDiv {
   text-align: center !important;
@@ -259,6 +259,8 @@ div.IdPSelectPreferredIdPImg {
   width: unset;
 }
 
+.container_incommon_top #idpSelectIdPSelector .IdPSelectautoDispatchTile { margin-left: 50px; }
+
 /* feature-slim-incommon-3.1
 #idpSelect { 
   width: 100%; 
@@ -269,16 +271,16 @@ div.IdPSelectPreferredIdPImg {
   margin-left: 35px !important;
 }
 #idpSelectIdPEntryTile {
-  /*background-color: black;*/
+  background-color: black;
   color: black;
   padding: 10px;
 }
 */
 
 /** controls incommon options in login screen **/
-#idpSelectIdPSelector #idpSelectIdPEntryTile { display: none; }
+/*#idpSelectIdPSelector #idpSelectIdPEntryTile { display: none; }
 #idpSelectIdPSelector .IdPSelectautoDispatchTile { display: none; }
-
+*/
 .container_incommon_top .button_container { display:none; }
 .container_incommon_top .linked_login_container { display:none; }
 

@@ -123,9 +123,7 @@ if( $registryUrl['dirname'] !== '/discovery_service_registry_only' ) :
   ?>
   <div class="row create_new_login">
     <div class="eleven columns align-self-center u-cf offset-by-one">
-        <br />
-        <br />
-        <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</a></h5>.</p>
+        <h5>Or <a href="<?php echo outputUrl( HC_ACCOUNT_CREATE_GATEWAY, true ); ?>">click here to create a new Humanities Commons log-in</a>.</h5>
       </div> <!-- /.eight.column -->
 
     </div> <!-- /.create_new_login -->

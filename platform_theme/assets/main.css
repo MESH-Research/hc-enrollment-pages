@@ -114,6 +114,8 @@ html {
     display: none !important;
 }
 
+.co_invites.reply #navigation-drawer, .co_invites.reply .mdl-layout__content, .co_invites.reply .mdl-layout__header { display: none; }
+
 .contentFooterWithoutSidebar {
   color: black;
   text-align: left;

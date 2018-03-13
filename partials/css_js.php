@@ -92,6 +92,7 @@ if( $(this).find('.IdPSelectIdPImg').attr('alt') == 'HC Login' ) {
     event.preventDefault();
     $('.login-items-desktop').hide();
     $('.titles_container').hide();
+    $('.IdPSelectPreferredIdPButton').hide();
 
     if( $('#saml_idp').data('saml-idp') && $('#cakephp').data('cakephp') ) {
         $('.IdPSelectPreferredIdPButton').hide();
@@ -99,18 +100,28 @@ if( $(this).find('.IdPSelectIdPImg').attr('alt') == 'HC Login' ) {
         $('.IdPSelectPreferredIdPButton').show();
     }
 
+    $('.linked_login_container').show();
+    $('.login_registry_text').hide();
+    $('.container_incommon_top #idpSelectIdPSelector .IdPSelectautoDispatchTile').css({'margin-left': '0', 'margin-top': '10px'});
+
     $('#idpSelectIdPSelector #idpSelectIdPEntryTile').show(); 
-    //$('.container_incommon_top .button_container').show();
+    $('.container_incommon_top .button_container').show();
+
+    $('.container_incommon_top .IdPSelectPreferredIdPButton').each(function(k,v) { 
+        $(this).hide();
+        //if( $(v).find('.IdPSelectPreferredIdPImg').is(':empty') ) { $(this).hide(); }
+    });
+
 
   });
 
-  /*$('.container_incommon_top .button_container').on('click', function(event) {
+  $('.container_incommon_top .button_container').on('click', function(event) {
     
     event.preventDefault();
 
     display_default_login();   
     $('.IdPSelectPreferredIdPButton').hide();
-  });*/
+  });
 
 
    $('.linked_login_container').on('click', function(event) {
@@ -119,14 +130,19 @@ if( $(this).find('.IdPSelectIdPImg').attr('alt') == 'HC Login' ) {
 
      display_default_login();
      $(this).hide();
+     $('.login_registry_text').show();
      $('.last_login_text').hide();
      if( $('.container_incommon_top .IdPSelectPreferredIdPButton').length == 1 ) {
        $('.container_incommon_top .IdPSelectPreferredIdPButton').hide();
      }        
-
+     $('#idpSelectIdPSelector .IdPSelectautoDispatchTile').css({'margin-left': '50px'});
       $('.IdPSelectPreferredIdPButton').hide();
 
   });
+
+$('.container_incommon_top .IdPSelectPreferredIdPButton').each(function(k,v) { 
+    if( $(v).find('.IdPSelectPreferredIdPImg').is(':empty') ) { $(this).hide(); }
+});
 
 if( Cookies.get('_saml_idp') && Cookies.get('_saml_idp').split(' ').length > 1 ) {
    //Cookies.set("last_login", "an Institutional account");
