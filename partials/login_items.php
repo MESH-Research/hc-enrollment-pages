@@ -16,6 +16,8 @@ function outputUrl( $entityId, $newLogin = false ) {
   parse_str( parse_url( $returnUrl, PHP_URL_QUERY ), $queryString );
   $returnUrl = explode( '?', $returnUrl )[0];
   $queryString['entityID'] = $entityId;
+  $queryString['idpentityid'] = $entityId;
+//$queryString['returnIDParam'] = 'entityID';
 
   //lets check if the user is trying to create a new login
   if( $newLogin == true ) {

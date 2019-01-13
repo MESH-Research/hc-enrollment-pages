@@ -53,6 +53,17 @@ html {
     display: none !important;
 }
 
+.privacy-page .mdl-layout, .guidelines-page .mdl-layout, .terms-page .mdl-layout {
+    overflow: unset !important;
+    display: unset !important;
+    flex-direction: unset !important;
+    position: unset !important;
+}
+
+.privacy-page #customFooter, .guidelines-page #customFooter, .terms-page #customFooter {
+    width: unset !important;
+}
+
 .humanities_commons_idp_enroller_co_petitions #main,
 .co_petitions.start #main,
 .pages.terms-page #main,
@@ -113,6 +124,8 @@ html {
 .hc-enrollment #navigation {
     display: none !important;
 }
+
+body.title-hidden #user-menu a.topMenu { color: white !important; }
 
 .co_invites.reply #navigation-drawer, .co_invites.reply .mdl-layout__content, .co_invites.reply .mdl-layout__header { display: none; }
 
