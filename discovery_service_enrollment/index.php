@@ -58,7 +58,7 @@
     for(i=0; i < args.length; i++){
       var arg = args[i].split('=');
       if(arg.length == 2) {
-        if((arg[0] == 'policy') && (arg[1] == 'urn:mla.org:SAML:profile:SSO:idp-discovery-protocol:commons_enrollment')) {
+        if((arg[0] == 'policy') && (decodeURIComponent(arg[1]) == 'urn:mla.org:SAML:profile:SSO:idp-discovery-protocol:commons_enrollment')) {
           return true;
         }
       }
@@ -77,6 +77,8 @@
   function checkForIdPCookie() {
     var args = document.cookie.split(';');
     var i;
+	
+	console.log( 'checkForIdpCookie::args: ' + args );
 
     for(i=0; i < args.length; i++) {
       var arg=args[i].split('=');
@@ -150,10 +152,17 @@
   // so as to not strand the user if there is a problem.
   $( document ).ready(function() {
     if(checkForEnrollmentPolicy()){
-      var entityID = checkForIdPCookie().pop();
+      var entityIDs = checkForIdPCookie();
+	  console.log( 'entityIDs: ' + entityIDs );
+	  if ( entityIDs ) {
+		  var entityID = entityIDs.pop();
+		  console.log( 'entityID: ' + entityID );
+	  }
       if (entityID) {
         var returnUrl = getReturnUrl();
-        var targetUrl = returnUrl + '&entityID=' + encodeURIComponent(entityID);
+		console.log( 'returnUrl: ' + returnUrl );
+        var targetUrl = returnUrl + '?entityID=' + encodeURIComponent(entityID);
+		console.log( 'targetUrl: ' + targetUrl );
 
         // Display the message user will see during pause.
         $('#waiting').show();

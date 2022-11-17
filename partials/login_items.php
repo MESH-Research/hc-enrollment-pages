@@ -51,12 +51,16 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
 
   <div class="row">
 
+<?php if( $registryUrl['dirname'] == '/discovery_service_wordpress' ) : ?>
+
     <div class="full-width align-self-center login-item twitter-login">
       <a data-login="Twitter" href="<?php echo outputUrl( TWITTER_GATEWAY ); ?>">
        <!-- <span>Twitter</span> -->
         <img alt="Twitter Login" src="/img/new_logos_fall_17/twitter_fall_17.png" height="64" width="64" />
       </a>
     </div> <!-- /.one-half.column -->
+
+<?php endif; ?>
 
     <div class="full-width align-self-center google-logo google-login login-item">
       <a data-login="Google" href="<?php echo outputUrl( GOOGLE_GATEWAY ); ?>">
@@ -76,7 +80,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
   <!-- <div class="row"> -->
 
   <?php if( $registryUrl['dirname'] == '/discovery_service_wordpress' ||
- $registryUrl['dirname'] == '/discovery_service_registry_only' ) : ?>
+  $registryUrl['dirname'] == '/discovery_service_registry_only' ) : ?>
 
     <!-- special patch to demo hc id account link scenario -->
     <div class="full-width align-self-center login-item hc-login" style="display:inherit">
@@ -87,6 +91,7 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
 
   <?php endif;
   if( $registryUrl['dirname'] == '/discovery_service_wordpress' ||
+    $registryUrl['dirname'] == '/discovery_service_registry' ||
     $registryUrl['dirname'] == '/discovery_service_registry_only' ||
     $check_saml_cake['_shib_session_'] == true ) : ?>
 
@@ -96,12 +101,24 @@ if( $check_saml_cake['CAKEPHP'] == true && $check_saml_cake['_saml_idp'] == true
       </a>
     </div> <!-- /.one-half.column -->
 
-    <?php /* need to change classes 'one-half' back to 'one-third' above when restoring this block
-      <div class="one-third column align-self-center">
-      <a href="">
-      <img src="/img/orcid_128x128.png"></img>
+    <div class="full-width align-self-center login-item msu-login">
+      <a data-login="your MSU NET ID" href="<?php echo MSU_GATEWAY; ?>">
+        <img alt="MSU Login" src="/img/icons/helmet-f2w.jpg" height="64" width="64" />
       </a>
-    </div> */ ?>
+      </div> <!-- /.one-half.column -->
+
+<?php /*
+    <div class="full-width align-self-center orcid-logo orcid-login login-item">
+      <a data-login="ORCID" href="<?php echo outputUrl( ORCID_GATEWAY ); ?>">
+        <img alt="ORCID Login" src="/img/icons/orcid_128x128.png" height="64" width="64" />
+      </a>
+      </div> <!-- /.one-half.column -->
+    <div class="full-width align-self-center login-item wiscs-login">
+      <a data-login="your WISC NET ID" href="<?php echo WISC_GATEWAY; ?>">
+        WISC
+      </a>
+      </div> <!-- /.one-half.column -->
+*/ ?>
 
   <?php endif;
 if( $registryUrl['dirname'] !== '/discovery_service_registry_only' ) :

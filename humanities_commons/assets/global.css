@@ -5,10 +5,9 @@ body {
 /** AJS enrollment styles **/
 .ajs-enrollment #main .ui-icon-circle-arrow-e { display: none; }
 .ajs-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-.ajs-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .hc-enrollment .mdl-button { background-color: #069 !important; }
-.ajs-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .hc-enrollment .mdl-button:hover { background-color: #08c !important; }
+.ajs-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .ajs-enrollment .mdl-button { background-color: #069 !important; }
+.ajs-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .ajs-enrollment .mdl-button:hover { background-color: #08c !important; }
 .ajs-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
-
 .ajs-enrollment #main .forwardbutton.ui-state-default,
 .ajs-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
   background-color: #069 !important;
@@ -25,17 +24,15 @@ body {
   background: none !important;
 }
 
-/** CAA Enrollment styles **/
-.caa-enrollment #main .ui-icon-circle-arrow-e { display:none }
-.caa-enrollment #navigation-drawer. .caa-enrollment .mdl-layout__content { display: none }
-.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .hc-enrollment .mdl-button { background-color: #680c2c !important; }
-.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .hc-enrollment .mdl-button:hover { background-color: #877682 !important; }
-.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
-
-.caa-enrollment #main .forwardbutton.ui-state-default,
-.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
-  background-color: #680c2c !important;
+/** ARLIS/NA enrollment styles **/
+.arlisna-enrollment #main .ui-icon-circle-arrow-e { display: none; }
+.arlisna-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
+.arlisna-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .arlisna-enrollment .mdl-button { background-color: #ED572F !important; }
+.arlisna-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .arlisna-enrollment .mdl-button:hover { background-color: #ED572F !important; }
+.arlisna-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
+.arlisna-enrollment #main .forwardbutton.ui-state-default,
+.arlisna-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #ED572F !important;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
@@ -52,8 +49,8 @@ body {
 /** ASEEES enrollment styles **/
 .aseees-enrollment #main .ui-icon-circle-arrow-e { display: none; }
 .aseees-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-.aseees-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .hc-enrollment .mdl-button { background-color: #ef4f54 !important; }
-.aseees-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .hc-enrollment .mdl-button:hover { background-color: #ef4f54 !important; }
+.aseees-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .asseees-enrollment .mdl-button { background-color: #ef4f54 !important; }
+.aseees-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .asseees-enrollment .mdl-button:hover { background-color: #ef4f54 !important; }
 .aseees-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 .aseees-enrollment #main .forwardbutton.ui-state-default,
 .aseees-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
@@ -71,16 +68,17 @@ body {
   background: none !important;
 }
 
-/** MLA enrollment styles **/
-.mla-enrollment #main .ui-icon-circle-arrow-e { display: none; }
-.mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
-.mla-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .hc-enrollment .mdl-button { background-color: #0087ff !important; }
-.mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .hc-enrollment .mdl-button:hover { background-color: #fdc74a !important; }
-.mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
+/** CAA Enrollment styles **/
+.caa-enrollment #main .ui-icon-circle-arrow-e { display:none }
+.caa-enrollment #navigation-drawer. .caa-enrollment .mdl-layout__content { display: none }
+.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
+.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .caa-enrollment .mdl-button { background-color: #680c2c !important; }
+.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .caa-enrollment .mdl-button:hover { background-color: #877682 !important; }
+.caa-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
 
-.mla-enrollment #main .forwardbutton.ui-state-default,
-.mla-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
-  background-color: #0087ff !important;
+.caa-enrollment #main .forwardbutton.ui-state-default,
+.caa-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #680c2c !important;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
@@ -100,10 +98,75 @@ body {
 .hc-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .hc-enrollment .mdl-button { background-color: #006650 !important; }
 .hc-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .hc-enrollment .mdl-button:hover { background-color: #009978 !important; }
 .hc-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
-
 .hc-enrollment #main .forwardbutton.ui-state-default,
 .hc-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
   background-color: #006650 !important;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: unset;
+  padding: 10px;
+  text-align: center;
+  text-transform: none;
+  width: unset;
+  background: none !important;
+}
+
+/** MLA enrollment styles **/
+.mla-enrollment #main .ui-icon-circle-arrow-e { display: none; }
+.mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
+.mla-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .mla-enrollment .mdl-button { background-color: #0087ff !important; }
+.mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .mla-enrollment .mdl-button:hover { background-color: #fdc74a !important; }
+.mla-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
+.mla-enrollment #main .forwardbutton.ui-state-default,
+.mla-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #0087ff !important;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: unset;
+  padding: 10px;
+  text-align: center;
+  text-transform: none;
+  width: unset;
+  background: none !important;
+}
+
+/** MSU enrollment styles **/
+.msu-enrollment #main .ui-icon-circle-arrow-e { display: none; }
+.msu-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
+.msu-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .msu-enrollment .mdl-button { background-color: #006650 !important; }
+.msu-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .msu-enrollment .mdl-button:hover { background-color: #006650 !important; }
+.msu-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
+.msu-enrollment #main .forwardbutton.ui-state-default,
+.msu-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #006650 !important;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: unset;
+  padding: 10px;
+  text-align: center;
+  text-transform: none;
+  width: unset;
+  background: none !important;
+}
+
+/** SAH enrollment styles **/
+.sah-enrollment #main .ui-icon-circle-arrow-e { display: none; }
+.sah-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default,
+.sah-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell .ui-state-default, .sah-enrollment .mdl-button { background-color: #B63100 !important; }
+.sah-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default:hover, .sah-enrollment .mdl-button:hover { background-color: #fdc74a !important; }
+.sah-enrollment #main .enrollmentFlowStartButton.ui-button.ui-state-default span.ui-button-text { padding: unset !important; }
+.sah-enrollment #main .forwardbutton.ui-state-default,
+.sah-enrollment #petitionerAttributes_co_petition_attrs_submit .submitCell input {
+  background-color: #B63100 !important;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
